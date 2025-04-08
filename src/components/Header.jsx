@@ -16,18 +16,18 @@ const Header = () => {
     <>
       <div className="bg-[#1b1f23] w-full h-14">
         <div className="flex items-center h-full justify-center text-white px-60">
-          <div className="p-0.5 bg-[#e9e9e9] text-[#1b1f23] rounded-sm mr-2">
+          <div className="p-0.5 bg-[#e9e9e9] text-[#1b1f23] rounded-sm mr-3">
             <FaLinkedinIn className="size-7 pt-0.5" />
           </div>
-          <div className="bg-[#38434f] rounded-sm flex items-center w-60 h-8 px-2 mr-26">
-            <HiSearch className="size-4 ml-2 mr-[6px]" />
+          <div className="bg-[#38434f] rounded-sm flex items-center w-74 h-8 px-2 mr-28">
+            <HiSearch className="size-4 ml-1 mr-[6px]" />
             <input
               type="text"
               className="placeholder:text-md outline-none"
               placeholder="Search"
             />
           </div>
-          <div className="flex border-r border-[#4b4f56]">
+          <div className="flex border-r border-[#4b4f56] pr-8">
             <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
               <div className="">
                 <BiSolidHome className="size-6" />
@@ -79,7 +79,7 @@ const Header = () => {
               </div>
               <div className="text-[11px] pt-0.5">For Business</div>
             </div>
-            <div className="flex flex-col items-center mr-6 min-w-[80px] max-w-[100px]">
+            <div className="flex flex-col items-center mr-2 min-w-[80px] max-w-[100px]">
               <div className="">
                 <img
                   src="../../public/img/Premium.png"
