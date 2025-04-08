@@ -8,12 +8,13 @@ import { BsSuitcaseLgFill } from "react-icons/bs";
 import { AiFillMessage } from "react-icons/ai";
 import { IoNotificationsSharp } from "react-icons/io5";
 import { FaCaretDown } from "react-icons/fa";
+import { CgMenuGridR } from "react-icons/cg";
 
 
 const Header = () => {
   return (
     <>
-      <div className="bg-[#1b1f23] w-full h-12">
+      <div className="bg-[#1b1f23] w-full h-14">
         <div className="flex items-center h-full justify-center text-white px-60">
           <div className="p-0.5 bg-[#e9e9e9] text-[#1b1f23] rounded-sm mr-2">
             <FaLinkedinIn className="size-7 pt-0.5" />
@@ -26,50 +27,69 @@ const Header = () => {
               placeholder="Search"
             />
           </div>
-          <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
-            <div className="">
-              <BiSolidHome className="size-6" />
+          <div className="flex border-r border-[#4b4f56]">
+            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
+              <div className="">
+                <BiSolidHome className="size-6" />
+              </div>
+              <div className="text-[11px] pt-0.5">Home</div>
             </div>
-            <div className="text-[10px]">Home</div>
+            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
+              <div className="">
+                <FaPeopleGroup className="size-6" />
+              </div>
+              <div className="text-[11px] pt-0.5">My Network</div>
+            </div>
+            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
+              <div className="">
+                <BsSuitcaseLgFill className="size-6" />
+              </div>
+              <div className="text-[11px] pt-0.5">Jobs</div>
+            </div>
+            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
+              <div className="">
+                <AiFillMessage className="size-6" />
+              </div>
+              <div className="text-[11px] pt-0.5">Messaging</div>
+            </div>
+            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
+              <div className="">
+                <IoNotificationsSharp className="size-6" />
+              </div>
+              <div className="text-[11px] pt-0.5">Notifications</div>
+            </div>
+            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
+              <div className="">
+                <img
+                  src="../../public/img/Elayabarathi Pro 1.jpg"
+                  alt="DP"
+                  className="rounded-full size-6"
+                />
+              </div>
+              <div className="flex justify-center items-center">
+                <div className="text-[11px] pt-0.5">Me</div>
+                <FaCaretDown className="size-4 ml-1" />
+              </div>
+            </div>
           </div>
-          <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
-            <div className="">
-              <FaPeopleGroup className="size-6" />
+          <div className="ml-10 flex">
+            <div className="flex flex-col items-center mr-6 min-w-[80px] max-w-[100px]">
+              <div className="">
+                <CgMenuGridR className="size-6" />
+              </div>
+              <div className="text-[11px] pt-0.5">For Business</div>
             </div>
-            <div className="text-[10px]">My Network</div>
-          </div>
-          <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
-            <div className="">
-              <BsSuitcaseLgFill className="size-6" />
-            </div>
-            <div className="text-[10px]">Jobs</div>
-          </div>
-          <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
-            <div className="">
-              <AiFillMessage className="size-6" />
-            </div>
-            <div className="text-[10px]">Messaging</div>
-          </div>
-          <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
-            <div className="">
-              <IoNotificationsSharp className="size-6" />
-            </div>
-            <div className="text-[10px]">Notifications</div>
-          </div>
-          <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
-            <div className="">
-              <img
-                src="../../public/img/Elayabarathi Pro 1.jpg"
-                alt="DP"
-                className="rounded-full size-6"
-              />
-            </div>
-            <div className="flex justify-center items-center">
-              <div className="text-[10px]">Me</div>
-              <FaCaretDown className="size-4 ml-1" />
+            <div className="flex flex-col items-center mr-6 min-w-[80px] max-w-[100px]">
+              <div className="">
+                <img
+                  src="../../public/img/Premium.png"
+                  alt="Premium"
+                  className="size-6"
+                />
+              </div>
+              <div className="text-[11px] pt-0.5">Try Premium for ₹0</div>
             </div>
           </div>
-          For Business Try Premium for free
         </div>
       </div>
     </>
