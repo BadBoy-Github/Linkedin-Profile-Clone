@@ -27,7 +27,7 @@ const Header = () => {
               placeholder="Search"
             />
           </div>
-          <div className="flex border-r border-[#4b4f56] pr-8">
+          <div className="flex border-r border-[#4b4f56]">
             <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
               <div className="">
                 <BiSolidHome className="size-6" />
@@ -72,14 +72,17 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="ml-10 flex">
-            <div className="flex flex-col items-center mr-6 min-w-[80px] max-w-[100px]">
+          <div className="ml-4 flex">
+            <div className="flex flex-col items-center mr-4 min-w-[80px] max-w-[100px]">
               <div className="">
                 <CgMenuGridR className="size-6" />
               </div>
-              <div className="text-[11px] pt-0.5">For Business</div>
+              <div className="flex">
+                <div className="text-[11px] pt-0.5">For Business</div>
+                <FaCaretDown className="size-4 ml-1" />
+              </div>
             </div>
-            <div className="flex flex-col items-center mr-2 min-w-[80px] max-w-[100px]">
+            <div className="flex flex-col items-center min-w-[80px] max-w-[100px]">
               <div className="">
                 <img
                   src="../../public/img/Premium.png"

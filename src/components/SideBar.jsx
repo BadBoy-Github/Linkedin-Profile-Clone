@@ -4,7 +4,7 @@ import React from 'react'
 const SideBar = () => {
   return (
     <>
-      <div className="bg-[#1b1f23] h-full w-1/4 rounded-xl ml-2 mr-80 my-5">
+      <div className="bg-[#1b1f23] h-full w-2/6 rounded-xl ml-2 mr-100 my-5">
         <div className="px-4 py-4" id="top1">
           <div className="border-b-2 border-black pb-4" id="pl">
             <div className="text-[#e9e9e9]">
