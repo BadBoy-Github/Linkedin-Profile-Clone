@@ -8,7 +8,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <div className="flex mx-90 my-4 gap-8">
+      <div className="flex bg-black h-full w-full ">
         <Body />
         <SideBar />
       </div>
