@@ -14,7 +14,7 @@ const Body = () => {
           <img
             src="../../public/img/LinkedIn Profile.jpg"
             alt="linkedin profile"
-            className="absolute size-40 rounded-full top-24 left-4 border-3 border-[#1b1f23]"
+            className="absolute size-39 rounded-full top-23 left-9 border-[4px] border-[#1b1f23]"
           />
         </div>
       </div>
