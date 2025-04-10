@@ -16,6 +16,7 @@ const Body = () => {
             alt="linkedin profile"
             className="absolute size-39 rounded-full top-23 left-9 border-[4px] border-[#1b1f23]"
           />
+          <img src="../../public/img/LinkedIn OTW.png" alt="OTW" className='absolute size-[149px] top-24 left-10'/>
         </div>
       </div>
     </>

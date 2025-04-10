@@ -3,12 +3,13 @@ import React from "react";
 import { FaLinkedinIn } from "react-icons/fa";
 import { HiSearch } from "react-icons/hi";
 import { BiSolidHome } from "react-icons/bi";
-import { FaPeopleGroup } from "react-icons/fa6";
-import { BsSuitcaseLgFill } from "react-icons/bs";
+import { IoPeople } from "react-icons/io5";
+import { RiSuitcaseFill } from "react-icons/ri";
 import { AiFillMessage } from "react-icons/ai";
-import { IoNotificationsSharp } from "react-icons/io5";
+import { GoBellFill } from "react-icons/go";
 import { FaCaretDown } from "react-icons/fa";
 import { CgMenuGridR } from "react-icons/cg";
+import { FaDotCircle } from "react-icons/fa";
 
 
 const Header = () => {
@@ -28,21 +29,27 @@ const Header = () => {
             />
           </div>
           <div className="flex border-r border-[#4b4f56]">
-            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
+            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px] relative">
               <div className="">
                 <BiSolidHome className="size-6" />
               </div>
+              <div className="absolute bg-white rounded-full top-[2px] left-[25px]">
+                <FaDotCircle className="text-red-600 size-[14px] animate" />
+              </div>
               <div className="text-[11px] pt-0.5">Home</div>
             </div>
-            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
+            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px] relative">
               <div className="">
-                <FaPeopleGroup className="size-6" />
+                <IoPeople className="size-6 scale-x-[-1]" />
+              </div>
+              <div className="absolute size-[14px] bg-red-600 rounded-full top-[2px] left-[32px] flex justify-center items-center text-[11px]">
+                1
               </div>
               <div className="text-[11px] pt-0.5">My Network</div>
             </div>
             <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
               <div className="">
-                <BsSuitcaseLgFill className="size-6" />
+                <RiSuitcaseFill className="size-6" />
               </div>
               <div className="text-[11px] pt-0.5">Jobs</div>
             </div>
@@ -52,9 +59,12 @@ const Header = () => {
               </div>
               <div className="text-[11px] pt-0.5">Messaging</div>
             </div>
-            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
+            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px] relative">
               <div className="">
-                <IoNotificationsSharp className="size-6" />
+                <GoBellFill className="size-6" />
+              </div>
+              <div className="absolute size-[14px] bg-red-600 rounded-full top-[2px] left-[32px] flex justify-center items-center text-[11px]">
+                2
               </div>
               <div className="text-[11px] pt-0.5">Notifications</div>
             </div>
