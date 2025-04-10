@@ -61,7 +61,7 @@ const Body = () => {
           <div className="flex items-center">
             <p>Portfolio</p>
             <div className="">
-
+              <HiExternalLink />
             </div>
           </div>
 
