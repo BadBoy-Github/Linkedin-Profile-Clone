@@ -4,6 +4,7 @@ import React from 'react'
 import { MdOutlineModeEditOutline } from "react-icons/md";
 import { BiCheckShield } from "react-icons/bi";
 import { GoDotFill } from "react-icons/go";
+import { HiExternalLink } from "react-icons/hi";
 
 const Body = () => {
   return (
@@ -60,7 +61,7 @@ const Body = () => {
           <div className="flex items-center">
             <p>Portfolio</p>
             <div className="">
-              
+
             </div>
           </div>
 
