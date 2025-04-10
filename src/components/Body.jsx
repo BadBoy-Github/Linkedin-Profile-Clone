@@ -1,16 +1,21 @@
 
 import React from 'react'
 
+import { MdOutlineModeEditOutline } from "react-icons/md";
+
 const Body = () => {
   return (
     <>
-      <div className="bg-[#1b1f23] h-full w-6/6 rounded-xl ml-100 mr-2 my-5">
+      <div className="bg-[#1b1f23] h-full w-4/5 rounded-xl mr-2 my-5">
         <div className="pb-10 rounded-t-xl h-80 w-full relative" id="pics">
           <img
             src="../../public/img/LinkedIn Banner.png"
             alt="linkedin banner"
             className="w-full rounded-t-xl"
           />
+          <div className="absolute text-blue-600 bg-white rounded-full p-1 size-7 flex items-center justify-center top-5 right-5">
+            <MdOutlineModeEditOutline />
+          </div>
           <img
             src="../../public/img/LinkedIn Profile.jpg"
             alt="linkedin profile"

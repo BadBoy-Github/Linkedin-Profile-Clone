@@ -45,7 +45,9 @@ const Header = () => {
               <div className="absolute size-[14px] bg-red-600 rounded-full top-[2px] left-[32px] flex justify-center items-center text-[11px]">
                 1
               </div>
-              <div className="text-[11px] pt-0.5">My Network</div>
+              <div className="text-[11px] pt-0.5 display-6">
+                My&nbsp;Network
+              </div>
             </div>
             <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
               <div className="">
