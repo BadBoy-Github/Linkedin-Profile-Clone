@@ -20,7 +20,7 @@ const Header = () => {
           <div className="p-0.5 bg-[#e9e9e9] text-[#1b1f23] rounded-sm mr-3">
             <FaLinkedinIn className="size-7 pt-0.5" />
           </div>
-          <div className="bg-[#38434f] rounded-sm flex items-center w-74 h-8 px-2 mr-28">
+          <div className="bg-[#38434f] rounded-sm flex items-center w-[17rem] h-8 px-2 mr-[8rem]">
             <HiSearch className="size-4 ml-1 mr-[6px]" />
             <input
               type="text"
@@ -29,16 +29,16 @@ const Header = () => {
             />
           </div>
           <div className="flex border-r border-[#4b4f56]">
-            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px] relative">
+            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative">
               <div className="">
                 <BiSolidHome className="size-6" />
               </div>
-              <div className="absolute bg-white rounded-full top-[2px] left-[25px]">
+              <div className="absolute bg-white rounded-full top-[2px] left-[30px]">
                 <FaDotCircle className="text-red-600 size-[14px] animate" />
               </div>
               <div className="text-[11px] pt-0.5">Home</div>
             </div>
-            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px] relative">
+            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative">
               <div className="">
                 <IoPeople className="size-6 scale-x-[-1]" />
               </div>
@@ -49,19 +49,19 @@ const Header = () => {
                 My&nbsp;Network
               </div>
             </div>
-            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
+            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px]">
               <div className="">
                 <RiSuitcaseFill className="size-6" />
               </div>
               <div className="text-[11px] pt-0.5">Jobs</div>
             </div>
-            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
+            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px]">
               <div className="">
                 <AiFillMessage className="size-6" />
               </div>
               <div className="text-[11px] pt-0.5">Messaging</div>
             </div>
-            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px] relative">
+            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative">
               <div className="">
                 <GoBellFill className="size-6" />
               </div>
@@ -70,7 +70,7 @@ const Header = () => {
               </div>
               <div className="text-[11px] pt-0.5">Notifications</div>
             </div>
-            <div className="flex flex-col items-center mr-6 min-w-[50px] max-w-[60px]">
+            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px]">
               <div className="">
                 <img
                   src="../../public/img/Elayabarathi Pro 1.jpg"
@@ -85,16 +85,16 @@ const Header = () => {
             </div>
           </div>
           <div className="ml-4 flex">
-            <div className="flex flex-col items-center mr-4 min-w-[80px] max-w-[100px]">
+            <div className="flex flex-col items-center mr-4 min-w-[60px] max-w-[80px]">
               <div className="">
                 <CgMenuGridR className="size-6" />
               </div>
-              <div className="flex">
-                <div className="text-[11px] pt-0.5">For Business</div>
+              <div className="flex justify-center items-center">
+                <div className="text-[11px] pt-0.5">For&nbsp;Business</div>
                 <FaCaretDown className="size-4 ml-1" />
               </div>
             </div>
-            <div className="flex flex-col items-center min-w-[80px] max-w-[100px]">
+            <div className="flex flex-col items-center min-w-[60px] max-w-[80px]">
               <div className="">
                 <img
                   src="../../public/img/Premium.png"
@@ -102,7 +102,9 @@ const Header = () => {
                   className="size-6"
                 />
               </div>
-              <div className="text-[11px] pt-0.5">Try Premium for ₹0</div>
+              <div className="text-[11px] pt-0.5">
+                Try&nbsp;Premium&nbsp;for&nbsp;₹0
+              </div>
             </div>
           </div>
         </div>
