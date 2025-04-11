@@ -19,7 +19,7 @@ const AnalyticsComponent = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-between text-[#c6c7c8] px-5 py-4 border-b border-[#4b4f56] w-full h-fit">
+        <div className="flex items-center justify-between text-[#c6c7c8] px-5 pt-4 pb-5 border-b border-[#4b4f56] w-full h-fit">
           <div className="">
             <div className="flex text-base items-center gap-3">
               <IoPeople className="size-5" />
@@ -40,7 +40,7 @@ const AnalyticsComponent = () => {
               your posts.
             </p>
           </div>
-          <div className="">
+          <div className="pr-8">
             <div className="flex text-base items-center gap-3">
               <FaSearch className="size-5" />
               <h1 className="font-semibold">29 search appearences</h1>
@@ -51,7 +51,7 @@ const AnalyticsComponent = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-center py-2 mt-2 gap-2 text-[#c6c7c8] font-bold">
+        <div className="flex items-center justify-center pt-2 pb-3 mt-2 gap-2 text-[#c6c7c8] font-bold">
           <p className="text-base">Show all Analysics</p>
           <FaArrowRightLong className='size-4'/>
         </div>
