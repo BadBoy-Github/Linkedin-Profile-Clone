@@ -69,7 +69,7 @@ const ProfileComponent = () => {
             </div>
 
             <div className="flex items-center text-[#6eb1f3] text-[0.82rem] font-semibold mt-1">
-              <p className="hover:underline">2,464 followers</p>
+              <p className="hover:underline">2,469 followers</p>
               <div className="px-1 text-white">
                 <GoDotFill className="size-[0.4rem]" />
               </div>
