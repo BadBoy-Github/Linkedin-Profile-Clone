@@ -10,7 +10,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 const AnalyticsComponent = () => {
   return (
     <>
-      <div className="bg-[#1b1f23] h-fit w-full rounded-xl mr-2 mt-1 mb-1 pt-5 px-3">
+      <div className="bg-[#1b1f23] h-fit w-full rounded-xl mr-2 mt-2 mb-1 pt-5 px-3">
         <div className="text-white px-5">
           <h1 className="font-semibold text-[1.2rem]">Analytics</h1>
           <div className="flex gap-2 items-center text-[#a4a5a7]">
