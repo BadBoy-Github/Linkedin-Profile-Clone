@@ -33,7 +33,7 @@ const AnalyticsComponent = () => {
           <div className="">
             <div className="flex text-base items-center gap-3">
               <RiBarChart2Fill className="size-5 border-b" />
-              <h1 className="font-semibold">1037 post impressions</h1>
+              <h1 className="font-semibold">1053 post impressions</h1>
             </div>
             <p className="text-[0.84rem] pl-8">
               Check out who's engaging with <br />
