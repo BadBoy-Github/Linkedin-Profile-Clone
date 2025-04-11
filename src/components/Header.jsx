@@ -79,7 +79,7 @@ const Header = () => {
                 <img
                   src="../../public/img/Elayabarathi Pro 1.jpg"
                   alt="DP"
-                  className="rounded-full size-6"
+                  className="rounded-full size-6 border-2 border-[#b7b7b7]"
                 />
               </div>
               <div className="flex justify-center items-center">
