@@ -5,12 +5,12 @@ import { IoPeople } from "react-icons/io5";
 import { BsEyeFill } from "react-icons/bs";
 import { RiBarChart2Fill } from "react-icons/ri";
 import { FaSearch } from "react-icons/fa";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const AnalyticsComponent = () => {
   return (
     <>
-      <div className="bg-[#1b1f23] h-fit w-full rounded-xl mr-2 mt-2 mb-2 pt-5 px-3">
+      <div className="bg-[#1b1f23] h-fit w-full rounded-xl mr-2 mt-2 mb-2 pt-7 px-3">
         <div className="text-white px-5">
           <h1 className="font-semibold text-[1.2rem]">Analytics</h1>
           <div className="flex gap-2 items-center text-[#a4a5a7]">
@@ -51,9 +51,9 @@ const AnalyticsComponent = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-center py-2 mt-2 text-[#c6c7c8]">
-          <p>Show all Analysics</p>
-          <FaLongArrowAltRight />
+        <div className="flex items-center justify-center py-2 mt-2 gap-2 text-[#c6c7c8] font-bold">
+          <p className="text-base">Show all Analysics</p>
+          <FaArrowRightLong className='size-4'/>
         </div>
       </div>
     </>
