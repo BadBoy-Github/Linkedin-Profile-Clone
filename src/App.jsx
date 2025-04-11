@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../src/components/Header";
 import Body from "../src/components/Body";
 import SideBar from "../src/components/SideBar";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Body />
         <SideBar />
       </div>
+      <Footer />
     </>
   );
 };
