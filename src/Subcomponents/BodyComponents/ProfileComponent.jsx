@@ -8,7 +8,7 @@ import { HiExternalLink } from "react-icons/hi";
 const ProfileComponent = () => {
   return (
     <>
-      <div className="bg-[#1b1f23] h-fit w-full rounded-xl mr-2 mt-5 mb-1 pb-1">
+      <div className="bg-[#1b1f23] h-fit w-full rounded-xl mr-2 mt-5 mb-2 pb-1">
         <div className="rounded-t-xl w-full h-full relative">
           <img
             src="../../public/img/LinkedIn Banner.png"
