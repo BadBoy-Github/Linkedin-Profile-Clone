@@ -7,7 +7,7 @@ import { MdOutlineModeEditOutline } from "react-icons/md";
 const LanguagesKnownComponent = () => {
   return (
     <>
-      <div className="bg-[#1b1f23] h-fit w-full rounded-xl ml-2 mt-5 relative">
+      <div className="bg-[#1b1f23] h-fit w-full rounded-xl ml-2 mt-3 relative">
         <div className="px-4 pt-5 pb-4">
           <div className="text-[#c6c7c8] flex items-center justify-between">
             <h1 className="text-white text-[18px] font-semibold">Languages</h1>
