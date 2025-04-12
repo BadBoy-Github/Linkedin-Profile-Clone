@@ -8,9 +8,9 @@ import { MdWork } from "react-icons/md";
 import { TbMessage2Filled } from "react-icons/tb";
 import { GoBellFill } from "react-icons/go";
 import { FaCaretDown } from "react-icons/fa";
-import { CgMenuGridR } from "react-icons/cg";
 import { FaDotCircle } from "react-icons/fa";
 import { RiSettings3Fill } from "react-icons/ri";
+import { FaCrown } from "react-icons/fa6";
 
 
 const Header = () => {
@@ -97,18 +97,15 @@ const Header = () => {
                 <div className="text-[11px] pt-0.5">Settings</div>
               </div>
             </div>
-            {/* <div className="flex flex-col items-center min-w-[60px] max-w-[80px]">
-              <div className="">
-                <img
-                  src="../../public/img/Premium.png"
-                  alt="Premium"
-                  className="size-6"
-                />
+            <div className="flex flex-col items-center min-w-[60px] max-w-[80px] relative">
+              <div className="flex justify-center items-center">
+                <FaCrown className="size-6" />
               </div>
-              <div className="text-[11px] pt-0.5">
-                Try&nbsp;Premium&nbsp;for&nbsp;₹0
+              <div className="absolute bg-black rounded-full top-[2px] left-[38px] animate-bounce">
+                <FaDotCircle className="text-yellow-500 size-[11px] " />
               </div>
-            </div> */}
+              <div className="text-[11px] pt-0.5">Try&nbsp;Premium</div>
+            </div>
           </div>
         </div>
       </div>
