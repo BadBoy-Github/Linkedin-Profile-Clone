@@ -4,10 +4,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { HiSearch } from "react-icons/hi";
 import { GoHomeFill } from "react-icons/go";
 import { HiUserGroup } from "react-icons/hi";
-import { RiSuitcaseFill } from "react-icons/ri";
-import { MdOutlineWork } from "react-icons/md";
-import { AiFillMessage } from "react-icons/ai";
-import { BiSolidMessageAlt } from "react-icons/bi";
+import { MdWork } from "react-icons/md";
+import { TbMessage2Filled } from "react-icons/tb";
 import { GoBellFill } from "react-icons/go";
 import { FaCaretDown } from "react-icons/fa";
 import { CgMenuGridR } from "react-icons/cg";
@@ -54,13 +52,16 @@ const Header = () => {
             </div>
             <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px]">
               <div className="">
-                <MdOutlineWork className="size-6" />
+                <MdWork className="size-6" />
               </div>
               <div className="text-[11px] pt-0.5">Jobs</div>
             </div>
-            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px]">
+            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative">
               <div className="">
-                <BiSolidMessageAlt className="size-6" />
+                <TbMessage2Filled className="size-6" />
+              </div>
+              <div className="absolute size-[12px] bg-red-600 rounded-full top-[2px] left-[35px] flex justify-center items-center text-[10px] animate-bounce">
+                3
               </div>
               <div className="text-[11px] pt-0.5">Messaging</div>
             </div>
@@ -68,8 +69,8 @@ const Header = () => {
               <div className="">
                 <GoBellFill className="size-6" />
               </div>
-              <div className="absolute size-[14px] bg-red-600 rounded-full top-[2px] left-[32px] flex justify-center items-center text-[11px]">
-                2
+              <div className="absolute size-[12px] bg-red-600 rounded-full top-[2px] left-[35px] flex justify-center items-center text-[10px] animate-bounce">
+                7
               </div>
               <div className="text-[11px] pt-0.5">Notifications</div>
             </div>
@@ -82,8 +83,8 @@ const Header = () => {
                 />
               </div>
               <div className="flex justify-center items-center">
-                <div className="text-[11px] pt-0.5">Me</div>
-                <FaCaretDown className="size-4 ml-1" />
+                <div className="text-[11px] pt-0.5">Profile</div>
+                <FaCaretDown className="size-4" />
               </div>
             </div>
           </div>
