@@ -1,9 +1,11 @@
 import React from "react";
 
 import { MdOutlineModeEditOutline } from "react-icons/md";
-import { BiCheckShield } from "react-icons/bi";
+import { MdVerified } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
-import { HiExternalLink } from "react-icons/hi";
+import { TbHeartHandshake } from "react-icons/tb";
+import { IoPaperPlaneOutline } from "react-icons/io5";
+import { LuExternalLink } from "react-icons/lu";
 
 const ProfileComponent = () => {
   return (
@@ -18,7 +20,7 @@ const ProfileComponent = () => {
           <div className="absolute  text-blue-600 bg-white rounded-full p-1 size-7 flex items-center justify-center top-5 right-5">
             <MdOutlineModeEditOutline />
           </div>
-          <div className="absolute size-[8rem] md:size-[11rem] top-[44%] left-[3%] rounded-full border-[6px] border-[#1b1f23]">
+          <div className="absolute size-[8rem] md:size-[10.5rem] top-[45%] left-[3%] rounded-full border-[6px] border-[#1b1f23]">
             <img
               src="../../public/img/LinkedIn Profile.jpg"
               alt="linkedin profile"
@@ -33,7 +35,7 @@ const ProfileComponent = () => {
         </div>
 
         <div className="relative">
-          <div className="absolute text-[#c6c7c8] bottom-46 right-6">
+          <div className="absolute text-[#c6c7c8] bottom-36 right-6">
             <MdOutlineModeEditOutline className="size-[1.6rem]" />
           </div>
           <div className="mt-[3rem] p-5">
@@ -41,10 +43,10 @@ const ProfileComponent = () => {
               <h1 className="text-white text-2xl font-semibold">
                 Elayabarathi M V
               </h1>
-              <div className="text-[#d0d1d2] text-[1.6rem] ml-2">
-                <BiCheckShield />
+              <div className="text-[#6eb1f3] text-[1.3rem] ml-3">
+                <MdVerified />
               </div>
-              <p className="text-[#6f7274] text-sm ml-2">(He/Him)</p>
+              {/* <p className="text-[#6f7274] text-sm ml-2">(He/Him)</p> */}
             </div>
 
             <div className="">
@@ -61,35 +63,44 @@ const ProfileComponent = () => {
               </div>
             </div>
 
-            <div className="flex items-center text-[#6eb1f3] text-[0.82rem] font-semibold mt-1">
+            {/* <div className="flex items-center text-[#6eb1f3] text-[0.82rem] font-semibold mt-1">
               <p className="hover:underline">Portfolio</p>
               <div className="text-lg pl-1">
                 <HiExternalLink className="size-4" />
               </div>
-            </div>
+            </div> */}
 
             <div className="flex items-center text-[#6eb1f3] text-[0.82rem] font-semibold mt-1">
-              <p className="hover:underline">2,469 followers</p>
+              <p className="hover:underline">2,470 followers</p>
               <div className="px-1 text-white">
                 <GoDotFill className="size-[0.4rem]" />
               </div>
-              <p className="hover:underline">500+ connections</p>
+              <p className="hover:underline">2,447 connections</p>
             </div>
           </div>
         </div>
 
-        <div className="mx-5 flex items-center">
-          <button className="bg-[#6eb1f3] text-[#38434f] rounded-full px-4 py-1 text-base font-semibold">
-            Open to
+        <div className="mx-5 flex items-center gap-3">
+          <button className="bg-[#6eb1f3] text-[#38434f] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2">
+            <div className="text-[1.2rem]">
+              <LuExternalLink />
+            </div>
+            Portfolio
           </button>
-          <button className="text-[#6eb1f3] border-1 border-[#6eb1f3] rounded-full px-4 ml-3 py-1 text-base font-semibold">
-            Add profile section
+          <button className="text-[#6eb1f3] border-1 border-[#6eb1f3] rounded-full px-4 ml-3 py-1 text-base font-semibold flex items-center gap-2">
+            <div className="text-[1.2rem]">
+              <TbHeartHandshake />
+            </div>
+            Connect
           </button>
-          <button className="text-[#6eb1f3] border-1 border-[#6eb1f3] rounded-full px-4 ml-3 py-1 text-base font-semibold">
-            Enhance profile
+          <button className="text-[#6eb1f3] border-1 border-[#6eb1f3] rounded-full px-4 ml-3 py-1 text-base font-semibold flex items-center gap-2">
+            <div className="text-[1.2rem]">
+              <IoPaperPlaneOutline />
+            </div>
+            Message
           </button>
           <button className="text-[#c1c1c1] border-1 border-[#c1c1c1] rounded-full px-4 ml-3 py-1 text-base font-semibold">
-            Resources
+            More
           </button>
         </div>
 
