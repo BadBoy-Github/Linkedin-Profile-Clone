@@ -2,10 +2,8 @@ import React from "react";
 
 import { FaLinkedinIn } from "react-icons/fa";
 import { HiSearch } from "react-icons/hi";
-import { BiSolidHome } from "react-icons/bi";
-import { SiGooglehome } from "react-icons/si";
-import { IoPeople } from "react-icons/io5";
-import { BsPersonVideo2 } from "react-icons/bs";
+import { GoHomeFill } from "react-icons/go";
+import { HiUserGroup } from "react-icons/hi";
 import { RiSuitcaseFill } from "react-icons/ri";
 import { MdOutlineWork } from "react-icons/md";
 import { AiFillMessage } from "react-icons/ai";
@@ -14,6 +12,7 @@ import { GoBellFill } from "react-icons/go";
 import { FaCaretDown } from "react-icons/fa";
 import { CgMenuGridR } from "react-icons/cg";
 import { FaDotCircle } from "react-icons/fa";
+import { RiSettings3Fill } from "react-icons/ri";
 
 
 const Header = () => {
@@ -35,19 +34,19 @@ const Header = () => {
           <div className="flex border-r border-[#4b4f56]">
             <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative">
               <div className="">
-                <SiGooglehome className="size-6" />
+                <GoHomeFill className="size-6" />
               </div>
-              <div className="absolute bg-white rounded-full top-[2px] left-[30px]">
-                <FaDotCircle className="text-red-600 size-[14px] animate" />
+              <div className="absolute bg-white rounded-full top-[2px] left-[34px] animate-bounce">
+                <FaDotCircle className="text-red-600 size-[11px] " />
               </div>
               <div className="text-[11px] pt-0.5">Home</div>
             </div>
             <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative">
               <div className="">
-                <BsPersonVideo2 className="size-6 scale-x-[-1]" />
+                <HiUserGroup className="size-6 scale-x-[-1]" />
               </div>
-              <div className="absolute size-[14px] bg-red-600 rounded-full top-[2px] left-[38px] flex justify-center items-center text-[11px]">
-                1
+              <div className="absolute bg-white rounded-full top-[2px] left-[36px] animate-bounce">
+                <FaDotCircle className="text-red-600 size-[11px] " />
               </div>
               <div className="text-[11px] pt-0.5 display-6">
                 My&nbsp;Network
@@ -91,14 +90,13 @@ const Header = () => {
           <div className="ml-4 flex">
             <div className="flex flex-col items-center mr-4 min-w-[60px] max-w-[80px]">
               <div className="">
-                <CgMenuGridR className="size-6" />
+                <RiSettings3Fill className="size-6" />
               </div>
               <div className="flex justify-center items-center">
-                <div className="text-[11px] pt-0.5">For&nbsp;Business</div>
-                <FaCaretDown className="size-4 ml-1" />
+                <div className="text-[11px] pt-0.5">Settings</div>
               </div>
             </div>
-            <div className="flex flex-col items-center min-w-[60px] max-w-[80px]">
+            {/* <div className="flex flex-col items-center min-w-[60px] max-w-[80px]">
               <div className="">
                 <img
                   src="../../public/img/Premium.png"
@@ -109,7 +107,7 @@ const Header = () => {
               <div className="text-[11px] pt-0.5">
                 Try&nbsp;Premium&nbsp;for&nbsp;₹0
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

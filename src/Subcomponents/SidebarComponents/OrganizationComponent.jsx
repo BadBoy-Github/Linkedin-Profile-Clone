@@ -3,6 +3,7 @@ import React from 'react'
 
 import { FaPlus } from "react-icons/fa6";
 import { MdOutlineModeEditOutline } from "react-icons/md";
+import { GoDotFill } from "react-icons/go";
 
 const OrganizationComponent = () => {
   return (
@@ -21,7 +22,13 @@ const OrganizationComponent = () => {
           <div className="mt-4 pr-1">
             <div className="text-white pb-3">
               <h1 className=" font-semibold ">JCI - Erode Galaxy</h1>
-              <p className="text-[0.84rem] pt-1">Member · Jan 2020 - Present</p>
+              <div className="flex items-center text-[0.84rem] pt-1">
+                <p className="">Member</p>
+                <div className="px-1">
+                  <GoDotFill className="size-[0.4rem]" />
+                </div>
+                <p>Jan 2020 - Present</p>
+              </div>
               <p className="text-[0.8rem] text-[#8d8f91] pt-1">
                 Developed leadership skills through community projects,
                 networking with young entrepreneurs, and organizing local impact
