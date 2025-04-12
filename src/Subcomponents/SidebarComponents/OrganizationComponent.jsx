@@ -21,8 +21,8 @@ const OrganizationComponent = () => {
           <div className="mt-4 pr-1">
             <div className="text-white pb-3">
               <h1 className=" font-semibold ">JCI - Erode Galaxy</h1>
-              <p className="text-[0.84rem]">Member · Jan 2020 - Present</p>
-              <p className="text-[0.8rem] text-[#8d8f91]">
+              <p className="text-[0.84rem] pt-1">Member · Jan 2020 - Present</p>
+              <p className="text-[0.8rem] text-[#8d8f91] pt-1">
                 Developed leadership skills through community projects,
                 networking with young entrepreneurs, and organizing local impact
                 initiatives.
