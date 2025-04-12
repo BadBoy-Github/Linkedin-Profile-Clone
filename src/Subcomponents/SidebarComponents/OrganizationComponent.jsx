@@ -18,7 +18,7 @@ const OrganizationComponent = () => {
               <MdOutlineModeEditOutline className="size-4" />
             </div>
           </div>
-          <div className="mt-4">
+          <div className="mt-4 pr-1">
             <div className="text-white pb-3">
               <h1 className=" font-semibold ">JCI - Erode Galaxy</h1>
               <p className="text-[0.84rem]">Member · Jan 2020 - Present</p>
