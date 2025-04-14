@@ -6,7 +6,7 @@ import { GoDotFill } from "react-icons/go";
 import { TbHeartHandshake } from "react-icons/tb";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { LuExternalLink } from "react-icons/lu";
-import { HiDotsVertical } from "react-icons/hi";
+import { MdOutlineExpandMore } from "react-icons/md";
 
 const ProfileComponent = () => {
   return (
@@ -104,8 +104,11 @@ const ProfileComponent = () => {
             </div>
             Message
           </button>
-          <button className="text-[#c1c1c1] border-1 border-[#c1c1c1] rounded-full px-4 py-1 text-base font-semibold cursor-pointer">
+          <button className="text-[#c1c1c1] border-1 border-[#c1c1c1] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer group">
             More
+            <div className="text-[1.2rem] hidden group-hover:block">
+              <MdOutlineExpandMore />
+            </div>
           </button>
         </div>
 
