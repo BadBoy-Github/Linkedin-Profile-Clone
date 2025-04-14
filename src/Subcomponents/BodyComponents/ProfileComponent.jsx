@@ -6,6 +6,7 @@ import { GoDotFill } from "react-icons/go";
 import { TbHeartHandshake } from "react-icons/tb";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { LuExternalLink } from "react-icons/lu";
+import { HiDotsVertical } from "react-icons/hi";
 
 const ProfileComponent = () => {
   return (
@@ -85,25 +86,25 @@ const ProfileComponent = () => {
         </div>
 
         <div className="mx-5 flex items-center gap-3">
-          <button className="bg-[#6eb1f3] text-[#38434f] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2">
+          <button className="bg-[#6eb1f3] text-[#38434f] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
             <div className="text-[1.2rem]">
               <LuExternalLink />
             </div>
             Portfolio
           </button>
-          <button className="text-[#6eb1f3] border-1 border-[#6eb1f3] rounded-full px-4 ml-3 py-1 text-base font-semibold flex items-center gap-2">
+          <button className="text-[#6eb1f3] border-1 border-[#6eb1f3] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
             <div className="text-[1.2rem]">
               <TbHeartHandshake />
             </div>
             Connect
           </button>
-          <button className="text-[#6eb1f3] border-1 border-[#6eb1f3] rounded-full px-4 ml-3 py-1 text-base font-semibold flex items-center gap-2">
+          <button className="text-[#6eb1f3] border-1 border-[#6eb1f3] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
             <div className="text-[1.2rem]">
               <IoPaperPlaneOutline />
             </div>
             Message
           </button>
-          <button className="text-[#c1c1c1] border-1 border-[#c1c1c1] rounded-full px-4 ml-3 py-1 text-base font-semibold">
+          <button className="text-[#c1c1c1] border-1 border-[#c1c1c1] rounded-full px-4 py-1 text-base font-semibold cursor-pointer">
             More
           </button>
         </div>
