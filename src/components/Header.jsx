@@ -34,7 +34,7 @@ const Header = () => {
               <div className="">
                 <GoHomeFill className="size-6" />
               </div>
-              <div className="absolute bg-white rounded-full top-[2px] left-[34px] animate-bounce">
+              <div className="absolute bg-white rounded-full top-[2px] left-[34px]">
                 <FaDotCircle className="text-red-600 size-[11px] " />
               </div>
               <div className="text-[11px] pt-0.5">Home</div>
@@ -43,7 +43,7 @@ const Header = () => {
               <div className="">
                 <HiUserGroup className="size-6 scale-x-[-1]" />
               </div>
-              <div className="absolute bg-white rounded-full top-[2px] left-[36px] animate-bounce">
+              <div className="absolute bg-white rounded-full top-[2px] left-[36px]">
                 <FaDotCircle className="text-red-600 size-[11px] " />
               </div>
               <div className="text-[11px] pt-0.5 display-6">
@@ -60,7 +60,7 @@ const Header = () => {
               <div className="">
                 <TbMessage2Filled className="size-6" />
               </div>
-              <div className="absolute size-[12px] bg-red-600 rounded-full top-[2px] left-[35px] flex justify-center items-center text-[10px] animate-bounce">
+              <div className="absolute size-[12px] bg-red-600 rounded-full top-[2px] left-[35px] flex justify-center items-center text-[10px]">
                 3
               </div>
               <div className="text-[11px] pt-0.5">Messaging</div>
@@ -69,7 +69,7 @@ const Header = () => {
               <div className="">
                 <GoBellFill className="size-6" />
               </div>
-              <div className="absolute size-[12px] bg-red-600 rounded-full top-[2px] left-[35px] flex justify-center items-center text-[10px] animate-bounce">
+              <div className="absolute size-[12px] bg-red-600 rounded-full top-[2px] left-[35px] flex justify-center items-center text-[10px]">
                 7
               </div>
               <div className="text-[11px] pt-0.5">Notifications</div>
