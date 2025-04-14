@@ -59,23 +59,27 @@ const ProfileComponent = () => {
                 <div className="px-1">
                   <GoDotFill className="size-[0.4rem]" />
                 </div>
-                <p className="text-[#6eb1f3] hover:underline">Contact info</p>
+                <p className="text-[#6eb1f3] hover:underline cursor-pointer">
+                  Contact info
+                </p>
               </div>
             </div>
 
             {/* <div className="flex items-center text-[#6eb1f3] text-[0.82rem] font-semibold mt-1">
-              <p className="hover:underline">Portfolio</p>
+              <p className="hover:underline cursor-pointer">Portfolio</p>
               <div className="text-lg pl-1">
                 <HiExternalLink className="size-4" />
               </div>
             </div> */}
 
             <div className="flex items-center text-[#6eb1f3] text-[0.82rem] font-semibold mt-1">
-              <p className="hover:underline">2,470 followers</p>
+              <p className="hover:underline cursor-pointer">2,470 followers</p>
               <div className="px-1 text-white">
                 <GoDotFill className="size-[0.4rem]" />
               </div>
-              <p className="hover:underline">2,447 connections</p>
+              <p className="hover:underline cursor-pointer">
+                2,447 connections
+              </p>
             </div>
           </div>
         </div>
@@ -104,13 +108,16 @@ const ProfileComponent = () => {
           </button>
         </div>
 
-        <div className="bg-[#38434f] py-2 px-3 mx-5 rounded-xl text-white text-sm w-3/4 my-6">
+        <div className="bg-[#38434f] py-2 px-3 mx-5 rounded-xl text-white text-sm my-6 relative">
+          <div className="absolute right-3 top-3 text-[#5086fc] rounded-full p-1 bg-[#ffffff]">
+            <MdOutlineModeEditOutline />
+          </div>
           <p className="font-semibold">Open to work</p>
-          <p className="">
+          <p className="pt-1">
             Microbiologist, Biotechnologist, Biological Technician, Video Editor
             and Computer Technician roles
           </p>
-          <p className="text-[#6eb1f3] font-semibold hover:underline">
+          <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline">
             Show details
           </p>
         </div>
