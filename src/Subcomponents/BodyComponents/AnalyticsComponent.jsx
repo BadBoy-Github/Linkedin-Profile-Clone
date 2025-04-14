@@ -2,7 +2,6 @@
 import React from 'react'
 
 import { IoPeople } from "react-icons/io5";
-import { BsEyeFill } from "react-icons/bs";
 import { RiBarChart2Fill } from "react-icons/ri";
 import { FaSearch } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
