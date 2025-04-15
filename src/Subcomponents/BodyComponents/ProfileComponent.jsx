@@ -15,24 +15,24 @@ const ProfileComponent = () => {
           <img
             src="../../public/img/LinkedIn Banner.png"
             alt="linkedin banner"
-            className="w-full rounded-t-xl hover:border border-[#999b9d] cursor-pointer"
+            className="w-full rounded-t-xl active:border border-[#999b9d] cursor-pointer"
           />
-          <div className="absolute size-[8rem] md:size-[10.5rem] top-[45%] left-[3%] rounded-full border-[6px] border-[#1b1f23]">
+          <div className="absolute size-[19%] top-[45%] left-[3%] ">
             <img
               src="../../public/img/LinkedIn Profile.jpg"
               alt="linkedin profile"
-              className="absolute rounded-full"
+              className="absolute rounded-full border-[4px] border-[#1b1f23]"
             />
             <img
               src="../../public/img/LinkedIn OTW.png"
               alt="OTW"
-              className="absolute"
+              className="absolute rounded-full border-[4px] border-[#1b1f23]"
             />
           </div>
         </div>
 
         <div className="">
-          <div className="mt-[3rem] p-5">
+          <div className="mt-[2rem] p-5">
             <div className="flex items-center">
               <h1 className="text-white text-2xl font-semibold">
                 Elayabarathi M V
