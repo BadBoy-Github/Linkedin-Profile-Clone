@@ -100,15 +100,24 @@ const ProfileComponent = () => {
           </button>
         </div>
 
-        <div className="bg-[#38434f] py-2 px-3 mx-5 rounded-xl text-white text-sm my-6 w-3/4">
-          <p className="font-semibold">Open to work</p>
-          <p className="pt-1">
-            Microbiologist, Biotechnologist, Biological Technician, Video Editor
-            and Computer Technician roles
-          </p>
-          <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline">
-            Show details
-          </p>
+        <div className=" flex">
+          <div className="bg-[#38434f] py-2 px-3 mx-5 rounded-xl text-white text-sm my-6 w-3/4">
+            <p className="font-semibold">Open to work</p>
+            <p className="pt-1">
+              Microbiologist, Biotechnologist, Biological Technician, Video
+              Editor and Computer Technician roles
+            </p>
+            <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline">
+              Show details
+            </p>
+          </div>
+          <div className="bg-[#38434f] py-2 px-3 mx-5 rounded-xl text-white text-sm my-6 w-1/4">
+            <p className="font-semibold">Heading</p>
+            <p className="pt-1">Content</p>
+            <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline">
+              Show details
+            </p>
+          </div>
         </div>
       </div>
     </>
