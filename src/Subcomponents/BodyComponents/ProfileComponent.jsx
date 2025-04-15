@@ -40,7 +40,7 @@ const ProfileComponent = () => {
               <div className="text-[#6eb1f3] text-[1.3rem] ml-3">
                 <MdVerified />
               </div>
-              {/* <p className="text-[#6f7274] text-sm ml-2">(He/Him)</p> */}
+              <p className="text-[#6f7274] text-sm ml-2 font-extralight">(He/Him)</p>
             </div>
 
             <div className="">
