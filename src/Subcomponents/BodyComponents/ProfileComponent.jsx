@@ -32,7 +32,7 @@ const ProfileComponent = () => {
         </div>
 
         <div className="">
-          <div className="mt-[2rem] p-5">
+          <div className="mt-[6%] p-5">
             <div className="flex items-center">
               <h1 className="text-white text-2xl font-semibold">
                 Elayabarathi M V
