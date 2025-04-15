@@ -57,7 +57,7 @@ const Header = () => {
               <div className="">
                 <TbMessage2Filled className="size-6" />
               </div>
-              <div className="absolute size-[12px] bg-red-600 rounded-full top-[2px] left-[35px] flex justify-center items-center text-[8px]">
+              <div className="absolute size-[12px] bg-red-600 rounded-full top-[2px] left-[35px] flex justify-center items-center text-[8px] text-white ">
                 <p>4</p>
               </div>
               <div className="text-[11px] pt-0.5">Messaging</div>
@@ -66,7 +66,7 @@ const Header = () => {
               <div className="">
                 <GoBellFill className="size-6" />
               </div>
-              <div className="absolute size-[12px] bg-red-600 rounded-full top-[2px] left-[35px] flex justify-center items-center text-[8px]">
+              <div className="absolute size-[12px] bg-red-600 rounded-full top-[2px] left-[35px] flex justify-center items-center text-[8px] text-white ">
                 <p>7</p>
               </div>
               <div className="text-[11px] pt-0.5">Notifications</div>
