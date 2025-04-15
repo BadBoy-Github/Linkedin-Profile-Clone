@@ -1,20 +1,16 @@
 
 import React from 'react'
 
-import { FaPlus } from "react-icons/fa6";
-import { MdOutlineModeEditOutline } from "react-icons/md";
 
-const LanguagesKnownComponent = () => {
+const LanguageComponent = () => {
   return (
     <>
-      <div className="bg-[#1b1f23] h-fit w-full rounded-xl ml-2 mt-3 relative">
+      <div className="bg-[#1b1f23] h-fit w-full rounded-xl ml-4 mt-4 relative">
         <div className="px-4 pt-5 pb-4">
           <div className="text-[#c6c7c8] flex items-center justify-between">
-            <h1 className="text-white text-[18px] font-semibold">Languages</h1>
-            <div className="flex items-center gap-3">
-              <FaPlus className="size-4" />
-              <MdOutlineModeEditOutline className="size-4" />
-            </div>
+            <h1 className="text-white text-[18px] font-semibold">
+              Linguistic abilities
+            </h1>
           </div>
           <div className="mt-4">
             <div className="border-b border-[#373a3d] text-white pb-3">
@@ -36,4 +32,4 @@ const LanguagesKnownComponent = () => {
   );
 }
 
-export default LanguagesKnownComponent
+export default LanguageComponent;
