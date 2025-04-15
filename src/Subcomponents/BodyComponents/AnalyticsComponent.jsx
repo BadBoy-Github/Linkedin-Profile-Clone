@@ -14,7 +14,7 @@ const AnalyticsComponent = () => {
           <h1 className="font-semibold text-[1.2rem]">Analytics</h1>
         </div>
 
-        <div className="flex items-center justify-between text-[#c6c7c8] px-5 pt-4 pb-5 border-b border-[#4b4f56] w-full h-fit">
+        <div className="flex items-center justify-between text-[#c6c7c8] px-6 pt-4 pb-5 border-b border-[#4b4f56] w-full h-fit">
           <div className="cursor-pointer">
             <div className="flex text-base items-center gap-3">
               <IoPeople className="size-5" />
@@ -35,7 +35,7 @@ const AnalyticsComponent = () => {
               your posts.
             </p>
           </div>
-          <div className="pr-8 cursor-pointer">
+          <div className="cursor-pointer">
             <div className="flex text-base items-center gap-3">
               <FaSearch className="size-5" />
               <h1 className="font-semibold">29 search appearences</h1>

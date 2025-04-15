@@ -49,7 +49,7 @@ const AboutComponent = () => {
             </>
           )}
           <span
-            className="text-blue-400 rounded-full cursor-pointer w-fit text-center absolute bottom-2 right-2 p-2"
+            className="text-blue-400 rounded-full cursor-pointer w-fit text-center absolute bottom-2 right-2 p-2 text-sm font-bold"
             onClick={() => setShowFullText(!showFullText)}
           >
             {showFullText ? "See less ▲" : "See more ▼"}

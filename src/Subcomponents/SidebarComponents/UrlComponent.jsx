@@ -5,7 +5,7 @@ import React from 'react'
 const UrlComponent = () => {
   return (
     <>
-      <div className="bg-[#1b1f23] h-fit w-full rounded-xl ml-4 mt-5">
+      <div className="bg-[#1b1f23] h-fit w-full rounded-xl ml-3 mt-5">
         <div className="px-4 py-4 ">
           <div className="">
             <div className="text-[#e9e9e9]">
