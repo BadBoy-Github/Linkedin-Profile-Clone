@@ -8,7 +8,6 @@ import { MdWork } from "react-icons/md";
 import { TbMessage2Filled } from "react-icons/tb";
 import { GoBellFill } from "react-icons/go";
 import { FaCaretDown } from "react-icons/fa";
-import { FaDotCircle } from "react-icons/fa";
 import { RiSettings3Fill } from "react-icons/ri";
 import { FaCrown } from "react-icons/fa6";
 
@@ -29,16 +28,16 @@ const Header = () => {
               placeholder="Search"
             />
           </div>
-          <div className="flex border-r border-[#4b4f56]">
-            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative">
+          <div className="flex border-r border-[#4b4f56] text-[#b8b8b8]">
+            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative hover:text-white hover:cursor-pointer">
               <div className="">
-                <GoHomeFill className="size-6" />
+                <GoHomeFill className="size-6 " />
               </div>
               <div className="absolute bg-red-500 rounded-full top-[2px] left-[34px] size-[12px] flex items-center justify-center animate-ping"></div>
               <div className="absolute bg-red-500 rounded-full top-[3px] left-[35px] size-[10px] flex items-center justify-center"></div>
               <div className="text-[11px] pt-0.5">Home</div>
             </div>
-            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative">
+            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative hover:text-white hover:cursor-pointer">
               <div className="">
                 <HiUserGroup className="size-6 scale-x-[-1]" />
               </div>
@@ -48,13 +47,13 @@ const Header = () => {
                 My&nbsp;Network
               </div>
             </div>
-            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px]">
+            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] hover:text-white hover:cursor-pointer">
               <div className="">
                 <MdWork className="size-6" />
               </div>
               <div className="text-[11px] pt-0.5">Jobs</div>
             </div>
-            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative">
+            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative hover:text-white hover:cursor-pointer">
               <div className="">
                 <TbMessage2Filled className="size-6" />
               </div>
@@ -63,7 +62,7 @@ const Header = () => {
               </div>
               <div className="text-[11px] pt-0.5">Messaging</div>
             </div>
-            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative">
+            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative hover:text-white hover:cursor-pointer">
               <div className="">
                 <GoBellFill className="size-6" />
               </div>
@@ -72,7 +71,7 @@ const Header = () => {
               </div>
               <div className="text-[11px] pt-0.5">Notifications</div>
             </div>
-            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px]">
+            <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] hover:text-white hover:cursor-pointer">
               <div className="">
                 <img
                   src="../../public/img/Elayabarathi Pro 1.jpg"
@@ -86,8 +85,8 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="ml-4 flex">
-            <div className="flex flex-col items-center mr-4 min-w-[60px] max-w-[80px]">
+          <div className="ml-4 flex text-[#b8b8b8]">
+            <div className="flex flex-col items-center mr-4 min-w-[60px] max-w-[80px] hover:text-white hover:cursor-pointer">
               <div className="">
                 <RiSettings3Fill className="size-6" />
               </div>
@@ -95,7 +94,7 @@ const Header = () => {
                 <div className="text-[11px] pt-0.5">Settings</div>
               </div>
             </div>
-            <div className="flex flex-col items-center min-w-[60px] max-w-[80px] relative">
+            <div className="flex flex-col items-center min-w-[60px] max-w-[80px] relative hover:text-white hover:cursor-pointer">
               <div className="flex justify-center items-center">
                 <FaCrown className="size-6" />
               </div>
