@@ -28,7 +28,7 @@ const Header = () => {
               placeholder="Search"
             />
           </div>
-          <div className="flex border-r border-[#4b4f56] text-[#b8b8b8]">
+          <div className="flex border-r border-[#4b4f56] text-[#cccccc]">
             <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative hover:text-white hover:cursor-pointer">
               <div className="">
                 <GoHomeFill className="size-6 " />
