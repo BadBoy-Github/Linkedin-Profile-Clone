@@ -1,19 +1,17 @@
+import React from "react";
 
-import React from 'react'
-
-import LanguageComponent from '../Subcomponents/SidebarComponents/LanguageComponent';
-import LanguagesKnownComponent from '../Subcomponents/SidebarComponents/LanguagesKnownComponent';
-import OrganizationComponent from '../Subcomponents/SidebarComponents/OrganizationComponent';
+import UrlComponent from "../Subcomponents/SidebarComponents/UrlComponent";
+import LanguageComponent from "../Subcomponents/SidebarComponents/LanguageComponent";
+import OrganizationComponent from "../Subcomponents/SidebarComponents/OrganizationComponent";
 
 const SideBar = () => {
   return (
     <div>
-      
-        <LanguageComponent />
-        <LanguagesKnownComponent />
-        <OrganizationComponent />
+      <UrlComponent />
+      <LanguageComponent />
+      <OrganizationComponent />
     </div>
   );
-}
+};
 
-export default SideBar
+export default SideBar;

@@ -3,7 +3,7 @@ import React from 'react'
 
 import { MdOutlineModeEditOutline } from "react-icons/md";
 
-const LanduageComponent = () => {
+const UrlComponent = () => {
   return (
     <>
       <div className="bg-[#1b1f23] h-fit w-full rounded-xl ml-2 mt-5">
@@ -37,4 +37,4 @@ const LanduageComponent = () => {
   );
 }
 
-export default LanduageComponent
+export default UrlComponent;
