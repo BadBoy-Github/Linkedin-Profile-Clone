@@ -1,6 +1,5 @@
 import React from "react";
 
-import { MdOutlineModeEditOutline } from "react-icons/md";
 import { MdVerified } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
 import { TbHeartHandshake } from "react-icons/tb";
@@ -16,11 +15,8 @@ const ProfileComponent = () => {
           <img
             src="../../public/img/LinkedIn Banner.png"
             alt="linkedin banner"
-            className="w-full rounded-t-xl"
+            className="w-full rounded-t-xl hover:border border-[#999b9d] cursor-pointer"
           />
-          <div className="absolute  text-blue-600 bg-white rounded-full p-1 size-7 flex items-center justify-center top-5 right-5">
-            <MdOutlineModeEditOutline />
-          </div>
           <div className="absolute size-[8rem] md:size-[10.5rem] top-[45%] left-[3%] rounded-full border-[6px] border-[#1b1f23]">
             <img
               src="../../public/img/LinkedIn Profile.jpg"
@@ -35,10 +31,7 @@ const ProfileComponent = () => {
           </div>
         </div>
 
-        <div className="relative">
-          <div className="absolute text-[#c6c7c8] bottom-36 right-6">
-            <MdOutlineModeEditOutline className="size-[1.6rem]" />
-          </div>
+        <div className="">
           <div className="mt-[3rem] p-5">
             <div className="flex items-center">
               <h1 className="text-white text-2xl font-semibold">
@@ -65,13 +58,6 @@ const ProfileComponent = () => {
                 </p>
               </div>
             </div>
-
-            {/* <div className="flex items-center text-[#6eb1f3] text-[0.82rem] font-semibold mt-1">
-              <p className="hover:underline cursor-pointer">Portfolio</p>
-              <div className="text-lg pl-1">
-                <HiExternalLink className="size-4" />
-              </div>
-            </div> */}
 
             <div className="flex items-center text-[#6eb1f3] text-[0.82rem] font-semibold mt-1">
               <p className="hover:underline cursor-pointer">2,470 followers</p>
@@ -112,10 +98,7 @@ const ProfileComponent = () => {
           </button>
         </div>
 
-        <div className="bg-[#38434f] py-2 px-3 mx-5 rounded-xl text-white text-sm my-6 relative">
-          <div className="absolute right-3 top-3 text-[#5086fc] rounded-full p-1 bg-[#ffffff]">
-            <MdOutlineModeEditOutline />
-          </div>
+        <div className="bg-[#38434f] py-2 px-3 mx-5 rounded-xl text-white text-sm my-6 w-3/4">
           <p className="font-semibold">Open to work</p>
           <p className="pt-1">
             Microbiologist, Biotechnologist, Biological Technician, Video Editor
