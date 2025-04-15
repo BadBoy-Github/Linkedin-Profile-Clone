@@ -40,7 +40,9 @@ const ProfileComponent = () => {
               <div className="text-[#6eb1f3] text-[1.3rem] ml-3">
                 <MdVerified />
               </div>
-              <p className="text-[#6f7274] text-sm ml-2 font-extralight">(He/Him)</p>
+              <p className="text-[#6f7274] text-sm ml-2 font-extralight">
+                (He/Him)
+              </p>
             </div>
 
             <div className="">
@@ -48,24 +50,24 @@ const ProfileComponent = () => {
                 Biotechnologist | Frontend Web Dev | Enthusiast in Scientific &
                 Technological Innovations
               </p>
-              <div className="flex items-center mt-1 text-[#999b9d] font-semibold text-[0.82rem]">
-                <p>Namakkal, Tamil Nadu, India</p>
+              <div className="flex items-center mt-1 text-[#999b9d] text-[0.82rem]">
+                <p className="font-semibold ">Namakkal, Tamil Nadu, India</p>
                 <div className="px-1">
                   <GoDotFill className="size-[0.4rem]" />
                 </div>
-                <p className="text-[#6eb1f3] hover:underline cursor-pointer">
+                <p className="text-[#6eb1f3] font-bold hover:underline cursor-pointer ">
                   Contact info
                 </p>
               </div>
             </div>
 
             <div className="flex items-center text-[#6eb1f3] text-[0.82rem] font-semibold mt-1">
-              <p className="hover:underline cursor-pointer">2,470 followers</p>
+              <p className="hover:underline cursor-pointer">2,479 followers</p>
               <div className="px-1 text-white">
                 <GoDotFill className="size-[0.4rem]" />
               </div>
               <p className="hover:underline cursor-pointer">
-                2,447 connections
+                2,467 connections
               </p>
             </div>
           </div>
