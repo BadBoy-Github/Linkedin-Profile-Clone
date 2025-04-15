@@ -34,18 +34,16 @@ const Header = () => {
               <div className="">
                 <GoHomeFill className="size-6" />
               </div>
-              <div className="absolute bg-white rounded-full top-[2px] left-[34px]">
-                <FaDotCircle className="text-red-600 size-[11px] " />
-              </div>
+              <div className="absolute bg-red-500 rounded-full top-[2px] left-[34px] size-[12px] flex items-center justify-center animate-ping"></div>
+              <div className="absolute bg-red-500 rounded-full top-[3px] left-[35px] size-[10px] flex items-center justify-center"></div>
               <div className="text-[11px] pt-0.5">Home</div>
             </div>
             <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative">
               <div className="">
                 <HiUserGroup className="size-6 scale-x-[-1]" />
               </div>
-              <div className="absolute bg-white rounded-full top-[2px] left-[36px]">
-                <FaDotCircle className="text-red-600 size-[11px] " />
-              </div>
+              <div className="absolute bg-red-500 rounded-full top-[2px] left-[34px] size-[12px] flex items-center justify-center animate-ping"></div>
+              <div className="absolute bg-red-500 rounded-full top-[3px] left-[35px] size-[10px] flex items-center justify-center"></div>
               <div className="text-[11px] pt-0.5 display-6">
                 My&nbsp;Network
               </div>
@@ -60,8 +58,8 @@ const Header = () => {
               <div className="">
                 <TbMessage2Filled className="size-6" />
               </div>
-              <div className="absolute size-[12px] bg-red-600 rounded-full top-[2px] left-[35px] flex justify-center items-center text-[10px]">
-                3
+              <div className="absolute size-[12px] bg-red-600 rounded-full top-[2px] left-[35px] flex justify-center items-center text-[8px]">
+                <p>4</p>
               </div>
               <div className="text-[11px] pt-0.5">Messaging</div>
             </div>
@@ -69,8 +67,8 @@ const Header = () => {
               <div className="">
                 <GoBellFill className="size-6" />
               </div>
-              <div className="absolute size-[12px] bg-red-600 rounded-full top-[2px] left-[35px] flex justify-center items-center text-[10px]">
-                7
+              <div className="absolute size-[12px] bg-red-600 rounded-full top-[2px] left-[35px] flex justify-center items-center text-[8px]">
+                <p>7</p>
               </div>
               <div className="text-[11px] pt-0.5">Notifications</div>
             </div>
@@ -101,9 +99,8 @@ const Header = () => {
               <div className="flex justify-center items-center">
                 <FaCrown className="size-6" />
               </div>
-              <div className="absolute bg-black rounded-full top-[2px] left-[38px] animate-bounce">
-                <FaDotCircle className="text-yellow-500 size-[11px] " />
-              </div>
+              <div className="absolute bg-yellow-500 rounded-full top-[2px] left-[38px] size-[12px] flex items-center justify-center animate-ping"></div>
+              <div className="absolute bg-yellow-500 rounded-full top-[3px] left-[39px] size-[10px] flex items-center justify-center"></div>
               <div className="text-[11px] pt-0.5">Try&nbsp;Premium</div>
             </div>
           </div>
