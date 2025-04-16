@@ -74,25 +74,25 @@ const ProfileComponent = () => {
         </div>
 
         <div className="mx-5 flex items-center gap-3">
-          <button className="bg-[#6eb1f3] text-[#38434f] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
+          <button className="bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] duration-300 text-[#38434f] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
             <div className="text-[1.2rem]">
               <BiSolidSend />
             </div>
             Message
           </button>
-          <button className="text-[#6eb1f3] border-1 border-[#6eb1f3] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
+          <button className="text-[#6eb1f3] outline-1 outline-[#6eb1f3] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
             <div className="text-[1.2rem]">
               <MdHandshake />
             </div>
             Connect
           </button>
-          <button className="text-[#6eb1f3] border-1 border-[#6eb1f3] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
+          <button className="text-[#6eb1f3] outline-1 outline-[#6eb1f3] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
             <div className="text-[1.2rem]">
               <FaUserPlus />
             </div>
             Follow
           </button>
-          <button className="text-[#c1c1c1] border-1 border-[#c1c1c1] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer group">
+          <button className="text-[#c1c1c1] outline-1 outline-[#c1c1c1] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer group">
             More
             <div className="text-[1.2rem] hidden group-hover:block">
               <MdOutlineExpandMore />
