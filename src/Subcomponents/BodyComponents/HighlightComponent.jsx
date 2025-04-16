@@ -11,7 +11,7 @@ const HighlightComponent = () => {
     <>
       <div className="bg-[#1b1f23] h-fit w-full rounded-xl mr-2 mt-2 mb-2 pt-7 px-3">
         <div className="text-white px-5">
-          <h1 className="font-semibold text-[1.2rem]">Analytics</h1>
+          <h1 className="font-semibold text-[1.2rem]">Highlights</h1>
         </div>
 
         <div className="flex items-center justify-between text-[#c6c7c8] px-6 pt-4 pb-5 border-b border-[#4b4f56] w-full h-fit">
