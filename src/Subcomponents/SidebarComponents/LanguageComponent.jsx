@@ -5,7 +5,7 @@ import React from 'react'
 const LanguageComponent = () => {
   return (
     <>
-      <div className="bg-[#1b1f23] h-fit w-full rounded-xl ml-3 mt-2">
+      <div className="bg-[#1b1f23] h-fit w-full rounded-xl ml-4 mt-2">
         <div className="px-4 pt-5 pb-4">
           <div className="text-[#c6c7c8] flex items-center justify-between">
             <h1 className="text-white text-[18px] font-semibold">

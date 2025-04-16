@@ -5,7 +5,7 @@ import { LuExternalLink } from "react-icons/lu";
 const UrlComponent = () => {
   return (
     <>
-      <div className="bg-[#1b1f23] h-fit w-full rounded-xl ml-3 mt-5">
+      <div className="bg-[#1b1f23] h-fit w-full rounded-xl ml-4 mt-5">
         <div className="px-4 py-4 ">
           <div className="border-b border-[#4b4f56] pb-2">
             <div className="text-[#e9e9e9]">
