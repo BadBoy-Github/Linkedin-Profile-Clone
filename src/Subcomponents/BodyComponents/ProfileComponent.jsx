@@ -74,7 +74,7 @@ const ProfileComponent = () => {
         </div>
 
         <div className="mx-5 flex items-center gap-3">
-          <button className="bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] duration-300 text-[#38434f] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
+          <button className="bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-all duration-300 text-[#38434f] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
             <div className="text-[1.2rem]">
               <BiSolidSend />
             </div>
