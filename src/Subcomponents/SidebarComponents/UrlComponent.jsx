@@ -20,7 +20,7 @@ const UrlComponent = () => {
             target="_blank"
             className="text-[18px] pt-4 flex justify-center font-bold"
           >
-            <button className="hover:border-1 hover:bg-[#1b1f23] border-white hover:text-white bg-white text-[#1b1f23] w-full flex items-center justify-center rounded-lg px-4 py-1 text-base gap-2 cursor-pointer">
+            <button className="hover:outline hover:bg-[#1b1f23] outline-white hover:text-white bg-white text-[#1b1f23] w-full flex items-center justify-center rounded-lg px-4 py-1 text-base gap-2 cursor-pointer">
               <div className="text-[1.2rem]">
                 <LuExternalLink />
               </div>
