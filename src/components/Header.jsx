@@ -18,7 +18,7 @@ const Header = () => {
       <div className="bg-[#1b1f23] w-full h-14 rounded-b-xl">
         <div className="flex items-center h-full justify-center text-white px-60">
           <div className="p-0.5 bg-[#e9e9e9] text-[#1b1f23] rounded-sm mr-3 cursor-pointer">
-            <FaLinkedinIn className="size-[1.6rem] pt-0.5"/>
+            <FaLinkedinIn className="size-[1.6rem] pt-0.5" />
           </div>
           <div className="bg-[#38434f] rounded-sm flex items-center w-[17rem] h-8 px-2 mr-[8rem]">
             <HiSearch className="size-4 ml-1 mr-[7px]" />
@@ -57,18 +57,16 @@ const Header = () => {
               <div className="">
                 <TbMessage2Filled className="size-6" />
               </div>
-              <div className="absolute size-[12px] bg-red-600 rounded-full top-[2px] left-[35px] flex justify-center items-center text-[8px] text-white ">
-                <p>4</p>
-              </div>
+              <div className="absolute bg-red-500 rounded-full top-[2px] left-[34px] size-[12px] flex items-center justify-center animate-ping"></div>
+              <div className="absolute bg-red-500 rounded-full top-[3px] left-[35px] size-[10px] flex items-center justify-center"></div>
               <div className="text-[11px] pt-0.5">Messaging</div>
             </div>
             <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] relative hover:text-white hover:cursor-pointer">
               <div className="">
                 <GoBellFill className="size-6" />
               </div>
-              <div className="absolute size-[12px] bg-red-600 rounded-full top-[2px] left-[35px] flex justify-center items-center text-[8px] text-white ">
-                <p>7</p>
-              </div>
+              <div className="absolute bg-red-500 rounded-full top-[2px] left-[34px] size-[12px] flex items-center justify-center animate-ping"></div>
+              <div className="absolute bg-red-500 rounded-full top-[3px] left-[35px] size-[10px] flex items-center justify-center"></div>
               <div className="text-[11px] pt-0.5">Notifications</div>
             </div>
             <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] hover:text-white hover:cursor-pointer">
