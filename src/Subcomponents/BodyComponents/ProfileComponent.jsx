@@ -2,10 +2,10 @@ import React from "react";
 
 import { MdVerified } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
-import { TbHeartHandshake } from "react-icons/tb";
-import { IoPaperPlaneOutline } from "react-icons/io5";
-import { LuExternalLink } from "react-icons/lu";
+import { MdHandshake } from "react-icons/md";
+import { BiSolidSend } from "react-icons/bi";
 import { MdOutlineExpandMore } from "react-icons/md";
+import { FaUserPlus } from "react-icons/fa";
 
 const ProfileComponent = () => {
   return (
@@ -76,21 +76,21 @@ const ProfileComponent = () => {
         <div className="mx-5 flex items-center gap-3">
           <button className="bg-[#6eb1f3] text-[#38434f] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
             <div className="text-[1.2rem]">
-              <LuExternalLink />
+              <BiSolidSend />
             </div>
-            Portfolio
+            Message
           </button>
           <button className="text-[#6eb1f3] border-1 border-[#6eb1f3] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
             <div className="text-[1.2rem]">
-              <TbHeartHandshake />
+              <MdHandshake />
             </div>
             Connect
           </button>
           <button className="text-[#6eb1f3] border-1 border-[#6eb1f3] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
             <div className="text-[1.2rem]">
-              <IoPaperPlaneOutline />
+              <FaUserPlus />
             </div>
-            Message
+            Follow
           </button>
           <button className="text-[#c1c1c1] border-1 border-[#c1c1c1] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer group">
             More
