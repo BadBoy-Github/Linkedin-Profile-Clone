@@ -1,17 +1,15 @@
 import React from "react";
 
 import ProfileComponent from "../Subcomponents/BodyComponents/ProfileComponent";
-import AnalyticsComponent from "../Subcomponents/BodyComponents/AnalyticsComponent";
+import HighlightComponent from "../Subcomponents/BodyComponents/HighlightComponent";
 import AboutComponent from "../Subcomponents/BodyComponents/AboutComponent";
 
 const Body = () => {
   return (
     <div>
-      
-          <ProfileComponent />
-          <AnalyticsComponent />
-          <AboutComponent />
-
+      <ProfileComponent />
+      <HighlightComponent />
+      <AboutComponent />
     </div>
   );
 };

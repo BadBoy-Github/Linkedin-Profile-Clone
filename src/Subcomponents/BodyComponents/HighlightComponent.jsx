@@ -6,7 +6,7 @@ import { RiBarChart2Fill } from "react-icons/ri";
 import { FaSearch } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const AnalyticsComponent = () => {
+const HighlightComponent = () => {
   return (
     <>
       <div className="bg-[#1b1f23] h-fit w-full rounded-xl mr-2 mt-2 mb-2 pt-7 px-3">
@@ -55,4 +55,4 @@ const AnalyticsComponent = () => {
   );
 }
 
-export default AnalyticsComponent
+export default HighlightComponent
