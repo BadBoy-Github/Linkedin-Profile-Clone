@@ -17,35 +17,39 @@ const AboutComponent = () => {
         <div className="text-white px-5 text-[0.94rem] pt-4 pb-12 relative">
           {showFullText ? (
             <>
-              As a dedicated biotechnologist 🔍 with a robust background in
-              microbiology 🧪, genetics 🧬, and plant biotechnology 🌿, I am
-              passionate about leveraging biological and technological
-              innovations to address real-world challenges ⚡. My academic
-              foundation is complemented by extensive hands-on experience with a
-              variety of laboratory methods and equipment.
+              As a dedicated <b>biotechnologist</b> 🧪 with a strong foundation
+              in <b>microbiology, genetics, and plant biotechnology</b> 🌿, I
+              thrive at the intersection of <b>science and technology</b>. My
+              expertise spans advanced laboratory techniques, data analysis, and
+              innovative research methodologies, allowing me to tackle
+              real-world biological challenges with precision ⚡.
               <br /> <br />
-              Driven by a continuous desire for learning and professional
-              growth, I am eager to acquire new skills 🧠 and explore diverse
-              opportunities within the biotechnology sector. Whether it’s
-              advancing research, developing innovative solutions, or
-              contributing to ground-breaking projects, I am committed to making
-              a meaningful impact in the field 🔬.
+              Beyond the lab, I am a <b>tech enthusiast</b> with a passion for
+              <b> frontend web development</b>. I craft clean, responsive, and
+              user-friendly websites using modern technologies like{" "}
+              <b>HTML, CSS, JavaScript, React and Tailwind CSS</b>. My ability
+              to merge <b>analytical thinking</b>
+              (from biotech) with <b>creative problem-solving</b> (from coding)
+              enables me to build intuitive digital experiences.
               <br /> <br />
-              Besides, I am a tech enthusiast 💻 with a hunger for knowledge. My
-              journey involves exploring technologies and algorithms that shapes
-              our world 🌐. I'm fascinated by the impact of innovations.
+              Driven by continuous learning 🧠, I am always expanding my skill
+              set—whether in <b>biotech research</b> or <b>web development</b>.
+              I’m excited about opportunities where science and technology
+              converge, from bioinformatics to science communication through
+              interactive web platforms.
               <br /> <br />
-              Let’s connect 🤝 and explore how we can collaborate to push the
-              boundaries of biotechnology! 🥳
+              Let’s connect 🤝 and explore how we can collaborate—whether in
+              <b> biotech innovation, scientific web solutions, or cutting-edge
+              research!</b> 🚀
             </>
           ) : (
             <>
-              As a dedicated biotechnologist 🔍 with a robust background in
-              microbiology 🧪, genetics 🧬, and plant biotechnology 🌿, I am
-              passionate about leveraging biological and technological
-              innovations to address real-world challenges ⚡. My academic
-              foundation is complemented by extensive hands-on experience with a
-              variety of laboratory methods and equipment...
+              As a dedicated <b>biotechnologist</b> 🧪 with a strong foundation
+              in <b>microbiology, genetics, and plant biotechnology</b> 🌿, I
+              thrive at the intersection of <b>science and technology</b>. My
+              expertise spans advanced laboratory techniques, data analysis, and
+              innovative research methodologies, allowing me to tackle
+              real-world biological challenges with precision ⚡.
             </>
           )}
           <span
