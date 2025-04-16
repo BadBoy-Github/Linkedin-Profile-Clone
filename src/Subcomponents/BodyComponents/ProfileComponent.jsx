@@ -15,7 +15,7 @@ const ProfileComponent = () => {
           <img
             src="../../public/img/LinkedIn Banner.png"
             alt="linkedin banner"
-            className="w-full rounded-t-xl active:border border-[#999b9d] cursor-pointer"
+            className="w-full rounded-t-xl rounded-b-sm active:border border-[#999b9d] cursor-pointer"
           />
           <div className="absolute size-[19%] top-[45%] left-[3%] ">
             <img
@@ -101,20 +101,23 @@ const ProfileComponent = () => {
         </div>
 
         <div className=" flex">
-          <div className="bg-[#38434f] py-2 px-3 mx-5 rounded-xl text-white text-sm my-6 w-3/4">
+          <div className="bg-[#38434f] py-2 px-3 ml-5 mr-2 rounded-xl text-white text-sm my-6 w-1/2">
             <p className="font-semibold">Open to work</p>
             <p className="pt-1">
               Microbiologist, Biotechnologist, Biological Technician, Video
               Editor and Computer Technician roles
             </p>
-            <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline">
+            <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline pt-1">
               Show details
             </p>
           </div>
-          <div className="bg-[#38434f] py-2 px-3 mx-5 rounded-xl text-white text-sm my-6 w-1/4">
-            <p className="font-semibold">Heading</p>
-            <p className="pt-1">Content</p>
-            <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline">
+          <div className="bg-[#38434f] py-2 px-3 mr-5 ml-2 rounded-xl text-white text-sm my-6 w-1/2">
+            <p className="font-semibold">Expert Services</p>
+            <p className="pt-1">
+              Frontend Website Development, Logo Designer, Video Editor, CAD
+              Designer
+            </p>
+            <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline pt-1">
               Show details
             </p>
           </div>
