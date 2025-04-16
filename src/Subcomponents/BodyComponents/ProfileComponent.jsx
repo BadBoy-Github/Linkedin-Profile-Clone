@@ -15,7 +15,7 @@ const ProfileComponent = () => {
           <img
             src="../../public/img/LinkedIn Banner.png"
             alt="linkedin banner"
-            className="w-full rounded-t-xl rounded-b-sm active:border border-[#999b9d] cursor-pointer"
+            className="w-full rounded-t-xl rounded-b-sm active:outline outline-[#999b9d] cursor-pointer"
           />
           <div className="absolute size-[19%] top-[45%] left-[3%] ">
             <img
