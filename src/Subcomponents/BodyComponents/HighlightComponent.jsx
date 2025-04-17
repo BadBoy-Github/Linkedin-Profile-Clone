@@ -10,15 +10,26 @@ const HighlightComponent = () => {
           <h1 className="font-semibold text-[1.2rem]">Highlights</h1>
         </div>
 
-        <div className="bg-[#38434f] py-2 px-3 mr-4 ml-2 rounded-xl text-white text-sm my-4">
-          <p className="font-semibold">Expert Services</p>
-          <p className="pt-1">
-            Frontend Website Development, Logo Designer, Video Editor, CAD
-            Designer
-          </p>
-          <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline pt-1 w-fit">
-            Show details
-          </p>
+        <div className="bg-[#38434f] py-2 px-3 mr-4 ml-2 rounded-xl text-white text-sm mt-4 mb-6 flex h-[6rem] relative">
+          <div className="size-[4.6rem] flex items-center justify-center mr-2">
+            <img
+              src="../../../public/img/Panda Productions Logo.png"
+              alt="panda logo"
+              className="rounded-xl"
+            />
+          </div>
+          <div className=" flex flex-col justify-center">
+            <p className="font-semibold text-[0.96rem]">
+              Both worked at Panda Productions
+            </p>
+            <p className="pt-1">
+              You both are the <b>Founder and CEO</b> of{" "}
+              <b>Panda Productions</b>
+            </p>
+            <button className="absolute bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-all duration-300 text-[#38434f] rounded-full p-1 text-base font-semibold flex items-center cursor-pointer top-2 right-2">
+              <BiSolidSend className="size-[100%]" />
+            </button>
+          </div>
         </div>
 
         <div className="bg-[#38434f] py-2 px-3 mr-4 ml-2 rounded-xl text-white text-sm mt-4 mb-6 flex h-[6rem] relative">
@@ -34,7 +45,8 @@ const HighlightComponent = () => {
               Both studied at K.S.Rangasamy College of Technology
             </p>
             <p className="pt-1">
-              You both studied at K.S.Rangasamy College of Technology from 2020
+              You both studied at{" "}
+              <b>K.S.Rangasamy College of Technology from 2020</b>
               to 2023
             </p>
             <button className="absolute bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-all duration-300 text-[#38434f] rounded-full p-1 text-base font-semibold flex items-center cursor-pointer top-2 right-2">
