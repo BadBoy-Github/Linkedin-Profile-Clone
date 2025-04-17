@@ -1,11 +1,6 @@
 
 import React from 'react'
 
-import { IoPeople } from "react-icons/io5";
-import { RiBarChart2Fill } from "react-icons/ri";
-import { FaSearch } from "react-icons/fa";
-import { FaArrowRightLong } from "react-icons/fa6";
-
 const HighlightComponent = () => {
   return (
     <>
