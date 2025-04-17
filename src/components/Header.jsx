@@ -1,5 +1,6 @@
 import React from "react";
 
+import { FaUser } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { HiSearch } from "react-icons/hi";
 import { GoHomeFill } from "react-icons/go";
@@ -71,11 +72,7 @@ const Header = () => {
             </div>
             <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] hover:text-white hover:cursor-pointer">
               <div className="">
-                <img
-                  src="../../public/img/Elayabarathi Pro 1.jpg"
-                  alt="DP"
-                  className="rounded-full size-6 border-2 border-[#b7b7b7]"
-                />
+                <FaUser className="rounded-full p-0.5 size-6 border-2 border-[#b7b7b7]" />
               </div>
               <div className="flex justify-center items-center">
                 <div className="text-[11px] pt-0.5">Profile</div>
