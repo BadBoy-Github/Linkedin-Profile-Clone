@@ -20,20 +20,30 @@ const HighlightComponent = () => {
             Frontend Website Development, Logo Designer, Video Editor, CAD
             Designer
           </p>
-          <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline pt-1">
+          <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline pt-1 w-fit">
             Show details
           </p>
         </div>
 
-        <div className="bg-[#38434f] py-2 px-3 mr-4 ml-2 rounded-xl text-white text-sm mt-4 mb-6">
-          <p className="font-semibold">Expert Services</p>
-          <p className="pt-1">
-            Frontend Website Development, Logo Designer, Video Editor, CAD
-            Designer
-          </p>
-          <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline pt-1">
-            Show details
-          </p>
+        <div className="bg-[#38434f] py-2 px-3 mr-4 ml-2 rounded-xl text-white text-sm mt-4 mb-6 flex">
+          <div className="w-[8%] flex items-center justify-center mr-2">
+            <img
+              src="../../../public/img/LinkedIn Profile.jpg"
+              alt="ksr logo"
+              className="rounded-xl"
+            />
+          </div>
+          <div className="">
+            <p className="font-semibold">
+              Both studied at K.S.Rangasamy College of Technology
+            </p>
+            <p className="pt-1">
+              You both studied at K.S.Rangasamy College of Technology from 2020 to 2023
+            </p>
+            <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline pt-1 w-fit">
+              Show details
+            </p>
+          </div>
         </div>
       </div>
     </>

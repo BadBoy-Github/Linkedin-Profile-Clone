@@ -107,7 +107,7 @@ const ProfileComponent = () => {
               Microbiologist, Biotechnologist, Biological Technician, Video
               Editor and Computer Technician roles
             </p>
-            <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline pt-1">
+            <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline pt-1 w-fit">
               Show details
             </p>
           </div>
@@ -117,7 +117,7 @@ const ProfileComponent = () => {
               Frontend Website Development, Logo Designer, Video Editor, CAD
               Designer
             </p>
-            <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline pt-1">
+            <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline pt-1 w-fit">
               Show details
             </p>
           </div>
