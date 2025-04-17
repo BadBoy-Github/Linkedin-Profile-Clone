@@ -23,8 +23,7 @@ const HighlightComponent = () => {
               Both worked at Panda Productions
             </p>
             <p className="pt-1">
-              You both are the <b>Founder and CEO</b> of{" "}
-              <b>Panda Productions</b>
+              You both are the <b>Founder & CEO</b> of <b>Panda Productions</b>
             </p>
             <button className="absolute bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-all duration-300 text-[#38434f] rounded-full p-1 text-base font-semibold flex items-center cursor-pointer top-2 right-2">
               <BiSolidSend className="size-[100%]" />
@@ -45,9 +44,8 @@ const HighlightComponent = () => {
               Both studied at K.S.Rangasamy College of Technology
             </p>
             <p className="pt-1">
-              You both studied at{" "}
-              <b>K.S.Rangasamy College of Technology from 2020</b>
-              to 2023
+              You both studied at <b>K.S.Rangasamy College of Technology</b>{" "}
+              from 2020 to 2023
             </p>
             <button className="absolute bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-all duration-300 text-[#38434f] rounded-full p-1 text-base font-semibold flex items-center cursor-pointer top-2 right-2">
               <BiSolidSend className="size-[100%]" />
