@@ -6,6 +6,7 @@ import { MdHandshake } from "react-icons/md";
 import { BiSolidSend } from "react-icons/bi";
 import { MdOutlineExpandMore } from "react-icons/md";
 import { FaUserPlus } from "react-icons/fa";
+import { GoBellFill } from "react-icons/go";
 
 const ProfileComponent = () => {
   return (
@@ -31,7 +32,10 @@ const ProfileComponent = () => {
           </div>
         </div>
 
-        <div className="">
+        <div className="relative ">
+          <div className="absolute right-[6%] bg-[#6eb1f3] p-1 text-[#38434f] rounded-full">
+            <GoBellFill className="size-[1.2rem]" />
+          </div>
           <div className="mt-[6%] p-5">
             <div className="flex items-center">
               <h1 className="text-white text-2xl font-semibold">
