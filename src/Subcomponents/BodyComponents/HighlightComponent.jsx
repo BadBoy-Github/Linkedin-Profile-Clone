@@ -18,9 +18,9 @@ const HighlightComponent = () => {
               className="rounded-xl"
             />
           </div>
-          <div className=" flex flex-col justify-center">
+          <div className=" flex flex-col justify-center w-[70%]">
             <p className="font-semibold text-[0.96rem]">
-              Both worked at Panda Productions
+              Both worked at Panda Productions 
             </p>
             <p className="pt-1">
               You both are the <b>Founder & CEO</b> of <b>Panda Productions</b>
@@ -39,7 +39,7 @@ const HighlightComponent = () => {
               className="rounded-xl"
             />
           </div>
-          <div className=" flex flex-col justify-center">
+          <div className=" flex flex-col justify-center w-[70%]">
             <p className="font-semibold text-[0.96rem]">
               Both studied at K.S.Rangasamy College of Technology
             </p>
