@@ -10,7 +10,7 @@ const HighlightComponent = () => {
           <h1 className="font-semibold text-[1.2rem]">Highlights</h1>
         </div>
 
-        <div className="bg-[#38434f] py-2 px-3 mr-4 ml-2 rounded-xl text-white text-sm mt-4 mb-6 flex h-[6rem] relative">
+        <div className="bg-[#38434f] py-2 px-3 mr-4 ml-2 rounded-xl text-white text-sm mt-4 mb-6 h-[6rem] relative flex items-center">
           <div className="size-[4.6rem] flex items-center justify-center mr-2">
             <img
               src="../../../public/img/Panda Productions Logo.png"
@@ -31,7 +31,7 @@ const HighlightComponent = () => {
           </div>
         </div>
 
-        <div className="bg-[#38434f] py-2 px-3 mr-4 ml-2 rounded-xl text-white text-sm mt-4 mb-6 flex h-[6rem] relative">
+        <div className="bg-[#38434f] py-2 px-3 mr-4 ml-2 rounded-xl text-white text-sm mt-4 mb-6 h-[6rem] relative flex items-center">
           <div className="size-[4.6rem] flex items-center justify-center mr-2">
             <img
               src="../../../public/img/KSRCT Logo.jpeg"
