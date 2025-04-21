@@ -9,11 +9,13 @@ const InterestContentAllComponent = ({c1name, c1followers, c1img, c2name, c2foll
       <div className="mt-3 px-4 text-white">
         <div className="flex items-center justify-between">
           <div className="mr-1">
-            <img
-              src={c1img}
-              alt="logo"
-              className="size-[2rem] px-1 py-2 bg-white rounded-xl"
-            />
+            <div className="size-[2rem] flex items-center justify-center bg-white rounded-xl">
+              <img
+                src={c1img}
+                alt="logo"
+                className="max-h-[1.5rem] max-w-[1.5rem]" // Adjust these values as needed
+              />
+            </div>
           </div>
           <div className="flex flex-col justify-center ml-1">
             <p className="text-sm font-semibold text-white">{c1name}</p>
@@ -27,11 +29,13 @@ const InterestContentAllComponent = ({c1name, c1followers, c1img, c2name, c2foll
         </div>
         <div className="flex items-center justify-between mt-3">
           <div className="mr-1">
-            <img
-              src={c2img}
-              alt="logo"
-              className="size-[2rem] px-1 py-1 bg-white rounded-xl"
-            />
+            <div className="size-[2rem] flex items-center justify-center bg-white rounded-xl">
+              <img
+                src={c2img}
+                alt="logo"
+                className="max-h-[1.5rem] max-w-[1.5rem]" // Adjust these values as needed
+              />
+            </div>
           </div>
           <div className="flex flex-col justify-center ml-1">
             <p className="text-sm font-semibold text-white">{c2name}</p>
