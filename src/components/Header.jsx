@@ -44,9 +44,7 @@ const Header = () => {
               </div>
               <div className="absolute bg-red-500 rounded-full top-[2px] left-[34px] size-[12px] flex items-center justify-center animate-ping"></div>
               <div className="absolute bg-red-500 rounded-full top-[3px] left-[35px] size-[10px] flex items-center justify-center"></div>
-              <div className="text-[11px] pt-0.5 display-6">
-                My&nbsp;Network
-              </div>
+              <div className="text-[11px] pt-0.5">My&nbsp;Network</div>
             </div>
             <div className="flex flex-col items-center mr-6 min-w-[60px] max-w-[80px] hover:text-white hover:cursor-pointer">
               <div className="">
@@ -89,12 +87,14 @@ const Header = () => {
                 <div className="text-[11px] pt-0.5">Settings</div>
               </div>
             </div>
-            <div className="flex flex-col items-center min-w-[60px] max-w-[80px] relative hover:text-white hover:cursor-pointer">
+            <div className="flex flex-col items-center min-w-[60px] max-w-[80px] relative hover:cursor-pointer hover:text-yellow-500">
               <div className="flex justify-center items-center">
                 <FaCrown className="size-6" />
               </div>
-              <div className="absolute bg-yellow-500 rounded-full top-[2px] left-[38px] size-[12px] flex items-center justify-center animate-ping"></div>
-              <div className="absolute bg-yellow-500 rounded-full top-[3px] left-[39px] size-[10px] flex items-center justify-center"></div>
+              <div className="group">
+                <div className="absolute bg-amber-200 rounded-full top-[2px] left-[38px] size-[12px] flex items-center justify-center animate-ping"></div>
+                <div className="absolute bg-amber-300 rounded-full top-[3px] left-[39px] size-[10px] flex items-center justify-center"></div>
+              </div>
               <div className="text-[11px] pt-0.5">Try&nbsp;Premium</div>
             </div>
           </div>
