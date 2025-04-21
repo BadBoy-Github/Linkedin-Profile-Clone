@@ -33,7 +33,7 @@ const ProfileComponent = () => {
         </div>
 
         <div className="relative ">
-          <div className="absolute right-[3%] bottom-[100%] bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-all duration-300 text-[#38434f]  p-1 rounded-full">
+          <div className="absolute right-[3%] bottom-[100%] bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-all duration-300 text-[#38434f]  p-1 rounded-full cursor-pointer">
             <GoBellFill className="size-[1.2rem]" />
           </div>
           <div className="mt-[6%] p-5">

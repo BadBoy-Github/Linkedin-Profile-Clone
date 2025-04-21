@@ -20,12 +20,12 @@ const HighlightComponent = () => {
           </div>
           <div className=" flex flex-col justify-center w-[70%]">
             <p className="font-semibold text-[0.96rem]">
-              Both worked at Panda Productions 
+              Both worked at Panda Productions
             </p>
             <p className="pt-1">
               You both are the <b>Founder & CEO</b> of <b>Panda Productions</b>
             </p>
-            <button className="absolute bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-all duration-300 text-[#38434f] rounded-full p-1 text-base font-semibold flex items-center cursor-pointer top-2 right-2">
+            <button className="absolute bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-all duration-300 text-[#38434f] rounded-full p-1 text-base font-semibold flex items-center cursor-pointer top-2 right-2 hover:rotate-[-45deg]">
               <BiSolidSend className="size-[100%]" />
             </button>
           </div>
@@ -47,7 +47,7 @@ const HighlightComponent = () => {
               You both studied at <b>K.S.Rangasamy College of Technology</b>{" "}
               from 2020 to 2023
             </p>
-            <button className="absolute bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-all duration-300 text-[#38434f] rounded-full p-1 text-base font-semibold flex items-center cursor-pointer top-2 right-2">
+            <button className="absolute bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-all duration-300 text-[#38434f] rounded-full p-1 text-base font-semibold flex items-center cursor-pointer top-2 right-2 hover:rotate-[-45deg]">
               <BiSolidSend className="size-[100%]" />
             </button>
           </div>
