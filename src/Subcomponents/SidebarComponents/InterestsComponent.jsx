@@ -33,7 +33,7 @@ const InterestsComponent = () => {
         <div className="my-1">
           <div className="text-xs flex items-center justify-center text-white gap-1">
             <button
-              className={`px-1 py-0.5 rounded-xl outline ${
+              className={`px-1 py-0.5 rounded-xl  ${
                 selectedInterest === "company"
                   ? "bg-[#6eb1f3] text-[#1b1f23]"
                   : "outline-[#6eb1f3] text-[#6eb1f3] hover:bg-[#6eb1f3] hover:text-[#1b1f23]"
@@ -43,7 +43,7 @@ const InterestsComponent = () => {
               Company
             </button>
             <button
-              className={`px-1 py-0.5 rounded-xl outline ${
+              className={`px-1 py-0.5 rounded-xl  ${
                 selectedInterest === "group"
                   ? "bg-[#6eb1f3] text-[#1b1f23]"
                   : "outline-[#6eb1f3] text-[#6eb1f3] hover:bg-[#6eb1f3] hover:text-[#1b1f23]"
@@ -53,7 +53,7 @@ const InterestsComponent = () => {
               Group
             </button>
             <button
-              className={`px-1 py-0.5 rounded-xl outline ${
+              className={`px-1 py-0.5 rounded-xl  ${
                 selectedInterest === "newsletter"
                   ? "bg-[#6eb1f3] text-[#1b1f23]"
                   : "outline-[#6eb1f3] text-[#6eb1f3] hover:bg-[#6eb1f3] hover:text-[#1b1f23]"
@@ -63,7 +63,7 @@ const InterestsComponent = () => {
               Newsletter
             </button>
             <button
-              className={`px-1 py-0.5 rounded-xl outline ${
+              className={`px-1 py-0.5 rounded-xl  ${
                 selectedInterest === "school"
                   ? "bg-[#6eb1f3] text-[#1b1f23]"
                   : "outline-[#6eb1f3] text-[#6eb1f3] hover:bg-[#6eb1f3] hover:text-[#1b1f23]"
