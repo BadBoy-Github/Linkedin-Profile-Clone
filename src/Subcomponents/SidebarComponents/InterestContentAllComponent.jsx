@@ -3,20 +3,20 @@ import React from 'react'
 
 import { IoMdAdd } from "react-icons/io";
 
-const InterestContentAllComponent = ({c1name, c1followers, c2name, c2followers}) => {
+const InterestContentAllComponent = ({c1name, c1followers, c1img, c2name, c2followers, c2img}) => {
   return (
     <>
       <div className="mt-3 px-4 text-white">
-        <div className="flex">
+        <div className="flex items-center justify-between">
           <div className="mr-1">
             <img
-              src="/public/img/IBM.png"
-              alt=""
-              className="size-[3rem] px-2 py-3 bg-white rounded-xl"
+              src={c1img}
+              alt="logo"
+              className="size-[2rem] px-1 py-2 bg-white rounded-xl"
             />
           </div>
           <div className="flex flex-col justify-center ml-1">
-            <p className="text-base font-semibold text-white">{c1name}</p>
+            <p className="text-sm font-semibold text-white">{c1name}</p>
             <p className="text-xs text-gray-400">{c1followers}</p>
           </div>
           <div className="flex items-center ml-auto">
@@ -25,16 +25,16 @@ const InterestContentAllComponent = ({c1name, c1followers, c2name, c2followers})
             </button>
           </div>
         </div>
-        <div className="flex mt-3">
+        <div className="flex items-center justify-between mt-3">
           <div className="mr-1">
             <img
-              src="/public/img/Microsoft.png"
-              alt=""
-              className="size-[3rem] px-2 py-2 bg-white rounded-xl"
+              src={c2img}
+              alt="logo"
+              className="size-[2rem] px-1 py-1 bg-white rounded-xl"
             />
           </div>
           <div className="flex flex-col justify-center ml-1">
-            <p className="text-base font-semibold text-white">{c2name}</p>
+            <p className="text-sm font-semibold text-white">{c2name}</p>
             <p className="text-xs text-gray-400">{c2followers}</p>
           </div>
           <div className="flex items-center ml-auto">
