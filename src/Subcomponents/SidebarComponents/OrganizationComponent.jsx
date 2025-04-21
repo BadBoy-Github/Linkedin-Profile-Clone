@@ -1,8 +1,6 @@
 
 import React from 'react'
 
-import { FaPlus } from "react-icons/fa6";
-import { MdOutlineModeEditOutline } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
 
 const OrganizationComponent = () => {
