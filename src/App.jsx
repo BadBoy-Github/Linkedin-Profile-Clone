@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <div className="flex flex-col bg-black min-h-screen w-full items-center relative">
-        <div className="w-3/5">
+        <div className="w-3/5 2xl:w-full">
           <Header />
         </div>
         <div className="flex bg-black h-full w-full lg:w-3/5 flex-grow">
@@ -23,7 +23,7 @@ const App = () => {
           <Messaging />
         </div>
 
-        <div className="w-3/5">
+        <div className="w-full 2xl:w-3/5">
           <Footer />
         </div>
       </div>
