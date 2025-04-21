@@ -8,12 +8,21 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <>
-      <Header />
-      <div className="flex bg-black h-full w-3/5 mx-auto">
-        <Body />
-        <SideBar />
+      <div className="flex flex-col bg-black min-h-screen w-full items-center">
+        <div className="w-full">
+          <Header />
+        </div>
+        <div className="flex bg-black h-full w-full lg:w-3/5 flex-grow">
+          <Body />
+          <div className="hidden xl:block">
+            <SideBar />
+          </div>
+        </div>
+
+        <div className="w-full">
+          <Footer />
+        </div>
       </div>
-      <Footer />
     </>
   );
 };

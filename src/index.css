@@ -5,3 +5,18 @@
 * {
     font-family: "Poppins", sans-serif;
 }
+
+@layer base {
+    body {
+        @apply bg-black text-white;
+        /* Set default background to black and text to white */
+        /* Add other base styles if needed */
+    }
+}
+
+/* You might need to remove default browser margins/padding too */
+html,
+body {
+    padding: 0;
+    margin: 0;
+}

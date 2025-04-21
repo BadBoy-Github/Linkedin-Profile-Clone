@@ -21,7 +21,7 @@ const Header = () => {
           <div className="p-0.5 bg-[#e9e9e9] text-[#1b1f23] rounded-sm mr-3 cursor-pointer">
             <FaLinkedinIn className="size-[1.6rem] pt-0.5" />
           </div>
-          <div className="bg-[#38434f] rounded-sm flex items-center w-[17rem] h-8 px-2 mr-[8rem]">
+          <div className="bg-[#38434f] rounded-sm xl:flex items-center w-[17rem] h-8 px-2 mr-[8rem] hidden">
             <HiSearch className="size-4 ml-1 mr-[7px]" />
             <input
               type="text"
