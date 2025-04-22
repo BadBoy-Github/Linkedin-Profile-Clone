@@ -2,10 +2,8 @@ import React from "react";
 
 import { MdVerified } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
-import { MdHandshake } from "react-icons/md";
 import { BiSolidSend } from "react-icons/bi";
 import { MdOutlineExpandMore } from "react-icons/md";
-import { FaUserPlus } from "react-icons/fa";
 import { GoBellFill } from "react-icons/go";
 
 const ProfileComponent = () => {
@@ -33,8 +31,8 @@ const ProfileComponent = () => {
         </div>
 
         <div className="relative ">
-          <div className="absolute right-[3%] bottom-[100%] bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-all duration-300 text-[#38434f]  p-1 rounded-full cursor-pointer">
-            <GoBellFill className="size-[1.2rem]" />
+          <div className="absolute right-[3%] bottom-[100%] bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-all duration-300 text-[#38434f] p-1 rounded-full cursor-pointer">
+            <GoBellFill className="size-[1.2rem] bell-animation" />
           </div>
           <div className="mt-[6%] p-5">
             <div className="flex items-center">
@@ -78,25 +76,13 @@ const ProfileComponent = () => {
         </div>
 
         <div className="mx-5 flex items-center gap-3">
-          <button className="bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-all duration-300 text-[#38434f] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
-            <div className="text-[1.2rem]">
+          <button className="group bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-colors duration-300 text-[#38434f] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
+            <div className="text-[1.2rem] transition-transform duration-300 group-hover:scale-125 group-hover:rotate-[-45deg]">
               <BiSolidSend />
             </div>
             Message
           </button>
-          <button className="text-[#6eb1f3] outline-1 outline-[#6eb1f3] hover:outline-[#4aa1f8] hover:text-[#4aa1f8] transition-all rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
-            <div className="text-[1.2rem]">
-              <MdHandshake />
-            </div>
-            Connect
-          </button>
-          <button className="text-[#6eb1f3] outline-1 outline-[#6eb1f3] hover:outline-[#4aa1f8] hover:text-[#4aa1f8] transition-all rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
-            <div className="text-[1.2rem]">
-              <FaUserPlus />
-            </div>
-            Follow
-          </button>
-          <button className="text-[#c1c1c1] outline-1 outline-[#c1c1c1] hover:outline-white hover:text-white transition-all rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer group">
+          <button className="outline-1 outline-white text-white transition-all rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer group">
             More
             <span className="text-[1.2rem] hidden group-hover:block">
               <MdOutlineExpandMore />
