@@ -14,18 +14,18 @@ const ProfileComponent = () => {
       <div className="bg-[#1b1f23] h-fit w-full rounded-xl mr-2 mt-5 mb-2 pb-1">
         <div className="rounded-t-xl w-full h-full relative">
           <img
-            src="/public/img/LinkedIn Banner.png"
+            src="/img/LinkedIn Banner.png"
             alt="linkedin banner"
             className="w-full rounded-t-xl rounded-b-sm active:outline outline-[#999b9d] cursor-pointer"
           />
           <div className="absolute size-[19%] top-[45%] left-[3%] ">
             <img
-              src="/public/img/LinkedIn Profile.jpg"
+              src="/img/LinkedIn Profile.jpg"
               alt="linkedin profile"
               className="absolute rounded-full border-[4px] border-[#1b1f23]"
             />
             <img
-              src="/public/img/LinkedIn OTW.png"
+              src="/img/LinkedIn OTW.png"
               alt="OTW"
               className="absolute rounded-full border-[4px] border-[#1b1f23]"
             />
