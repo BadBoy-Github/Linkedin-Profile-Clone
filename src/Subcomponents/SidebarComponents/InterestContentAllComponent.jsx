@@ -9,7 +9,7 @@ const InterestContentAllComponent = ({c1name, c1followers, c1img, c2name, c2foll
       <div className="mt-3 px-4 text-white">
         <div className="flex items-center justify-between">
           <div className="mr-1">
-            <div className="size-[2rem] flex items-center justify-center bg-white rounded-xl">
+            <div className="size-[2rem] flex items-center justify-center">
               <img
                 src={c1img}
                 alt="logo"
