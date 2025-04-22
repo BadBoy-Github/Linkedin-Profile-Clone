@@ -13,7 +13,7 @@ const HighlightComponent = () => {
         <div className="bg-[#38434f] py-2 px-3 mr-4 ml-2 rounded-xl text-white text-sm mt-4 mb-6 h-[6rem] relative flex items-center">
           <div className="size-[4.6rem] flex items-center justify-center mr-2">
             <img
-              src="../../../public/img/Panda Productions Logo.png"
+              src="/public/img/Panda Productions Logo.png"
               alt="panda logo"
               className="rounded-xl"
             />
@@ -34,7 +34,7 @@ const HighlightComponent = () => {
         <div className="bg-[#38434f] py-2 px-3 mr-4 ml-2 rounded-xl text-white text-sm mt-4 mb-6 h-[6rem] relative flex items-center">
           <div className="size-[4.6rem] flex items-center justify-center mr-2">
             <img
-              src="../../../public/img/KSRCT Logo.jpeg"
+              src="/public/img/KSRCT Logo.jpeg"
               alt="ksr logo"
               className="rounded-xl"
             />
