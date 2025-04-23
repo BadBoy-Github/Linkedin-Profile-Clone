@@ -33,7 +33,7 @@ const InterestsComponent = () => {
         <div className="my-1">
           <div className="text-xs flex items-center justify-center text-white gap-1 pb-2">
             <button
-              className={`px-1 py-0.5 border-b-2 ${
+              className={`px-1 py-0.5 border-b-2 cursor-pointer ${
                 selectedInterest === "company"
                   ? "border-[#6eb1f3] text-[#6eb1f3]"
                   : "border-transparent text-[#6eb1f3]"
@@ -43,7 +43,7 @@ const InterestsComponent = () => {
               Company
             </button>
             <button
-              className={`px-1 py-0.5 border-b-2 ${
+              className={`px-1 py-0.5 border-b-2 cursor-pointer ${
                 selectedInterest === "group"
                   ? "border-[#6eb1f3] text-[#6eb1f3]"
                   : "border-transparent text-[#6eb1f3]"
@@ -53,7 +53,7 @@ const InterestsComponent = () => {
               Group
             </button>
             <button
-              className={`px-1 py-0.5 border-b-2 ${
+              className={`px-1 py-0.5 border-b-2 cursor-pointer ${
                 selectedInterest === "newsletter"
                   ? "border-[#6eb1f3] text-[#6eb1f3]"
                   : "border-transparent text-[#6eb1f3]"
@@ -63,7 +63,7 @@ const InterestsComponent = () => {
               Newsletter
             </button>
             <button
-              className={`px-1 py-0.5 border-b-2 ${
+              className={`px-1 py-0.5 border-b-2 cursor-pointer ${
                 selectedInterest === "school"
                   ? "border-[#6eb1f3] text-[#6eb1f3]"
                   : "border-transparent text-[#6eb1f3]"
