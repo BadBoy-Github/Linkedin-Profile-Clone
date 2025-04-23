@@ -7,25 +7,32 @@ import { GoBellFill } from "react-icons/go";
 import { IoClose } from "react-icons/io5";
 import { IoMdArrowDropup } from "react-icons/io";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { TbArrowLeftFromArc } from "react-icons/tb";
+import { MdRecommend } from "react-icons/md";
+import { MdPersonRemove } from "react-icons/md";
+import { RiUserUnfollowFill } from "react-icons/ri";
+import { FaCodePullRequest } from "react-icons/fa6";
+import { FaSave } from "react-icons/fa";
+import { FcAbout } from "react-icons/fc";
+import { RiFlagFill } from "react-icons/ri";
 
 const ProfileComponent = () => {
-
   // Function to handle the click event on the banner image
-  const [ selectedImage, setSelectedImage ] = useState(null);
-  const [ selectMore, setSelectMore ] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectMore, setSelectMore] = useState(false);
 
   const openImage = (imgUrl) => {
     setSelectedImage(imgUrl);
     document.body.classList.add("overflow-hidden");
-  }
+  };
   const closeImage = () => {
     setSelectedImage(null);
     document.body.classList.remove("overflow-hidden");
-  }
+  };
 
   const toggleMore = () => {
-    setSelectMore(prev => !prev)
-  }
+    setSelectMore((prev) => !prev);
+  };
 
   return (
     <>
@@ -149,8 +156,39 @@ const ProfileComponent = () => {
             </button>
             {/* Selecting More Option Modal */}
             {selectMore && (
-              <div className="absolute top-full mt-2 w-40 z-10 flex items-start justify-center bg-[#1b1f23] rounded-lg border border-[#373a3d] p-2">
-                Hi
+              <div className="absolute top-full mt-2 w-60 z-10 flex flex-col gap-1 items-start justify-center bg-[#1b1f23] rounded-lg border border-[#373a3d] p-2">
+                <div className="flex items-center gap-4 w-full text-white hover:bg-[#313539] cursor-pointer rounded-lg p-2 transition-all duration-300 group">
+                  <MdPersonRemove className="group-hover:scale-125" />
+                  <p className="text-xs">Remove Connection</p>
+                </div>
+                <div className="flex items-center gap-4 w-full text-white hover:bg-[#313539] cursor-pointer rounded-lg p-2 transition-all duration-300 group">
+                  <RiUserUnfollowFill className="group-hover:scale-125" />
+                  <p className="text-xs">Unfollow</p>
+                </div>
+                <div className="flex items-center gap-4 w-full text-white hover:bg-[#313539] cursor-pointer rounded-lg p-2 transition-all duration-300 group">
+                  <TbArrowLeftFromArc className="group-hover:scale-125" />
+                  <p className="text-xs">Send profile in a message</p>
+                </div>
+                <div className="flex items-center gap-4 w-full text-white hover:bg-[#313539] cursor-pointer rounded-lg p-2 transition-all duration-300 group">
+                  <FaCodePullRequest className="group-hover:scale-125" />
+                  <p className="text-xs">Request a recommendation</p>
+                </div>
+                <div className="flex items-center gap-4 w-full text-white hover:bg-[#313539] cursor-pointer rounded-lg p-2 transition-all duration-300 group">
+                  <MdRecommend className="group-hover:scale-125" />
+                  <p className="text-xs">Recommend</p>
+                </div>
+                <div className="flex items-center gap-4 w-full text-white hover:bg-[#313539] cursor-pointer rounded-lg p-2 transition-all duration-300 group">
+                  <FaSave className="group-hover:scale-125" />
+                  <p className="text-xs">Save to PDF</p>
+                </div>
+                <div className="flex items-center gap-4 w-full text-white hover:bg-[#313539] cursor-pointer rounded-lg p-2 transition-all duration-300 group">
+                  <RiFlagFill className="group-hover:scale-125" />
+                  <p className="text-xs">Report/Block</p>
+                </div>
+                <div className="flex items-center gap-4 w-full text-white hover:bg-[#313539] cursor-pointer rounded-lg p-2 transition-all duration-300 group">
+                  <FcAbout className="group-hover:scale-125" />
+                  <p className="text-xs">About this profile</p>
+                </div>
               </div>
             )}
           </div>
