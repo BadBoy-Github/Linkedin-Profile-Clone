@@ -55,6 +55,7 @@ const SkillsComponent = () => {
               </div>
             </div>
           </div>
+        
           <div className="mt-1 flex  justify-center items-center border-t border-[#373a3d] group cursor-pointer">
             <div className="mt-2 flex justify-center items-center gap-2 ">
               <p className="text-sm font-semibold">Show all 56 skills </p>

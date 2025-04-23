@@ -25,7 +25,7 @@ const InterestsComponent = () => {
   };
 
   return (
-    <div className="bg-[#1b1f23] h-fit w-full rounded-xl ml-4 mt-2">
+    <div className="bg-[#1b1f23] h-fit w-full rounded-xl ml-4 mt-2 mb-2">
       <div className="pt-5 pb-4">
         <div className="text-[#c6c7c8] flex items-center justify-between px-4">
           <h1 className="text-white text-[18px] font-semibold">Interests</h1>
