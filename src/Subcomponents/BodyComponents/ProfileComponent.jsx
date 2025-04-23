@@ -65,32 +65,15 @@ const ProfileComponent = () => {
 
             <div className="flex items-center text-[#6eb1f3] text-[0.82rem] font-semibold mt-1">
               <p className="hover:underline cursor-pointer">
-                <b>2,482</b> followers
+                2,482 followers
               </p>
               <div className="px-1 text-white">
                 <GoDotFill className="size-[0.4rem]" />
               </div>
               <p className="hover:underline cursor-pointer">
-                <b>2,470</b> connections
+                2,470 connections
               </p>
             </div>
-          </div>
-        </div>
-
-        <div className="flex mx-5 mb-4 items-center gap-2">
-          <div className="relative">
-            <div className="size-[1.4rem]">
-              <img src="/img/Moovin.jpeg" alt="" className="rounded-full" />
-            </div>
-            <div className="size-[1.4rem] absolute top-0 left-4">
-              <img src="/img/Muppidathi.jpeg" alt="" className="rounded-full" />
-            </div>
-          </div>
-          <div className="pl-4">
-            <p className="text-[#999b9d] text-[0.82rem] font-semibold">
-              <b>Moovin S</b>, <b>Muppidathi Ramachandran</b>, and 240 other
-              mutual connections
-            </p>
           </div>
         </div>
 
