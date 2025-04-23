@@ -19,7 +19,7 @@ const App = () => {
             <SideBar />
           </div>
         </div>
-        <div className="fixed bottom-0 right-0 z-50 mx-4">
+        <div className="fixed bottom-0 right-0 mx-4">
           <Messaging />
         </div>
 
