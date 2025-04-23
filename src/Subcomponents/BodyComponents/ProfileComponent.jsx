@@ -11,14 +11,22 @@ const ProfileComponent = () => {
 
   // Function to handle the click event on the banner image
   const [ selectedImage, setSelectedImage ] = useState(null);
+  const [ selectMore, setSelectMore ] = useState(false);
 
-  const openModal = (imgUrl) => {
+  const openImage = (imgUrl) => {
     setSelectedImage(imgUrl);
     document.body.classList.add("overflow-hidden");
   }
-  const closeModal = () => {
+  const closeImage = () => {
     setSelectedImage(null);
     document.body.classList.remove("overflow-hidden");
+  }
+
+  const openMore = () => {
+    setSelectMore(true);
+  }
+  const closeMore = () => {
+    setSelectMore(false);
   }
 
   return (
@@ -29,7 +37,7 @@ const ProfileComponent = () => {
             src="/img/LinkedIn Banner.png"
             alt="linkedin banner"
             className="w-full rounded-t-xl rounded-b-sm active:outline outline-[#999b9d] cursor-pointer"
-            onClick={() => openModal("/img/LinkedIn Banner.png")}
+            onClick={() => openImage("/img/LinkedIn Banner.png")}
           />
 
           <div className="absolute size-[19%] top-[45%] left-[3%] ">
@@ -37,10 +45,38 @@ const ProfileComponent = () => {
               src="/img/LinkedIn Profile.png"
               alt="linkedin profile"
               className="absolute rounded-full border-[4px] border-[#1b1f23] cursor-pointer"
-              onClick={() => openModal("/img/LinkedIn Profile.png")}
+              onClick={() => openImage("/img/LinkedIn Profile.png")}
             />
           </div>
         </div>
+        {/* Selecting Image */}
+        {selectedImage && (
+          <div
+            className="fixed inset-0 bg-black/80 z-50 flex items-start justify-center p-4 animate-fadeIn"
+            onClick={closeImage}
+          >
+            <div
+              className="relative w-fit"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="bg-black flex items-center justify-center p-4 rounded-lg border border-[#373a3d] mt-6 relative">
+                <div className="">
+                  <img
+                    src={selectedImage}
+                    alt="Selected Linkedin Banner Image"
+                    className=" max-h-[40vh] rounded-xl"
+                  />
+                </div>
+                <div
+                  className="absolute bg-[#999b9d] text-[#1b1f23] top-0 right-0 cursor-pointer m-3 p-1 rounded-full"
+                  onClick={closeImage}
+                >
+                  <IoClose className="size-[1.2rem]" />
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
         <div className="relative ">
           <div className="absolute right-[3%] bottom-[100%] bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-all duration-300 text-[#38434f] p-1 rounded-full cursor-pointer">
@@ -94,13 +130,27 @@ const ProfileComponent = () => {
             </div>
             Message
           </button>
-          <button className="outline-1 outline-white text-white transition-all rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer group">
+          <button
+            className="outline-1 outline-white text-white transition-all rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer group"
+            onClick={() => {
+              openMore();
+            }}
+          >
             More
             <span className="text-[1.2rem] hidden group-hover:block">
               <MdOutlineExpandMore />
             </span>
           </button>
         </div>
+        {/* Selecting More Option */}
+        {selectMore && (
+          <div
+            className="fixed z-50 flex items-start justify-center"
+            onClick={() => closeMore()}
+          >
+            Hi
+          </div>
+        )}
 
         <div className=" flex">
           <div className="bg-[#38434f] py-2 px-3 ml-5 mr-2 rounded-xl text-white text-sm my-6 w-1/2">
@@ -125,34 +175,6 @@ const ProfileComponent = () => {
           </div>
         </div>
       </div>
-      {/* Modal overlay */}
-      {selectedImage && (
-        <div
-          className="fixed inset-0 bg-black/80 z-50 flex items-start justify-center p-4 animate-fadeIn"
-          onClick={closeModal}
-        >
-          <div
-            className="relative w-fit"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="bg-black flex items-center justify-center p-4 rounded-lg border border-[#373a3d] mt-6 relative">
-              <div className="">
-                <img
-                  src={selectedImage}
-                  alt="Selected Linkedin Banner Image"
-                  className=" max-h-[40vh] rounded-xl"
-                />
-              </div>
-              <div
-                className="absolute bg-[#999b9d] text-[#1b1f23] top-0 right-0 cursor-pointer m-3 p-1 rounded-full"
-                onClick={closeModal}
-              >
-                <IoClose className="size-[1.2rem]" />
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </>
   );
 };
