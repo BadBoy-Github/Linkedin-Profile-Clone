@@ -22,16 +22,14 @@ const ProfileComponent = () => {
     document.body.classList.remove("overflow-hidden");
   }
 
-  const openMore = () => {
-    setSelectMore(true);
-  }
-  const closeMore = () => {
-    setSelectMore(false);
+  const toggleMore = () => {
+    setSelectMore(prev => !prev)
   }
 
   return (
     <>
       <div className="bg-[#1b1f23] h-fit w-full rounded-xl mr-2 mt-5 mb-2 pb-1">
+        {/* Banner and Profile Image */}
         <div className="rounded-t-xl w-full h-full relative">
           <img
             src="/img/LinkedIn Banner.png"
@@ -49,7 +47,7 @@ const ProfileComponent = () => {
             />
           </div>
         </div>
-        {/* Selecting Image */}
+        {/* Selecting Image Modal */}
         {selectedImage && (
           <div
             className="fixed inset-0 bg-black/80 z-50 flex items-start justify-center p-4 animate-fadeIn"
@@ -78,6 +76,7 @@ const ProfileComponent = () => {
           </div>
         )}
 
+        {/* Profile Info */}
         <div className="relative ">
           <div className="absolute right-[3%] bottom-[100%] bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-all duration-300 text-[#38434f] p-1 rounded-full cursor-pointer">
             <GoBellFill className="size-[1.4rem] bell-animation" />
@@ -123,6 +122,7 @@ const ProfileComponent = () => {
           </div>
         </div>
 
+        {/* Action Buttons */}
         <div className="mx-5 flex items-center gap-3">
           <button className="group bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-colors duration-300 text-[#38434f] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
             <div className="text-[1.2rem] transition-transform duration-300 group-hover:scale-125 group-hover:rotate-[-30deg]">
@@ -130,28 +130,28 @@ const ProfileComponent = () => {
             </div>
             Message
           </button>
-          <button
-            className="outline-1 outline-white text-white transition-all rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer group"
-            onClick={() => {
-              openMore();
-            }}
-          >
-            More
-            <span className="text-[1.2rem] hidden group-hover:block">
-              <MdOutlineExpandMore />
-            </span>
-          </button>
-        </div>
-        {/* Selecting More Option */}
-        {selectMore && (
-          <div
-            className="fixed z-50 flex items-start justify-center"
-            onClick={() => closeMore()}
-          >
-            Hi
+          <div className="relative">
+            <button
+              className="outline-1 outline-white text-white transition-all rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer group"
+              onClick={() => {
+                toggleMore();
+              }}
+            >
+              More
+              <span className="text-[1.2rem] hidden group-hover:block">
+                <MdOutlineExpandMore />
+              </span>
+            </button>
+            {/* Selecting More Option Modal */}
+            {selectMore && (
+              <div className="absolute top-full mt-2 w-40 z-10 flex items-start justify-center bg-[#1b1f23] rounded-lg border border-[#373a3d] p-2">
+                Hi
+              </div>
+            )}
           </div>
-        )}
+        </div>
 
+        {/* Open to Work Section */}
         <div className=" flex">
           <div className="bg-[#38434f] py-2 px-3 ml-5 mr-2 rounded-xl text-white text-sm my-6 w-1/2">
             <p className="font-semibold">Open to work</p>
