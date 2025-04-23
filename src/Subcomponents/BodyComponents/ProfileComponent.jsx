@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { MdVerified } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
 import { BiSolidSend } from "react-icons/bi";
 import { MdOutlineExpandMore } from "react-icons/md";
 import { GoBellFill } from "react-icons/go";
+import { IoClose } from "react-icons/io5";
 
 const ProfileComponent = () => {
+
+  // Function to handle the click event on the banner image
+  const [ selectedImage, setSelectedImage ] = useState(null);
+
+  const openModal = (imgUrl) => {
+    setSelectedImage(imgUrl);
+    document.body.classList.add("overflow-hidden");
+  }
+  const closeModal = () => {
+    setSelectedImage(null);
+    document.body.classList.remove("overflow-hidden");
+  }
 
   return (
     <>
@@ -16,17 +29,15 @@ const ProfileComponent = () => {
             src="/img/LinkedIn Banner.png"
             alt="linkedin banner"
             className="w-full rounded-t-xl rounded-b-sm active:outline outline-[#999b9d] cursor-pointer"
+            onClick={() => openModal("/img/LinkedIn Banner.png")}
           />
+
           <div className="absolute size-[19%] top-[45%] left-[3%] ">
             <img
-              src="/img/LinkedIn Profile.jpg"
+              src="/img/LinkedIn Profile.png"
               alt="linkedin profile"
-              className="absolute rounded-full border-[4px] border-[#1b1f23]"
-            />
-            <img
-              src="/img/LinkedIn OTW.png"
-              alt="OTW"
-              className="absolute rounded-full border-[4px] border-[#1b1f23]"
+              className="absolute rounded-full border-[4px] border-[#1b1f23] cursor-pointer"
+              onClick={() => openModal("/img/LinkedIn Profile.png")}
             />
           </div>
         </div>
@@ -114,6 +125,34 @@ const ProfileComponent = () => {
           </div>
         </div>
       </div>
+      {/* Modal overlay */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/80 z-50 flex items-start justify-center p-4 animate-fadeIn"
+          onClick={closeModal}
+        >
+          <div
+            className="relative w-fit"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="bg-black flex items-center justify-center p-4 rounded-lg border border-[#373a3d] mt-6 relative">
+              <div className="">
+                <img
+                  src={selectedImage}
+                  alt="Selected Linkedin Banner Image"
+                  className=" max-h-[40vh] rounded-xl"
+                />
+              </div>
+              <div
+                className="absolute bg-[#999b9d] text-[#1b1f23] top-0 right-0 cursor-pointer m-3 p-1 rounded-full"
+                onClick={closeModal}
+              >
+                <IoClose className="size-[1.2rem]" />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
