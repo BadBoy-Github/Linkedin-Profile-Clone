@@ -13,7 +13,7 @@ const InterestContentAllComponent = ({c1name, c1followers, c1img, c2name, c2foll
               <img
                 src={c1img}
                 alt="logo"
-                className="max-h-[2rem] max-w-[2rem] rounded-xl"
+                className="max-h-[2rem] max-w-[2rem] rounded-xl cursor-pointer"
               />
             </div>
           </div>
@@ -37,7 +37,7 @@ const InterestContentAllComponent = ({c1name, c1followers, c1img, c2name, c2foll
               <img
                 src={c2img}
                 alt="logo"
-                className="max-h-[2rem] max-w-[2rem] rounded-xl"
+                className="max-h-[2rem] max-w-[2rem] rounded-xl cursor-pointer"
               />
             </div>
           </div>
