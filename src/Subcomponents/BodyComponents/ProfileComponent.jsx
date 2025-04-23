@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import { MdVerified } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
 import { BiSolidSend } from "react-icons/bi";
-import { MdOutlineExpandMore } from "react-icons/md";
 import { GoBellFill } from "react-icons/go";
 import { IoClose } from "react-icons/io5";
+import { IoMdArrowDropup } from "react-icons/io";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const ProfileComponent = () => {
 
@@ -111,12 +112,12 @@ const ProfileComponent = () => {
             </div>
 
             <div className="flex items-center text-[#6eb1f3] text-[0.82rem] font-semibold mt-1">
-              <p className="hover:underline cursor-pointer">2,482 followers</p>
+              <p className="hover:underline cursor-pointer">2,484 followers</p>
               <div className="px-1 text-white">
                 <GoDotFill className="size-[0.4rem]" />
               </div>
               <p className="hover:underline cursor-pointer">
-                2,470 connections
+                2,472 connections
               </p>
             </div>
           </div>
@@ -138,8 +139,12 @@ const ProfileComponent = () => {
               }}
             >
               More
-              <span className="text-[1.2rem] hidden group-hover:block">
-                <MdOutlineExpandMore />
+              <span className="text-[1.2rem]">
+                {selectMore ? (
+                  <IoMdArrowDropup className="block" />
+                ) : (
+                  <IoMdArrowDropdown className="hidden group-hover:block" />
+                )}
               </span>
             </button>
             {/* Selecting More Option Modal */}
