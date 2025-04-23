@@ -7,6 +7,7 @@ import { MdOutlineExpandMore } from "react-icons/md";
 import { GoBellFill } from "react-icons/go";
 
 const ProfileComponent = () => {
+
   return (
     <>
       <div className="bg-[#1b1f23] h-fit w-full rounded-xl mr-2 mt-5 mb-2 pb-1">
@@ -64,9 +65,7 @@ const ProfileComponent = () => {
             </div>
 
             <div className="flex items-center text-[#6eb1f3] text-[0.82rem] font-semibold mt-1">
-              <p className="hover:underline cursor-pointer">
-                2,482 followers
-              </p>
+              <p className="hover:underline cursor-pointer">2,482 followers</p>
               <div className="px-1 text-white">
                 <GoDotFill className="size-[0.4rem]" />
               </div>
