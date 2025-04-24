@@ -188,9 +188,39 @@ const ProfileComponent = () => {
                               <p className="font-semibold">
                                 Elayabarathi's Profile
                               </p>
-                              <p className="text-[#6eb1f3] text-sm hover:underline cursor-pointer">
+                              <p className="text-[#6eb1f3] font-semibold text-sm hover:underline cursor-pointer">
                                 linkedn.com/in/elayabarathi
                               </p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <div className="flex items-center justify-center w-fit h-fit p-1 rounded-sm  text-[#e9e9e9]">
+                              <FaPhone />
+                            </div>
+                            <div className="flex flex-col text-base mx-2">
+                              <p className="font-semibold">Phone</p>
+                              <div className="flex items-center gap-1">
+                                <p className="text-white text-sm hover:underline cursor-pointer">
+                                  +91 98428 52121
+                                </p>
+                                <p className="text-sm text-[#999b9d]">
+                                  (Mobile)
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <div className="flex items-center justify-center w-fit h-fit p-1 rounded-sm  text-[#e9e9e9]">
+                              <FaPhone />
+                            </div>
+                            <div className="flex flex-col text-base mx-2">
+                              <p className="font-semibold">Address</p>
+                              <div className="flex items-center gap-1">
+                                <p className="text-[#6eb1f3] font-semibold text-sm hover:underline cursor-pointer">
+                                  4/352, Pudhur road, Kumaramangalam,
+                                  Tiruchengode, Namakkal, Tamilnadu - 637205.
+                                </p>
+                              </div>
                             </div>
                           </div>
                           <div className="flex items-center gap-2">
