@@ -260,9 +260,7 @@ const ProfileComponent = () => {
                             <div className="flex flex-col text-base mx-2">
                               <p className="font-semibold">Birthday</p>
                               <div className="flex items-center gap-1">
-                                <a
-                                  className="text-white text-sm"
-                                >
+                                <a className="text-white text-sm">
                                   January 28 2003
                                 </a>
                               </div>
@@ -275,9 +273,7 @@ const ProfileComponent = () => {
                             <div className="flex flex-col text-base mx-2">
                               <p className="font-semibold">Connected</p>
                               <div className="flex items-center gap-1">
-                                <a
-                                  className="text-sm text-white"
-                                >
+                                <a className="text-sm text-white">
                                   January 25 2023
                                 </a>
                               </div>
@@ -375,15 +371,26 @@ const ProfileComponent = () => {
 
         {/* Open to Work Section */}
         <div className=" flex">
-          <div className="bg-[#38434f] py-2 px-3 ml-5 mr-2 rounded-xl text-white text-sm my-6 w-1/2">
-            <p className="font-semibold">Open to work</p>
-            <p className="pt-1">
-              Microbiologist, Biotechnologist, Biological Technician, Video
-              Editor and Computer Technician roles
-            </p>
-            <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline pt-1 w-fit">
-              Show details
-            </p>
+          <div className=" ml-5 rounded-xl text-white text-sm my-6 w-1/2 flex">
+            <div className="bg-[#38434f] rounded-xl p-4 w-full mr-1 relative h-40">
+              <p className="font-semibold">Open to work</p>
+              <p className="pt-1 line-clamp-4 overflow-hidden text-ellipsis">
+                Microbiologist, Biotechnologist, Biological Technician, Video
+                Editor and Computer Technician roles
+              </p>
+              <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline pt-1 w-fit absolute bottom-4">
+                Show details
+              </p>
+            </div>
+            <div className="bg-[#38434f] rounded-xl p-4 w-full ml-1 relative">
+              <p className="font-semibold">Open to volunteering</p>
+              <p className="pt-1 line-clamp-4 overflow-hidden text-ellipsis">
+                Arts and Culture, Science and Technology, Social Services
+              </p>
+              <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline pt-1 w-fit absolute bottom-4">
+                Show details
+              </p>
+            </div>
           </div>
           <div className="border border-[#38434f] py-2 px-3 mr-5 ml-2 rounded-xl text-white text-sm my-6 w-1/2">
             <div className="flex items-center justify-between">
