@@ -372,9 +372,9 @@ const ProfileComponent = () => {
         {/* Open to Work Section */}
         <div className=" flex">
           <div className=" ml-5 rounded-xl text-white text-sm my-6 w-1/2 flex">
-            <div className="bg-[#38434f] rounded-xl p-4 w-full mr-1 relative h-40">
+            <div className="bg-[#38434f] rounded-xl p-4 w-full mr-1 relative h-42">
               <p className="font-semibold">Open to work</p>
-              <p className="pt-1 line-clamp-4 overflow-hidden text-ellipsis">
+              <p className="pt-2 line-clamp-4 overflow-hidden text-ellipsis">
                 Microbiologist, Biotechnologist, Biological Technician, Video
                 Editor and Computer Technician roles
               </p>
@@ -384,7 +384,7 @@ const ProfileComponent = () => {
             </div>
             <div className="bg-[#38434f] rounded-xl p-4 w-full ml-1 relative">
               <p className="font-semibold">Open to volunteering</p>
-              <p className="pt-1 line-clamp-4 overflow-hidden text-ellipsis">
+              <p className="pt-2 line-clamp-3 overflow-hidden text-ellipsis">
                 Arts and Culture, Science and Technology, Social Services
               </p>
               <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline pt-1 w-fit absolute bottom-4">

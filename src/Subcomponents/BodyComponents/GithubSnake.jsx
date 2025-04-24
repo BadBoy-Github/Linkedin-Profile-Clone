@@ -50,11 +50,11 @@ const GitHubSnake = ({ username = "BadBoy-Github" }) => {
         />
       </picture>
 
-      <div className="bg-red-400 mt-2 flex justify-between items-center">
-        <div className="text-xs bg-green-400 px-2 rounded-full flex justify-center items-center">
-          33 repos
+      <div className=" mt-2 flex justify-between items-center">
+        <div className=" bg-green-500  px-2 py-1 rounded-full flex justify-center items-center ">
+          <p className="text-xs text-[#1b1f23] font-bold">33 repos</p>
         </div>
-        <div className="text-xs">@BadBoy-Github</div>
+        <p className="text-xs text-green-500">@BadBoy-Github</p>
       </div>
     </div>
   );
