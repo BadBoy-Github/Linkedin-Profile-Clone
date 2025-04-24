@@ -44,11 +44,11 @@ const ProfileComponent = () => {
   const openContactInfo = () => {
     setIsContactInfoOpen(true);
     document.body.classList.add("overflow-hidden");
-  }
+  };
   const closeContactInfo = () => {
     setIsContactInfoOpen(false);
     document.body.classList.remove("overflow-hidden");
-  }
+  };
 
   return (
     <>
@@ -181,8 +181,10 @@ const ProfileComponent = () => {
                           </div>
                         </div>
                       </div>
-                      <div className=" flex flex-col gap-2 my-2 p-4 w-full ">
-                        <h1 className="text-xl font-semibold">Contact Info</h1>
+                      <div className=" flex flex-col gap-2 mb-2 p-4 w-full ">
+                        <h1 className="text-xl font-semibold pb-1">
+                          Contact Info
+                        </h1>
                         <div className="flex flex-col gap-3 ">
                           <div className="flex items-center gap-4">
                             <div className="flex items-center justify-center w-fit h-fit p-1 rounded-sm text-[#1b1f23] bg-[#e9e9e9]">
@@ -204,7 +206,7 @@ const ProfileComponent = () => {
                             <div className="flex flex-col text-base mx-2">
                               <p className="font-semibold">Phone</p>
                               <div className="flex items-center gap-1">
-                                <p className="text-white text-sm hover:underline cursor-pointer">
+                                <p className="text-white text-sm ">
                                   +91 98428 52121
                                 </p>
                                 <p className="text-sm text-[#999b9d]">
@@ -220,7 +222,15 @@ const ProfileComponent = () => {
                             <div className="flex flex-col text-base mx-2">
                               <p className="font-semibold">Address</p>
                               <div className="flex items-center gap-1">
-                                <p className="text-[#6eb1f3] font-semibold text-sm hover:underline cursor-pointer">
+                                <p
+                                  className="text-[#6eb1f3] font-semibold text-sm hover:underline cursor-pointer"
+                                  onClick={() => {
+                                    window.open(
+                                      "https://www.google.com/maps/place//@11.3682272,77.9304153,17.75z?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D",
+                                      "_blank"
+                                    );
+                                  }}
+                                >
                                   4/352, Pudhur road, Kumaramangalam,
                                   Tiruchengode, Namakkal, Tamilnadu - 637205.
                                 </p>
@@ -234,9 +244,42 @@ const ProfileComponent = () => {
                             <div className="flex flex-col text-base mx-2">
                               <p className="font-semibold">Email</p>
                               <div className="flex items-center gap-1">
-                                <p className="text-[#6eb1f3] font-semibold text-sm hover:underline cursor-pointer">
+                                <a
+                                  href="mailto:elayabarathimv@gmail.com"
+                                  className="text-[#6eb1f3] font-semibold text-sm hover:underline cursor-pointer"
+                                >
                                   elayabarathimv@gmail.com
-                                </p>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-4">
+                            <div className="flex items-center justify-center w-fit h-fit p-1 rounded-sm  text-[#e9e9e9]">
+                              <IoMailOpen className="size-[1.2rem]" />
+                            </div>
+                            <div className="flex flex-col text-base mx-2">
+                              <p className="font-semibold">Birthday</p>
+                              <div className="flex items-center gap-1">
+                                <a
+                                  className="text-white text-sm"
+                                >
+                                  January 28 2003
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-4">
+                            <div className="flex items-center justify-center w-fit h-fit p-1 rounded-sm  text-[#e9e9e9]">
+                              <IoMailOpen className="size-[1.2rem]" />
+                            </div>
+                            <div className="flex flex-col text-base mx-2">
+                              <p className="font-semibold">Connected</p>
+                              <div className="flex items-center gap-1">
+                                <a
+                                  className="text-sm text-white"
+                                >
+                                  January 25 2023
+                                </a>
                               </div>
                             </div>
                           </div>
