@@ -17,6 +17,8 @@ import { FcAbout } from "react-icons/fc";
 import { RiFlagFill } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
+import { IoMailOpen } from "react-icons/io5";
 
 const ProfileComponent = () => {
   // Function to handle the click event on the banner image
@@ -180,9 +182,9 @@ const ProfileComponent = () => {
                       <div className=" flex flex-col gap-2 my-2 p-4 w-full ">
                         <h1 className="text-xl font-semibold">Contact Info</h1>
                         <div className="flex flex-col gap-3 ">
-                          <div className="flex items-center gap-2">
+                          <div className="flex items-center gap-4">
                             <div className="flex items-center justify-center w-fit h-fit p-1 rounded-sm text-[#1b1f23] bg-[#e9e9e9]">
-                              <FaLinkedinIn />
+                              <FaLinkedinIn className="size-[1.2rem]" />
                             </div>
                             <div className="flex flex-col text-base mx-2">
                               <p className="font-semibold">
@@ -193,9 +195,9 @@ const ProfileComponent = () => {
                               </p>
                             </div>
                           </div>
-                          <div className="flex items-center gap-2">
+                          <div className="flex items-center gap-4">
                             <div className="flex items-center justify-center w-fit h-fit p-1 rounded-sm  text-[#e9e9e9]">
-                              <FaPhone />
+                              <FaPhone className="size-[1.2rem]" />
                             </div>
                             <div className="flex flex-col text-base mx-2">
                               <p className="font-semibold">Phone</p>
@@ -209,9 +211,9 @@ const ProfileComponent = () => {
                               </div>
                             </div>
                           </div>
-                          <div className="flex items-center gap-2">
+                          <div className="flex items-center gap-4">
                             <div className="flex items-center justify-center w-fit h-fit p-1 rounded-sm  text-[#e9e9e9]">
-                              <FaPhone />
+                              <FaLocationDot className="size-[1.2rem]" />
                             </div>
                             <div className="flex flex-col text-base mx-2">
                               <p className="font-semibold">Address</p>
@@ -223,18 +225,15 @@ const ProfileComponent = () => {
                               </div>
                             </div>
                           </div>
-                          <div className="flex items-center gap-2">
+                          <div className="flex items-center gap-4">
                             <div className="flex items-center justify-center w-fit h-fit p-1 rounded-sm  text-[#e9e9e9]">
-                              <FaPhone />
+                              <IoMailOpen className="size-[1.2rem]" />
                             </div>
                             <div className="flex flex-col text-base mx-2">
-                              <p className="font-semibold">Profile</p>
+                              <p className="font-semibold">Email</p>
                               <div className="flex items-center gap-1">
-                                <p className="text-[#6eb1f3] text-sm hover:underline cursor-pointer">
-                                  +91 98428 52121
-                                </p>
-                                <p className="text-sm text-[#999b9d]">
-                                  (Mobile)
+                                <p className="text-[#6eb1f3] font-semibold text-sm hover:underline cursor-pointer">
+                                  elayabarathimv@gmail.com
                                 </p>
                               </div>
                             </div>
