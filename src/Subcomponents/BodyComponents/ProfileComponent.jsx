@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// Import Icons
 import { MdVerified } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
 import { BiSolidSend } from "react-icons/bi";
@@ -19,15 +20,20 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMailOpen } from "react-icons/io5";
-import GitHubSnake from "./GithubSnake";
 import { FaGithub } from "react-icons/fa";
+
+// Import Component
+import GitHubSnake from "./GithubSnake";
 
 const ProfileComponent = () => {
   // Function to handle the click event on the banner image
   const [selectedImage, setSelectedImage] = useState(null);
+  // Function to handle the click event on the more button
   const [selectMore, setSelectMore] = useState(false);
+  // Function to handle the click event on the contact info button
   const [isContactInfoOpen, setIsContactInfoOpen] = useState(false);
 
+  // Function to handle the click event on the banner image
   const openImage = (imgUrl) => {
     setSelectedImage(imgUrl);
     document.body.classList.add("overflow-hidden");
@@ -37,10 +43,12 @@ const ProfileComponent = () => {
     document.body.classList.remove("overflow-hidden");
   };
 
+  // Function to handle the click event on the more button
   const toggleMore = () => {
     setSelectMore((prev) => !prev);
   };
 
+  // Function to handle the click event on the contact info button
   const openContactInfo = () => {
     setIsContactInfoOpen(true);
     document.body.classList.add("overflow-hidden");
