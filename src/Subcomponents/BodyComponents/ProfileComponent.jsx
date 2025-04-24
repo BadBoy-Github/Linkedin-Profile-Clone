@@ -15,6 +15,8 @@ import { FaCodePullRequest } from "react-icons/fa6";
 import { FaSave } from "react-icons/fa";
 import { FcAbout } from "react-icons/fc";
 import { RiFlagFill } from "react-icons/ri";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa6";
 
 const ProfileComponent = () => {
   // Function to handle the click event on the banner image
@@ -35,8 +37,14 @@ const ProfileComponent = () => {
     setSelectMore((prev) => !prev);
   };
 
-  const openContactInfo = () => setIsContactInfoOpen(true);
-  const closeContactInfo = () => setIsContactInfoOpen(false);
+  const openContactInfo = () => {
+    setIsContactInfoOpen(true);
+    document.body.classList.add("overflow-hidden");
+  }
+  const closeContactInfo = () => {
+    setIsContactInfoOpen(false);
+    document.body.classList.remove("overflow-hidden");
+  }
 
   return (
     <>
@@ -117,7 +125,7 @@ const ProfileComponent = () => {
                   <GoDotFill className="size-[0.4rem]" />
                 </div>
                 <p
-                  className="text-[#6eb1f3] font-bold hover:underline cursor-pointer"
+                  className="text-[#6eb1f3] font-bold hover:underline active:underline cursor-pointer"
                   onClick={() => {
                     openContactInfo();
                   }}
@@ -139,16 +147,16 @@ const ProfileComponent = () => {
                   <div className="bg-[#1b1f23] flex p-4 rounded-lg border border-[#373a3d] mt-10 relative w-lg">
                     <div className=" w-full">
                       <div className="flex items-center justify-start p-2">
-                        <h1 className="font-bold text-lg">Elayabarathi M V</h1>
+                        <h1 className="font-bold text-xl">Elayabarathi M V</h1>
                       </div>
-                      <div className="flex flex-col w-full gap-2 mt-2 border border-[#373a3d] rounded-lg p-4">
+                      <div className="flex flex-col w-full gap-2 mt-2 bg-[#293138] rounded-lg p-4">
                         <div className="flex items-center gap-3">
                           <MdVerified className="size-[1.3rem] text-[#6eb1f3]" />
                           <h1 className="font-medium text-lg">
                             Verified phone number
                           </h1>
                         </div>
-                        <div className="flex items-center">
+                        <div className="flex items-center ml-2">
                           <div className="flex items-baseline">
                             <span>
                               A phone number associated with this account has
@@ -166,6 +174,40 @@ const ProfileComponent = () => {
                               </span>
                               .
                             </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className=" flex flex-col gap-2 my-2 p-4 w-full ">
+                        <h1 className="text-xl font-semibold">Contact Info</h1>
+                        <div className="flex flex-col gap-3 ">
+                          <div className="flex items-center gap-2">
+                            <div className="flex items-center justify-center w-fit h-fit p-1 rounded-sm text-[#1b1f23] bg-[#e9e9e9]">
+                              <FaLinkedinIn />
+                            </div>
+                            <div className="flex flex-col text-base mx-2">
+                              <p className="font-semibold">
+                                Elayabarathi's Profile
+                              </p>
+                              <p className="text-[#6eb1f3] text-sm hover:underline cursor-pointer">
+                                linkedn.com/in/elayabarathi
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <div className="flex items-center justify-center w-fit h-fit p-1 rounded-sm  text-[#e9e9e9]">
+                              <FaPhone />
+                            </div>
+                            <div className="flex flex-col text-base mx-2">
+                              <p className="font-semibold">Profile</p>
+                              <div className="flex items-center gap-1">
+                                <p className="text-[#6eb1f3] text-sm hover:underline cursor-pointer">
+                                  +91 98428 52121
+                                </p>
+                                <p className="text-sm text-[#999b9d]">
+                                  (Mobile)
+                                </p>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
