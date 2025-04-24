@@ -25,10 +25,7 @@ const GitHubSnake = ({ username = "BadBoy-Github" }) => {
   }, [darkMode, username]);
 
   return (
-    <div
-      className="github-snake-container"
-      style={{ width: "100%", maxWidth: "800px", margin: "0 auto" }}
-    >
+    <div className="w-full ">
       <picture>
         <source
           media="(prefers-color-scheme: dark)"
@@ -49,13 +46,6 @@ const GitHubSnake = ({ username = "BadBoy-Github" }) => {
           }}
         />
       </picture>
-
-      <div className=" mt-2 flex justify-between items-center">
-        <div className=" bg-green-500  px-2 py-1 rounded-full flex justify-center items-center ">
-          <p className="text-xs text-[#1b1f23] font-bold">33 repos</p>
-        </div>
-        <p className="text-xs text-green-500">@BadBoy-Github</p>
-      </div>
     </div>
   );
 };

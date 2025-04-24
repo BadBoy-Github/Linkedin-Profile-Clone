@@ -378,9 +378,9 @@ const ProfileComponent = () => {
         </div>
 
         {/* Open to Work Section */}
-        <div className=" flex">
-          <div className=" ml-5 rounded-xl text-white text-sm my-6 w-1/2 flex">
-            <div className="bg-[#38434f] rounded-xl p-4 w-full mr-1 relative h-42">
+        <div className=" flex  my-6 w-full h-fit">
+          <div className=" ml-5 rounded-xl text-white text-sm  w-1/2 flex h-42">
+            <div className="bg-[#38434f] rounded-xl p-4 w-full mr-1 relative  ">
               <p className="font-semibold">Open to work</p>
               <p className="pt-2 line-clamp-4 overflow-hidden text-ellipsis">
                 Microbiologist, Biotechnologist, Biological Technician, Video
@@ -400,8 +400,8 @@ const ProfileComponent = () => {
               </p>
             </div>
           </div>
-          <div className="border border-[#38434f] py-2 px-3 mr-5 ml-2 rounded-xl text-white text-sm my-6 w-1/2">
-            <div className="flex items-center justify-between">
+          <div className="border border-[#38434f] py-2 px-3 mr-5 ml-2 rounded-xl text-white text-sm w-1/2 h-42">
+            <div className="flex items-center justify-between ">
               <div className="flex items-center gap-1 my-1">
                 <p className="font-semiboldr">GitHub Profile:</p>
                 <p
@@ -418,12 +418,28 @@ const ProfileComponent = () => {
               </div>
             </div>
             <div
-              className="w-full h-full"
+              className="w-full h-[80%] cursor-wait relative"
               onClick={() => {
                 window.open("https://github.com/BadBoy-Github", "_blank");
               }}
             >
               <GitHubSnake />
+              <div className="flex justify-between items-center absolute bottom-0 left-0 right-0">
+                <div className=" bg-[#6eb1f3]  px-2 py-1 rounded-full flex justify-center items-center">
+                  <p
+                    className="text-xs text-[#1b1f23] font-bold cursor-pointer "
+                    onClick={() => {
+                      window.open(
+                        "https://github.com/BadBoy-Github?tab=repositories",
+                        "_blank"
+                      );
+                    }}
+                  >
+                    33 repos
+                  </p>
+                </div>
+                <p className="text-xs text-[#6eb1f3]">@BadBoy-Github</p>
+              </div>
             </div>
           </div>
         </div>
