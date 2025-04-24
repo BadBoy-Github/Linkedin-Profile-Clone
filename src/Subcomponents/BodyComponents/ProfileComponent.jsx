@@ -20,6 +20,7 @@ const ProfileComponent = () => {
   // Function to handle the click event on the banner image
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectMore, setSelectMore] = useState(false);
+  const [isContactInfoOpen, setIsContactInfoOpen] = useState(false);
 
   const openImage = (imgUrl) => {
     setSelectedImage(imgUrl);
@@ -33,6 +34,9 @@ const ProfileComponent = () => {
   const toggleMore = () => {
     setSelectMore((prev) => !prev);
   };
+
+  const openContactInfo = () => setIsContactInfoOpen(true);
+  const closeContactInfo = () => setIsContactInfoOpen(false);
 
   return (
     <>
@@ -65,12 +69,12 @@ const ProfileComponent = () => {
               className="relative w-fit"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="bg-black flex items-center justify-center p-4 rounded-lg border border-[#373a3d] mt-6 relative">
+              <div className="bg-black flex items-center justify-center p-4 rounded-lg border border-[#373a3d] mt-10 relative">
                 <div className="">
                   <img
                     src={selectedImage}
                     alt="Selected Linkedin Banner Image"
-                    className=" max-h-[40vh] rounded-xl"
+                    className=" max-h-[40vh] max-w-[120vh] rounded-xl"
                   />
                 </div>
                 <div
@@ -112,11 +116,70 @@ const ProfileComponent = () => {
                 <div className="px-1">
                   <GoDotFill className="size-[0.4rem]" />
                 </div>
-                <p className="text-[#6eb1f3] font-bold hover:underline cursor-pointer">
+                <p
+                  className="text-[#6eb1f3] font-bold hover:underline cursor-pointer"
+                  onClick={() => {
+                    openContactInfo();
+                  }}
+                >
                   Contact info
                 </p>
               </div>
             </div>
+            {/* Selecting Contact Info Modal */}
+            {isContactInfoOpen && (
+              <div
+                className="fixed inset-0 bg-black/80 z-50 flex items-start justify-center p-4 animate-fadeIn"
+                onClick={closeContactInfo}
+              >
+                <div
+                  className="relative w-fit"
+                  onClick={(e) => e.stopPropagation()} // Prevent click from closing modal
+                >
+                  <div className="bg-[#1b1f23] flex p-4 rounded-lg border border-[#373a3d] mt-10 relative w-lg">
+                    <div className=" w-full">
+                      <div className="flex items-center justify-start p-2">
+                        <h1 className="font-bold text-lg">Elayabarathi M V</h1>
+                      </div>
+                      <div className="flex flex-col w-full gap-2 mt-2 border border-[#373a3d] rounded-lg p-4">
+                        <div className="flex items-center gap-3">
+                          <MdVerified className="size-[1.3rem] text-[#6eb1f3]" />
+                          <h1 className="font-medium text-lg">
+                            Verified phone number
+                          </h1>
+                        </div>
+                        <div className="flex items-center">
+                          <div className="flex items-baseline">
+                            <span>
+                              A phone number associated with this account has
+                              been verified. Learn more about{" "}
+                              <span
+                                onClick={() =>
+                                  window.open(
+                                    "https://example.com/verification",
+                                    "_blank"
+                                  )
+                                }
+                                className="text-[#6eb1f3] hover:underline cursor-pointer font-medium"
+                              >
+                                account verification
+                              </span>
+                              .
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className="absolute bg-[#999b9d] text-[#1b1f23] top-0 right-0 cursor-pointer m-3 p-1 rounded-full"
+                      onClick={closeContactInfo}
+                    >
+                      <IoClose className="size-[1.2rem]" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
 
             <div className="flex items-center text-[#6eb1f3] text-[0.82rem] font-semibold mt-1">
               <p className="hover:underline cursor-pointer">2,484 followers</p>
