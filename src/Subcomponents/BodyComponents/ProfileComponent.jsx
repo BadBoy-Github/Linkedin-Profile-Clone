@@ -19,6 +19,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMailOpen } from "react-icons/io5";
+import GitHubSnake from "./GithubSnake";
 
 const ProfileComponent = () => {
   // Function to handle the click event on the banner image
@@ -166,7 +167,7 @@ const ProfileComponent = () => {
                               <span
                                 onClick={() =>
                                   window.open(
-                                    "https://example.com/verification",
+                                    "https://www.linkedin.com/help/linkedin/answer/a1337715/",
                                     "_blank"
                                   )
                                 }
@@ -340,15 +341,23 @@ const ProfileComponent = () => {
               Show details
             </p>
           </div>
-          <div className="bg-[#38434f] py-2 px-3 mr-5 ml-2 rounded-xl text-white text-sm my-6 w-1/2">
-            <p className="font-semibold">Expert Services</p>
-            <p className="pt-1">
-              Frontend Website Development, Logo Designer, Video Editor, CAD
-              Designer
-            </p>
-            <p className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline pt-1 w-fit">
-              Show details
-            </p>
+          <div className="border border-[#38434f] py-2 px-3 mr-5 ml-2 rounded-xl text-white text-sm my-6 w-1/2">
+            <div className="flex items-center gap-1">
+              <p className="font-semibold">GitHub Profile:</p>
+              <p
+                className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline]"
+                onClick={() => {
+                  window.open("https://github.com/BadBoy-Github", "_blank");
+                }}
+              >
+                BadBoy-Github
+              </p>
+            </div>
+            <div className="w-full h-full" onClick={() => {
+              window.open("https://github.com/BadBoy-Github", "_blank");
+            }}>
+              <GitHubSnake />
+            </div>
           </div>
         </div>
       </div>
