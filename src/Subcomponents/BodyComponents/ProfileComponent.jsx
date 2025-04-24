@@ -21,6 +21,8 @@ import { FaPhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMailOpen } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
+import { FaBirthdayCake } from "react-icons/fa";
+import { HiUserGroup } from "react-icons/hi";
 
 // Import Component
 import GitHubSnake from "./GithubSnake";
@@ -263,7 +265,7 @@ const ProfileComponent = () => {
                           </div>
                           <div className="flex items-center gap-4">
                             <div className="flex items-center justify-center w-fit h-fit p-1 rounded-sm  text-[#e9e9e9]">
-                              <IoMailOpen className="size-[1.2rem]" />
+                              <FaBirthdayCake className="size-[1.2rem]" />
                             </div>
                             <div className="flex flex-col text-base mx-2">
                               <p className="font-semibold">Birthday</p>
@@ -276,7 +278,7 @@ const ProfileComponent = () => {
                           </div>
                           <div className="flex items-center gap-4">
                             <div className="flex items-center justify-center w-fit h-fit p-1 rounded-sm  text-[#e9e9e9]">
-                              <IoMailOpen className="size-[1.2rem]" />
+                              <HiUserGroup className="size-[1.2rem]" />
                             </div>
                             <div className="flex flex-col text-base mx-2">
                               <p className="font-semibold">Connected</p>
