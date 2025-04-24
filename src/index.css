@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-* {
-    font-family: "Source Sans 3", sans-serif;
-        font-weight: 500;
-}
-
 @layer base {
     body {
         @apply bg-black text-white;
