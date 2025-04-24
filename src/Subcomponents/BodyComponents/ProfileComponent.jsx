@@ -20,6 +20,7 @@ import { FaPhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMailOpen } from "react-icons/io5";
 import GitHubSnake from "./GithubSnake";
+import { FaGithub } from "react-icons/fa";
 
 const ProfileComponent = () => {
   // Function to handle the click event on the banner image
@@ -342,20 +343,28 @@ const ProfileComponent = () => {
             </p>
           </div>
           <div className="border border-[#38434f] py-2 px-3 mr-5 ml-2 rounded-xl text-white text-sm my-6 w-1/2">
-            <div className="flex items-center gap-1">
-              <p className="font-semibold">GitHub Profile:</p>
-              <p
-                className="text-[#6eb1f3] font-semibold cursor-pointer hover:underline]"
-                onClick={() => {
-                  window.open("https://github.com/BadBoy-Github", "_blank");
-                }}
-              >
-                BadBoy-Github
-              </p>
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-1 my-1">
+                <p className="font-semiboldr">GitHub Profile:</p>
+                <p
+                  className="text-[#6eb1f3] font-semibold hover:underline cursor-pointer ]"
+                  onClick={() => {
+                    window.open("https://github.com/BadBoy-Github", "_blank");
+                  }}
+                >
+                  BadBoy-Github
+                </p>
+              </div>
+              <div className="bg-[#1b1f23] text-white">
+                <FaGithub className="size-[1rem]" />
+              </div>
             </div>
-            <div className="w-full h-full" onClick={() => {
-              window.open("https://github.com/BadBoy-Github", "_blank");
-            }}>
+            <div
+              className="w-full h-full"
+              onClick={() => {
+                window.open("https://github.com/BadBoy-Github", "_blank");
+              }}
+            >
               <GitHubSnake />
             </div>
           </div>
