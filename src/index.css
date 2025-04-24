@@ -1,14 +1,13 @@
 @import "tailwindcss";
 
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
+        font-weight: 500;
 }
 
 @layer base {
     body {
         @apply bg-black text-white;
-        /* Set default background to black and text to white */
-        /* Add other base styles if needed */
     }
 }
 
