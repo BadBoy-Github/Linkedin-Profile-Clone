@@ -12,7 +12,6 @@ const FeaturedComponent = () => {
         </div>
 
         <div className="flex justify-between items-center w-full h-[36vh]">
-          
           <div className="w-full h-[36vh] ml-4 mr-2 group relative">
             <div className="h-full w-full border border-[#38434f] rounded-xl overflow-hidden flex flex-col">
               {/* Link badge - moved outside other containers */}
@@ -30,7 +29,7 @@ const FeaturedComponent = () => {
               </div>
 
               {/* Text and info container */}
-              <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[180px]">
+              <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[160px]">
                 {/* Moving text */}
                 <div className="px-4 pt-2 transition-transform duration-300">
                   <p className="text-base font-semibold text-white">
@@ -44,7 +43,12 @@ const FeaturedComponent = () => {
                   <p className="text-sm text-[#999b9d]">
                     Explore my open-source projects and contributions.
                   </p>
-                  <button className="mt-2 text-white text-sm bg-[#38434f] hover:bg-[#475569] px-3 py-1 rounded-md">
+                  <button
+                    className="mt-2 text-white text-sm bg-[#38434f] hover:bg-[#475569] px-3 py-1 rounded-md cursor-pointer"
+                    onClick={() => {
+                      window.open("https://github.com/BadBoy-Github", "_blank");
+                    }}
+                  >
                     Visit Profile
                   </button>
                 </div>
@@ -69,7 +73,7 @@ const FeaturedComponent = () => {
               </div>
 
               {/* Text and info container */}
-              <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[180px]">
+              <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[160px]">
                 {/* Moving text */}
                 <div className="px-4 pt-2 transition-transform duration-300">
                   <p className="text-base font-semibold text-white">
@@ -85,7 +89,13 @@ const FeaturedComponent = () => {
                   <p className="text-sm text-[#999b9d]">
                     Explore my open-source projects and contributions.
                   </p>
-                  <button className="mt-2 text-white text-sm bg-[#38434f] hover:bg-[#475569] px-3 py-1 rounded-md">
+                  <button className="mt-2 text-white text-sm bg-[#38434f] hover:bg-[#475569] px-3 py-1 rounded-md cursor-pointer"
+                  onClick={() => {
+                    window.open(
+                      "https://www.geeksforgeeks.org/user/elayabarathimv/",
+                      "_blank"
+                    );
+                  }}>
                     Visit Profile
                   </button>
                 </div>
@@ -97,7 +107,7 @@ const FeaturedComponent = () => {
             <div className="h-full w-full border border-[#38434f] rounded-xl overflow-hidden flex flex-col">
               {/* Link badge */}
               <div className="bg-[#38434f] shadow-2xl rounded-full absolute flex justify-center items-center px-2 py-0.5 top-2 left-2 z-20">
-                <p className="text-xs text-white">Link</p>
+                <p className="text-xs text-white">Post</p>
               </div>
 
               {/* Reaction buttons - moved to image container with higher z-index */}
@@ -122,7 +132,7 @@ const FeaturedComponent = () => {
               </div>
 
               {/* Text and info container */}
-              <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[180px]">
+              <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[160px]">
                 {/* Moving text */}
                 <div className="px-4 pt-2 transition-transform duration-300">
                   <p className="text-base font-semibold text-white">
@@ -138,8 +148,8 @@ const FeaturedComponent = () => {
                   <p className="text-sm text-[#999b9d]">
                     Explore my open-source projects and contributions.
                   </p>
-                  <button className="mt-2 text-white text-sm bg-[#38434f] hover:bg-[#475569] px-3 py-1 rounded-md">
-                    Visit Profile
+                  <button className="mt-2 text-white text-sm bg-[#38434f] hover:bg-[#475569] px-3 py-1 rounded-md cursor-pointer">
+                    View Post
                   </button>
                 </div>
               </div>
