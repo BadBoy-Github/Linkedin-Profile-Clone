@@ -1,8 +1,7 @@
 import React from "react";
 
 // React Icons
-import { AiFillLike } from "react-icons/ai";
-import { FaHandsClapping } from "react-icons/fa6";
+import { MdEmojiEmotions } from "react-icons/md";
 
 const FeaturedComponent = () => {
   return (
@@ -11,7 +10,9 @@ const FeaturedComponent = () => {
         <div className="text-white px-5">
           <h1 className="font-semibold text-[1.2rem]">Featured</h1>
         </div>
+
         <div className="flex justify-between items-center w-full h-[36vh]">
+          
           <div className="w-full h-[36vh] ml-4 mr-2 group relative">
             <div className="h-full w-full border border-[#38434f] rounded-xl overflow-hidden flex flex-col">
               {/* Link badge - moved outside other containers */}
@@ -29,7 +30,7 @@ const FeaturedComponent = () => {
               </div>
 
               {/* Text and info container */}
-              <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[160px]">
+              <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[180px]">
                 {/* Moving text */}
                 <div className="px-4 pt-2 transition-transform duration-300">
                   <p className="text-base font-semibold text-white">
@@ -39,7 +40,7 @@ const FeaturedComponent = () => {
                 </div>
 
                 {/* Hidden info that appears */}
-                <div className="px-4 py-2 opacity-0 transition-opacity duration-300 delay-100 group-hover:opacity-100">
+                <div className="px-4 py-2 opacity-0 transition-opacity duration-300 delay-100 group-hover:opacity-100 ">
                   <p className="text-sm text-[#999b9d]">
                     Explore my open-source projects and contributions.
                   </p>
@@ -50,6 +51,7 @@ const FeaturedComponent = () => {
               </div>
             </div>
           </div>
+
           <div className="w-full h-[36vh] ml-4 mr-2 group relative">
             <div className="h-full w-full border border-[#38434f] rounded-xl overflow-hidden flex flex-col">
               {/* Link badge - moved outside other containers */}
@@ -67,7 +69,7 @@ const FeaturedComponent = () => {
               </div>
 
               {/* Text and info container */}
-              <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[160px]">
+              <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[180px]">
                 {/* Moving text */}
                 <div className="px-4 pt-2 transition-transform duration-300">
                   <p className="text-base font-semibold text-white">
@@ -90,11 +92,24 @@ const FeaturedComponent = () => {
               </div>
             </div>
           </div>
+
           <div className="w-full h-[36vh] ml-4 mr-2 group relative">
             <div className="h-full w-full border border-[#38434f] rounded-xl overflow-hidden flex flex-col">
-              {/* Link badge - moved outside other containers */}
+              {/* Link badge */}
               <div className="bg-[#38434f] shadow-2xl rounded-full absolute flex justify-center items-center px-2 py-0.5 top-2 left-2 z-20">
                 <p className="text-xs text-white">Link</p>
+              </div>
+
+              {/* Reaction buttons - moved to image container with higher z-index */}
+              <div className="absolute top-2 right-0 z-20 flex items-center space-x-2 px-2 ">
+                <div className="bg-[#38434f] shadow-2xl rounded-full flex justify-center items-center px-1 py-0.5 gap-1">
+                  <div className="w-fit h-fit text-sky-400 ">
+                    <MdEmojiEmotions className="size-[1.3rem] bg-black rounded-full p-0.5" />
+                  </div>
+                  <div className="w-5 h-5 p-1 rounded-full bg-black flex items-center justify-center">
+                    <p className="text-[0.5rem] text-white">22</p>
+                  </div>
+                </div>
               </div>
 
               {/* Image with zoom effect */}
@@ -107,23 +122,15 @@ const FeaturedComponent = () => {
               </div>
 
               {/* Text and info container */}
-              <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[160px]">
+              <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[180px]">
                 {/* Moving text */}
                 <div className="px-4 pt-2 transition-transform duration-300">
                   <p className="text-base font-semibold text-white">
-                    LinkedIn 2024 Unwrapped
+                    LinkedIn Unwrapped
                   </p>
-                  <div className="w-full py- relative flex items-center justify-center">
-                    <div className="absolute bottom-2 left-0 w-fit h-fit text-sky-400 rounded-full bg-black">
-                      <AiFillLike className="size-[1.2rem] p-1" />
-                    </div>
-                    <div className="absolute bottom-2 left-6 w-fit h-fit text-green-500 rounded-full bg-black">
-                      <FaHandsClapping className="size-[1.2rem] p-1" />
-                    </div>
-                    <div className="absolute bottom-2 left-12 w-5 h-5 p-1 rounded-full bg-black flex items-center justify-center">
-                      <p className="text-[0.5rem] text-white">33</p>
-                    </div>
-                  </div>
+                  <p className="text-sm text-[#999b9d]">
+                    www.cleve.ai/unwrapped
+                  </p>
                 </div>
 
                 {/* Hidden info that appears */}
