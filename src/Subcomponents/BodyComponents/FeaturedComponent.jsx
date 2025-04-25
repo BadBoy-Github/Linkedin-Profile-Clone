@@ -87,15 +87,17 @@ const FeaturedComponent = () => {
                 {/* Hidden info that appears */}
                 <div className="px-4 py-2 opacity-0 transition-opacity duration-300 delay-100 group-hover:opacity-100">
                   <p className="text-sm text-[#999b9d]">
-                    Explore my open-source projects and contributions.
+                    Dive Into My Coding Journey on GeeksforGeeks
                   </p>
-                  <button className="mt-2 text-white text-sm bg-[#38434f] hover:bg-[#475569] px-3 py-1 rounded-md cursor-pointer"
-                  onClick={() => {
-                    window.open(
-                      "https://www.geeksforgeeks.org/user/elayabarathimv/",
-                      "_blank"
-                    );
-                  }}>
+                  <button
+                    className="mt-2 text-white text-sm bg-[#38434f] hover:bg-[#475569] px-3 py-1 rounded-md cursor-pointer"
+                    onClick={() => {
+                      window.open(
+                        "https://www.geeksforgeeks.org/user/elayabarathimv/",
+                        "_blank"
+                      );
+                    }}
+                  >
                     Visit Profile
                   </button>
                 </div>
@@ -146,7 +148,7 @@ const FeaturedComponent = () => {
                 {/* Hidden info that appears */}
                 <div className="px-4 py-2 opacity-0 transition-opacity duration-300 delay-100 group-hover:opacity-100">
                   <p className="text-sm text-[#999b9d]">
-                    Explore my open-source projects and contributions.
+                    LinkedIn Reflecting on an Incredible 2024!
                   </p>
                   <button className="mt-2 text-white text-sm bg-[#38434f] hover:bg-[#475569] px-3 py-1 rounded-md cursor-pointer">
                     View Post
