@@ -7,35 +7,61 @@ const FeaturedComponent = () => {
         <div className="text-white px-5">
           <h1 className="font-semibold text-[1.2rem]">Featured</h1>
         </div>
-        <div className="flex justify-between items-center w-full h-[36vh] ">
-          <div className="w-full h-full mx-4 ">
-            <div className="h-full w-full border border-[#38434f] rounded-xl relative ">
-              <div className="bg-[#38434f] shadow-2xl rounded-full absolute flex justify-center items-center px-2 py-0.5 top-2 left-2">
-                <p className="text-xs  text-white">Link</p>
+        <div className="flex justify-between items-center w-full h-[36vh]">
+          <div className="w-full h-[36vh] mx-4">
+            <div className="h-full w-full border border-[#38434f] rounded-xl relative overflow-hidden flex flex-col">
+              <div className="bg-[#38434f] shadow-2xl rounded-full absolute flex justify-center items-center px-2 py-0.5 top-2 left-2 z-10">
+                <p className="text-xs text-white">Link</p>
               </div>
-              <div className="w-fit h-fit flex justify-center items-center rounded-t-xl border-b border-[#38434f]">
-                <img src="/img/DP.jpg" alt="" className="rounded-t-xl size-[16rem]" />
+              <div className="flex-1 min-h-0 overflow-hidden">
+                <img
+                  src="/img/DP.jpg"
+                  alt="GitHub Projects"
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
-              <div className="w-full h-full bg-red-400">Hi</div>
-            </div>
-          </div>
-          <div className="w-full h-full mx-4">
-            <div className="h-full w-full border border-[#38434f] rounded-xl relative">
-              <div className="bg-[#38434f] shadow-2xl rounded-full absolute flex justify-center items-center px-2 py-0.5 top-2 left-2">
-                <p className="text-xs  text-white">Link</p>
-              </div>
-              <div className="flex justify-center items-center rounded-t-xl border-b border-[#38434f]">
-                <img src="/img/GFG.jpg" alt="" className="rounded-t-xl" />
+              <div className="w-full p-2">
+                <p className="text-base font-semibold text-white">
+                  Explore My Code & Projects on GitHub
+                </p>
               </div>
             </div>
           </div>
-          <div className="w-full h-full mr-6">
-            <div className="h-full w-full border border-[#38434f] rounded-xl relative">
-              <div className="bg-[#38434f] shadow-2xl rounded-full absolute flex justify-center items-center px-2 py-0.5 top-2 left-2">
-                <p className="text-xs  text-white">Post</p>
+          <div className="w-full h-[36vh] mx-4">
+            <div className="h-full w-full border border-[#38434f] rounded-xl relative overflow-hidden flex flex-col">
+              <div className="bg-[#38434f] shadow-2xl rounded-full absolute flex justify-center items-center px-2 py-0.5 top-2 left-2 z-10">
+                <p className="text-xs text-white">Link</p>
               </div>
-              <div className="flex justify-center items-center rounded-t-xl border-b border-[#38434f]">
-                <img src="/img/LIUW.jpg" alt="" className="rounded-t-xl" />
+              <div className="flex-1 min-h-0 overflow-hidden">
+                <img
+                  src="/img/GFG.jpg"
+                  alt="GFG Profile"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="w-full p-2">
+                <p className="text-base font-semibold text-white">
+                  Dive Into My Coding Joumey on GeeksforGæks
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="w-full h-[36vh] mx-4">
+            <div className="h-full w-full border border-[#38434f] rounded-xl relative overflow-hidden flex flex-col">
+              <div className="bg-[#38434f] shadow-2xl rounded-full absolute flex justify-center items-center px-2 py-0.5 top-2 left-2 z-10">
+                <p className="text-xs text-white">Link</p>
+              </div>
+              <div className="flex-1 min-h-0 overflow-hidden">
+                <img
+                  src="/img/LIUW.jpg"
+                  alt="LinkedIn Profile"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="w-full p-2">
+                <p className="text-base font-semibold text-white">
+                  LinkedIn 2024 Unwrapper
+                </p>
               </div>
             </div>
           </div>
