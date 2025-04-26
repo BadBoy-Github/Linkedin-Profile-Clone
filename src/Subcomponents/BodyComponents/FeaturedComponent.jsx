@@ -38,7 +38,7 @@ const FeaturedComponent = () => {
             imgSrc="/img/LIUW.jpg"
             title="LinkedIn Unwrapped"
             linkName="www.cleve.ai/unwrapped"
-            info="LinkedIn Reflecting on an Incredible 2024!"
+            info="Reflecting on an Incredible 2024!"
             buttonName="View Post"
             buttonLink="#"
           />
