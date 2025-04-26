@@ -5,12 +5,14 @@ import LanguageComponent from "../Subcomponents/SidebarComponents/LanguageCompon
 import OrganizationComponent from "../Subcomponents/SidebarComponents/OrganizationComponent";
 import InterestsComponet from "../Subcomponents/SidebarComponents/InterestsComponent";
 import SkillsComponent from "../Subcomponents/SidebarComponents/SkillsComponent";
+import RecommendationComponent from "../Subcomponents/SidebarComponents/RecommendationCOmponent";
 
 const SideBar = () => {
   return (
     <div>
       <UrlComponent />
       <LanguageComponent />
+      <RecommendationComponent />
       <OrganizationComponent />
       <SkillsComponent />
       <InterestsComponet />
