@@ -2,6 +2,7 @@ import React from "react";
 
 // React Icons
 import { MdEmojiEmotions } from "react-icons/md";
+import FeaturedIndividualComponent from "./FeaturedIndividualComponent";
 
 const FeaturedComponent = () => {
   return (
@@ -12,151 +13,36 @@ const FeaturedComponent = () => {
         </div>
 
         <div className="flex justify-between items-center w-full h-[36vh]">
-          <div className="w-full h-[36vh] ml-4 mr-2 group relative">
-            <div className="h-full w-full border border-[#38434f] rounded-xl overflow-hidden flex flex-col">
-              {/* Link badge - moved outside other containers */}
-              <div className="bg-[#38434f] shadow-2xl rounded-full absolute flex justify-center items-center px-2 py-0.5 top-2 left-2 z-20">
-                <p className="text-xs text-white">Link</p>
-              </div>
+          <FeaturedIndividualComponent
+            topType="Link"
+            imgSrc="/img/DP.jpg"
+            title="GitHub Profile"
+            linkName="www.github.com"
+            info="Explore my open-source projects."
+            buttonName="Visit Profile"
+            buttonLink="https://github.com/BadBoy-Github"
+          />
 
-              {/* Image with zoom effect */}
-              <div className="flex-1 min-h-0 overflow-hidden relative">
-                <img
-                  src="/img/DP.jpg"
-                  alt="GitHub Projects"
-                  className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
+          <FeaturedIndividualComponent
+            topType="Link"
+            imgSrc="/img/GFG.jpg"
+            title="GeeksforGeeks Profile"
+            linkName="www.geeksforgeeks.org"
+            info="Dive Into My Coding Journey."
+            buttonName="Visit Profile"
+            buttonLink="https://www.geeksforgeeks.org/user/elayabarathimv/"
+          />
 
-              {/* Text and info container */}
-              <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[160px]">
-                {/* Moving text */}
-                <div className="px-4 pt-2 transition-transform duration-300">
-                  <p className="text-base font-semibold text-white">
-                    GitHub Profile
-                  </p>
-                  <p className="text-sm text-[#999b9d]">www.github.com</p>
-                </div>
+          <FeaturedIndividualComponent
+            topType="Post"
+            imgSrc="/img/LIUW.jpg"
+            title="LinkedIn Unwrapped"
+            linkName="www.cleve.ai/unwrapped"
+            info="LinkedIn Reflecting on an Incredible 2024!"
+            buttonName="View Post"
+            buttonLink="#"
+          />
 
-                {/* Hidden info that appears */}
-                <div className="px-4 py-2 opacity-0 transition-opacity duration-300 delay-100 group-hover:opacity-100 ">
-                  <p className="text-sm text-[#999b9d]">
-                    Explore my open-source projects and contributions.
-                  </p>
-                  <button
-                    className="mt-2 text-white text-sm bg-[#38434f] hover:bg-[#475569] px-3 py-1 rounded-md cursor-pointer"
-                    onClick={() => {
-                      window.open("https://github.com/BadBoy-Github", "_blank");
-                    }}
-                  >
-                    Visit Profile
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="w-full h-[36vh] ml-4 mr-2 group relative">
-            <div className="h-full w-full border border-[#38434f] rounded-xl overflow-hidden flex flex-col">
-              {/* Link badge - moved outside other containers */}
-              <div className="bg-[#38434f] shadow-2xl rounded-full absolute flex justify-center items-center px-2 py-0.5 top-2 left-2 z-20">
-                <p className="text-xs text-white">Link</p>
-              </div>
-
-              {/* Image with zoom effect */}
-              <div className="flex-1 min-h-0 overflow-hidden relative">
-                <img
-                  src="/img/GFG.jpg"
-                  alt="GeeksforGeeks Projects"
-                  className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-
-              {/* Text and info container */}
-              <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[160px]">
-                {/* Moving text */}
-                <div className="px-4 pt-2 transition-transform duration-300">
-                  <p className="text-base font-semibold text-white">
-                    GeeksforGeeks Profile
-                  </p>
-                  <p className="text-sm text-[#999b9d]">
-                    www.geeksforgeeks.org
-                  </p>
-                </div>
-
-                {/* Hidden info that appears */}
-                <div className="px-4 py-2 opacity-0 transition-opacity duration-300 delay-100 group-hover:opacity-100">
-                  <p className="text-sm text-[#999b9d]">
-                    Dive Into My Coding Journey on GeeksforGeeks
-                  </p>
-                  <button
-                    className="mt-2 text-white text-sm bg-[#38434f] hover:bg-[#475569] px-3 py-1 rounded-md cursor-pointer"
-                    onClick={() => {
-                      window.open(
-                        "https://www.geeksforgeeks.org/user/elayabarathimv/",
-                        "_blank"
-                      );
-                    }}
-                  >
-                    Visit Profile
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="w-full h-[36vh] ml-4 mr-2 group relative">
-            <div className="h-full w-full border border-[#38434f] rounded-xl overflow-hidden flex flex-col">
-              {/* Link badge */}
-              <div className="bg-[#38434f] shadow-2xl rounded-full absolute flex justify-center items-center px-2 py-0.5 top-2 left-2 z-20">
-                <p className="text-xs text-white">Post</p>
-              </div>
-
-              {/* Reaction buttons - moved to image container with higher z-index */}
-              <div className="absolute top-2 right-0 z-20 flex items-center space-x-2 px-2 ">
-                <div className="bg-[#38434f] shadow-2xl rounded-full flex justify-center items-center px-1 py-0.5 gap-1">
-                  <div className="w-fit h-fit text-sky-400 ">
-                    <MdEmojiEmotions className="size-[1.3rem] bg-black rounded-full p-0.5" />
-                  </div>
-                  <div className="w-5 h-5 p-1 rounded-full bg-black flex items-center justify-center">
-                    <p className="text-[0.5rem] text-white">22</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Image with zoom effect */}
-              <div className="flex-1 min-h-0 overflow-hidden relative">
-                <img
-                  src="/img/LIUW.jpg"
-                  alt="Linkedin 2024 Unwrapped"
-                  className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-
-              {/* Text and info container */}
-              <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[160px]">
-                {/* Moving text */}
-                <div className="px-4 pt-2 transition-transform duration-300">
-                  <p className="text-base font-semibold text-white">
-                    LinkedIn Unwrapped
-                  </p>
-                  <p className="text-sm text-[#999b9d]">
-                    www.cleve.ai/unwrapped
-                  </p>
-                </div>
-
-                {/* Hidden info that appears */}
-                <div className="px-4 py-2 opacity-0 transition-opacity duration-300 delay-100 group-hover:opacity-100">
-                  <p className="text-sm text-[#999b9d]">
-                    LinkedIn Reflecting on an Incredible 2024!
-                  </p>
-                  <button className="mt-2 text-white text-sm bg-[#38434f] hover:bg-[#475569] px-3 py-1 rounded-md cursor-pointer">
-                    View Post
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </>
