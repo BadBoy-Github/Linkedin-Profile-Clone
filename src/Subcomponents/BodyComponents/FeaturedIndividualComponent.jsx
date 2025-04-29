@@ -1,10 +1,6 @@
 
 import React from 'react'
 
-// React Icons
-import { MdOutlineMan } from "react-icons/md";
-import { FaGithub } from "react-icons/fa";
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const FeaturedIndividualComponent = ({topType, imgSrc, title, linkName, info, buttonName, buttonLink}) => {
   return (
