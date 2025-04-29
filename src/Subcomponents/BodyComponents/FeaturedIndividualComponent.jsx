@@ -16,12 +16,12 @@ const FeaturedIndividualComponent = ({topType, imgSrc, title, linkName, info, bu
             <img
               src={imgSrc}
               alt="GitHub Projects"
-              className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-125 group-hover:translate-y-[-20%]"
             />
           </div>
 
           {/* Text and info container */}
-          <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[160px]">
+          <div className="relative bg-[#1b1f23] h-[60px] overflow-hidden transition-all duration-300 group-hover:h-[130px]">
             {/* Moving text */}
             <div className="px-4 pt-2 transition-transform duration-300">
               <p className="text-base font-semibold text-white">{title}</p>
