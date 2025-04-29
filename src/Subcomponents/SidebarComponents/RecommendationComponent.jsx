@@ -1,6 +1,10 @@
 
 import React, {useState} from 'react'
 
+// React Icons
+import { FaAngleDoubleDown } from "react-icons/fa";
+import { FaAngleDoubleUp } from "react-icons/fa";
+
 const RecommendationComponent = () => {
 
   const [showFullText, setShowFullText] = useState(false);
@@ -57,7 +61,7 @@ const RecommendationComponent = () => {
                   className="text-blue-400 rounded-full cursor-pointer w-fit text-center absolute bottom-0 right-2 p-2 text-xs font-bold"
                   onClick={() => setShowFullText(!showFullText)}
                 >
-                  {showFullText ? "▲" : "▼"}
+                  {showFullText ? <FaAngleDoubleUp /> : <FaAngleDoubleDown />}
                 </span>
               </div>
             </div>
