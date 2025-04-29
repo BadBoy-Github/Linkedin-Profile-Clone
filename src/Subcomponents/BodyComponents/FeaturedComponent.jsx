@@ -16,8 +16,8 @@ const FeaturedComponent = () => {
           <FeaturedIndividualComponent
             topType="Link"
             imgSrc="/img/Portfolio.jpg"
-            title="My Portfolio"
-            linkName="Elayabarathi M V"
+            title="Elayabarathi M V | Frontend Website Developer Portfolio"
+            linkName=""
             info="Frontend Web Developer."
             buttonName="Visit Portfolio"
             buttonLink="https://portfolio-three-pi-52.vercel.app/"
