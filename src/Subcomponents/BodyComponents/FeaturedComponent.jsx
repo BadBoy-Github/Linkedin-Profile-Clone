@@ -16,9 +16,9 @@ const FeaturedComponent = () => {
           <FeaturedIndividualComponent
             topType="Link"
             imgSrc="/img/Portfolio.jpg"
-            title="Elayabarathi M V | Frontend Website Developer Portfolio"
-            linkName=""
-            info="Frontend Web Developer."
+            title="Elayabarathi M V | Portfolio"
+            linkName="www.elayabarathimv.com"
+            info="My personal portfolio showcasing projects and my technical expertise."
             buttonName="Visit Portfolio"
             buttonLink="https://portfolio-three-pi-52.vercel.app/"
           />
@@ -28,7 +28,7 @@ const FeaturedComponent = () => {
             imgSrc="/img/Github Profile.jpg"
             title="GitHub Profile"
             linkName="www.github.com"
-            info="Explore my open-source projects."
+            info="Check out my GitHub profile to dive into my coding journey and projects!"
             buttonName="Visit Profile"
             buttonLink="https://github.com/BadBoy-Github"
           />
@@ -38,7 +38,7 @@ const FeaturedComponent = () => {
             imgSrc="/img/LIUW.jpg"
             title="LinkedIn Unwrapped"
             linkName="www.cleve.ai/unwrapped"
-            info="Reflecting on an Incredible 2024!"
+            info="Reflecting on an Incredible LinkedIn 2024 Journey!"
             buttonName="View Post"
             buttonLink="#"
           />
