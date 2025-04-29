@@ -15,22 +15,22 @@ const FeaturedComponent = () => {
         <div className="flex justify-between items-center w-full h-[36vh]">
           <FeaturedIndividualComponent
             topType="Link"
+            imgSrc="/img/Portfolio.jpg"
+            title="Portfolio"
+            linkName="www.github.com"
+            info="Explore my open-source projects."
+            buttonName="Visit Profile"
+            buttonLink="https://portfolio-three-pi-52.vercel.app/"
+          />
+
+          <FeaturedIndividualComponent
+            topType="Link"
             imgSrc="/img/DP.jpg"
             title="GitHub Profile"
             linkName="www.github.com"
             info="Explore my open-source projects."
             buttonName="Visit Profile"
             buttonLink="https://github.com/BadBoy-Github"
-          />
-
-          <FeaturedIndividualComponent
-            topType="Link"
-            imgSrc="/img/GFG.jpg"
-            title="GeeksforGeeks Profile"
-            linkName="www.geeksforgeeks.org"
-            info="Dive Into My Coding Journey."
-            buttonName="Visit Profile"
-            buttonLink="https://www.geeksforgeeks.org/user/elayabarathimv/"
           />
 
           <FeaturedIndividualComponent
@@ -42,7 +42,6 @@ const FeaturedComponent = () => {
             buttonName="View Post"
             buttonLink="#"
           />
-
         </div>
       </div>
     </>
