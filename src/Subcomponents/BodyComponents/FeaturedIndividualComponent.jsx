@@ -16,7 +16,7 @@ const FeaturedIndividualComponent = ({topType, imgSrc, title, linkName, info, bu
             <img
               src={imgSrc}
               alt="GitHub Projects"
-              className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-125 group-hover:translate-y-[-20%]"
+              className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-125 group-hover:translate-y-[-10%]"
             />
           </div>
 
