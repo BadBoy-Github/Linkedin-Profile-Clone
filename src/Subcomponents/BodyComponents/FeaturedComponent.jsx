@@ -17,9 +17,9 @@ const FeaturedComponent = () => {
             topType="Link"
             imgSrc="/img/Portfolio.jpg"
             title="My Portfolio"
-            linkName="www.github.com"
-            info="Explore my open-source projects."
-            buttonName="Visit Profile"
+            linkName="Elayabarathi M V"
+            info="Frontend Web Developer."
+            buttonName="Visit Portfolio"
             buttonLink="https://portfolio-three-pi-52.vercel.app/"
           />
 
