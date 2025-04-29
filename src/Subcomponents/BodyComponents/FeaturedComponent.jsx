@@ -25,7 +25,7 @@ const FeaturedComponent = () => {
 
           <FeaturedIndividualComponent
             topType="Link"
-            imgSrc="/img/DP.jpg"
+            imgSrc="/img/Github Profile.jpg"
             title="GitHub Profile"
             linkName="www.github.com"
             info="Explore my open-source projects."
