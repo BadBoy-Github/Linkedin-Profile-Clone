@@ -7,7 +7,7 @@ import FeaturedComponent from "../Subcomponents/BodyComponents/FeaturedComponent
 
 const Body = () => {
   return (
-    <div>
+    <div className="w-212">
       <ProfileComponent />
       <HighlightComponent />
       <AboutComponent />

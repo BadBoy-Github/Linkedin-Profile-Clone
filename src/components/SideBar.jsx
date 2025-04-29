@@ -9,7 +9,7 @@ import RecommendationComponent from "../Subcomponents/SidebarComponents/Recommen
 
 const SideBar = () => {
   return (
-    <div>
+    <div className="w-70">
       <UrlComponent />
       <LanguageComponent />
       <RecommendationComponent />
