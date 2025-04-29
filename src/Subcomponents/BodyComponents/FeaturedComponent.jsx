@@ -20,7 +20,6 @@ const FeaturedComponent = () => {
             linkName="www.elayabarathimv.com"
             info="My personal portfolio showcasing projects and my technical expertise."
             buttonName="Visit Portfolio"
-            buttonIcon="MdOutlineMan"
             buttonLink="https://portfolio-three-pi-52.vercel.app/"
           />
 
@@ -31,7 +30,6 @@ const FeaturedComponent = () => {
             linkName="www.github.com"
             info="Check out my GitHub profile to dive into my coding journey and projects!"
             buttonName="Visit Profile"
-            buttonIcon="FaGithub"
             buttonLink="https://github.com/BadBoy-Github"
           />
 
@@ -42,7 +40,6 @@ const FeaturedComponent = () => {
             linkName="www.cleve.ai/unwrapped"
             info="Reflecting on an Incredible LinkedIn 2024 Journey!"
             buttonName="View Post"
-            buttonIcon="FaArrowUpRightFromSquare"
             buttonLink="#"
           />
         </div>
