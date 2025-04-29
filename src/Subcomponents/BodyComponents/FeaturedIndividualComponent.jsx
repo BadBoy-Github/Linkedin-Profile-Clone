@@ -1,7 +1,12 @@
 
 import React from 'react'
 
-const FeaturedIndividualComponent = ({topType, imgSrc, title, linkName, info, buttonName, buttonLink}) => {
+// React Icons
+import { MdOutlineMan } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+
+const FeaturedIndividualComponent = ({topType, imgSrc, title, linkName, info, buttonName, buttonIcon, buttonLink}) => {
   return (
     <>
       <div className="w-full h-[36vh] ml-4 mr-2 group relative">
