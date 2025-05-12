@@ -5,7 +5,7 @@ import React from 'react'
 const FeaturedIndividualComponent = ({topType, imgSrc, title, linkName, info, buttonName, buttonLink}) => {
   return (
     <>
-      <div className="w-full h-[36vh] ml-4 mr-2 group relative">
+      <div className="w-full h-[36vh] mx-2 group relative">
         <div className="h-full w-full border border-[#38434f] rounded-xl overflow-hidden flex flex-col">
           {/* Link badge - moved outside other containers */}
           <div className="bg-[#1b1f23] border-b border-[#38434f] w-full shadow-2xl flex justify-start items-center px-3 py-1 z-20">
