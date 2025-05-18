@@ -304,12 +304,12 @@ const ProfileComponent = () => {
             )}
 
             <div className="flex items-center text-[#6eb1f3] text-[0.82rem] font-semibold mt-1">
-              <p className="hover:underline cursor-pointer">2,510 followers</p>
+              <p className="hover:underline cursor-pointer">2,540 followers</p>
               <div className="px-1 text-white">
                 <GoDotFill className="size-[0.4rem]" />
               </div>
               <p className="hover:underline cursor-pointer">
-                2,498 connections
+                2,527 connections
               </p>
             </div>
           </div>

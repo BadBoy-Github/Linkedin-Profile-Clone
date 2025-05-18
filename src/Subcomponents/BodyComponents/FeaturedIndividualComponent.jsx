@@ -22,7 +22,7 @@ const FeaturedIndividualComponent = ({topType, imgSrc, title, linkName, info, bu
           </div>
 
           {/* Text and info container */}
-          <div className="relative bg-[#1b1f23] border-t border-[#38434f] h-[70px] overflow-hidden transition-all duration-300 group-hover:h-[160px]">
+          <div className="relative bg-[#1b1f23] border-t border-[#38434f] h-[70px] overflow-hidden transition-all duration-300 group-hover:h-[200px]">
             {/* Moving text */}
             <div className="px-4 pt-2 transition-transform duration-300">
               <p className="text-base font-semibold text-white">{title}</p>
