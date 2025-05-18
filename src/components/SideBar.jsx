@@ -5,7 +5,7 @@ import LanguageComponent from "../Subcomponents/SidebarComponents/LanguageCompon
 import OrganizationComponent from "../Subcomponents/SidebarComponents/OrganizationComponent";
 import InterestsComponet from "../Subcomponents/SidebarComponents/InterestsComponent";
 import SkillsComponent from "../Subcomponents/SidebarComponents/SkillsComponent";
-import RecommendationComponent from "../Subcomponents/SidebarComponents/RecommendationCOmponent";
+import RecommendationComponent from "../Subcomponents/SidebarComponents/RecommendationComponent";
 
 const SideBar = () => {
   return (
