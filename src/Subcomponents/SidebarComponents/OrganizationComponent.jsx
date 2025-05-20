@@ -13,7 +13,7 @@ const OrganizationComponent = () => {
               Organizations
             </h1>
           </div>
-          <div className="mt-4 pr-1">
+          <div className="mt-4 pr-1 border-b border-[#373a3d]">
             <div className="text-white pb-3">
               <h1 className=" font-semibold ">JCI - Erode Galaxy</h1>
               <div className="flex items-center text-[0.84rem] pt-1">
@@ -26,6 +26,22 @@ const OrganizationComponent = () => {
               <p className="text-[0.8rem] text-[#8d8f91] pt-1">
                 Built leadership through community projects, networking with
                 entrepreneurs, and organizing impactful local initiatives.
+              </p>
+            </div>
+          </div>
+          <div className="mt-4 pr-1">
+            <div className="text-white pb-3">
+              <h1 className=" font-semibold ">PMC & PAC Club - KSRCT</h1>
+              <div className="flex items-center text-[0.84rem] pt-1">
+                <p className="">Secretary</p>
+                <div className="px-1">
+                  <GoDotFill className="size-[0.4rem]" />
+                </div>
+                <p>Jun 2022 - May 2024</p>
+              </div>
+              <p className="text-[0.8rem] text-[#8d8f91] pt-1">
+                Led by Dr. K. Syed Zameer Ahmed, empower communities through
+                awareness on health, sustainability, and eco-friendly farming.
               </p>
             </div>
           </div>
