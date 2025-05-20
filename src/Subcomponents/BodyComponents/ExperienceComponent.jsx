@@ -30,7 +30,10 @@ const ExperienceComponent = () => {
             </div>
             <div className="mt-4">
               <div className="">
-                <h1 className="font-semibold text-base">Full Stack Dev Intern</h1>
+                <h1 className="font-semibold text-base">
+                  Full Stack Dev Intern
+                </h1>
+                <p className="text-xs text-[#999b9d]">Internship</p>
               </div>
             </div>
           </div>
