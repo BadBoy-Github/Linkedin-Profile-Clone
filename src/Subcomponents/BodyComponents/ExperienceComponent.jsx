@@ -1,4 +1,4 @@
-import { LiaIndustrySolid } from "react-icons/lia";
+
 
 const ExperienceComponent = () => {
   return (
