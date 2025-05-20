@@ -318,7 +318,7 @@ const ProfileComponent = () => {
         {/* Action Buttons */}
         <div className="mx-5 flex items-center gap-3">
           <button className="group bg-[#6eb1f3] hover:bg-[#4aa1f8] active:bg-[#6eb1f3] transition-colors duration-300 text-[#38434f] rounded-full px-4 py-1 text-base font-semibold flex items-center gap-2 cursor-pointer">
-            <div className="text-[1.2rem] transition-transform duration-300 group-hover:scale-125 group-hover:rotate-[-30deg]">
+            <div className="text-[1.2rem] transition-transform duration-300 group-hover:scale-125 group-hover:rotate-[-10deg] group-hover:animate-pulse">
               <BiSolidSend />
             </div>
             Message
