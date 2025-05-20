@@ -31,7 +31,7 @@ const UrlComponent = () => {
               <div className="flex relative text-[#8d8f91] ">
                 <a
                   href="/"
-                  className="text-[14px] pt-0.5 font-medium hover:text-white hover:underline cursor-pointer"
+                  className="text-[14px] pt-0.5 font-medium hover:text-[#6eb1f3] hover:underline cursor-pointer"
                 >
                   {link}
                 </a>
