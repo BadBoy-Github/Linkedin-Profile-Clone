@@ -1,4 +1,17 @@
+import ExperienceIndividualComponent from "./ExperienceIndividualComponent";
 
+const experience = [
+  {
+    name: "Corizo",
+    position: "Full Stack Dev Intern",
+    worktype: "Remote",
+    category: "Internship",
+    duration: "Nov 2024 - Dec 2024 · 1 month",
+    description:
+      "Completed a comprehensive full stack internship, gaining valuable coding skills!<br></br><br></br> <b>Scope of Internship:</b><br></br>1. Mastered front-end and back-end development techniques.<br></br> 2. Built dynamic web applications from scratch.<br></br>3. Learned industry best practices for coding, debugging, andtesting.<br></br> 4. Worked on real-world projects, enhancing myproblem-solving abilities.<br></br><br></br> Projects Completed:<br></br> 1. Full stack CRUD app with create, read, update, and delete applications user management app.<br></br>2. eCommerce website with all basic features.<br></br><br></br> This internship has been an incredible journey, significantly boosting my knowledge and confidence in the field ofsoftware development. Ready to apply these skills to future projects!",
+    skills: "React JS, Tailwind CSS and +7 skills",
+  },
+];
 
 const ExperienceComponent = () => {
   return (
@@ -7,37 +20,7 @@ const ExperienceComponent = () => {
         <div className="text-white px-5">
           <h1 className="font-semibold text-[1.2rem]">Experience</h1>
         </div>
-
-        <div className="text-white px-5 text-[0.94rem] pt-4 pb-12 w-full flex">
-          <div className="w-1/8 p-1">
-            <div className="">
-              <img
-                src="/img/Experience/corizo.jpg"
-                alt="Corizo Logo"
-                className="size-14 rounded-xl"
-              />
-            </div>
-          </div>
-          <div className="w-7/8 p-1">
-            <div className="flex flex-col">
-              <h1 className="font-semibold text-lg">Corizo</h1>
-              <div className="flex gap-2 items-center">
-                <p className="text-sm flex">2 Months</p>
-                <div className="bg-[#38434f] px-1 py-0.5 rounded-xl text-[0.6rem] flex justify-center items-center">
-                  <p className="">Remote</p>
-                </div>
-              </div>
-            </div>
-            <div className="mt-4">
-              <div className="">
-                <h1 className="font-semibold text-base">
-                  Full Stack Dev Intern
-                </h1>
-                <p className="text-xs text-[#999b9d]">Internship</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ExperienceIndividualComponent />
       </div>
     </>
   );
