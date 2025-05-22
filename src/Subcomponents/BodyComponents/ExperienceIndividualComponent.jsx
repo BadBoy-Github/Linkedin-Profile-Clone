@@ -2,7 +2,6 @@ import { GiCutDiamond } from "react-icons/gi";
 import { useState } from "react";
 
 
-
 const ExperienceIndividualComponent = ({
   imgSrc,
   name,
@@ -23,7 +22,7 @@ const ExperienceIndividualComponent = ({
 
   return (
     <>
-      <div className="text-white px-5 text-[0.94rem] pt-4 pb-6 w-full flex">
+      <div className="text-white px-5 text-[0.94rem] pt-4 pb-4 w-full flex">
         <div className="w-1/10 p-1">
           <div className="">
             <img
@@ -47,7 +46,7 @@ const ExperienceIndividualComponent = ({
             <p className="text-sm ">{worktype}</p>
             <p className="text-[#999b9d] text-xs">{duration}</p>
           </div>
-          <div className="mt-6 leading-snug">
+          <div className="mt-3 leading-snug">
             {" "}
             {showFullDescription ? (
               <div dangerouslySetInnerHTML={{ __html: description }} />
@@ -63,7 +62,7 @@ const ExperienceIndividualComponent = ({
               </div>
             )}
           </div>
-          <div className="mt-6 flex items-center gap-3 cursor-pointer group w-fit">
+          <div className="mt-3 flex items-center gap-3 cursor-pointer group w-fit">
             <div className="group-hover:text-yellow-500">
               <GiCutDiamond />
             </div>
@@ -71,7 +70,7 @@ const ExperienceIndividualComponent = ({
               {skills}
             </p>
           </div>
-          <div className="mt-6 flex gap-8 items-center cursor-pointer w-fit group">
+          <div className="mt-3 flex gap-5 items-center cursor-pointer w-fit group">
             <img
               src={cSrc}
               alt="Certificate"
