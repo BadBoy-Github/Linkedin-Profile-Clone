@@ -67,7 +67,7 @@ const ExperienceIndividualComponent = ({
             <div className="group-hover:text-yellow-500">
               <GiCutDiamond />
             </div>
-            <p className="font-semibold group-hover:text-[#6eb1f3] group-hover:underline ">
+            <p className="font-semibold group-hover:text-[#6eb1f3] group-hover:underline">
               {skills}
             </p>
           </div>
@@ -75,7 +75,7 @@ const ExperienceIndividualComponent = ({
             <img
               src={cSrc}
               alt="Certificate"
-              className="rounded-lg outline-2 outline-[#6d6d6d] w-32 h-16 group-hover:outline-[#6eb1f3]"
+              className="rounded-lg  w-32 h-16"
             />
             <p className="text-base font-semibold group-hover:text-[#6eb1f3]">
               {cName}
