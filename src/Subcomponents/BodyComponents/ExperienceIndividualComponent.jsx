@@ -1,4 +1,7 @@
 import { GiCutDiamond } from "react-icons/gi";
+import { useState } from "react";
+
+
 
 const ExperienceIndividualComponent = ({
   imgSrc,
@@ -9,10 +12,18 @@ const ExperienceIndividualComponent = ({
   duration,
   description,
   skills,
+  cSrc,
+  cName,
 }) => {
+
+  const [showFullDescription, setShowFullDescription] = useState(false);
+
+  const firstLine = description.split("<br>")[0];
+  const truncatedDescription = firstLine.replace(/<[^>]*>?/gm, "") + "...";
+
   return (
     <>
-      <div className="text-white px-5 text-[0.94rem] pt-4 pb-12 w-full flex">
+      <div className="text-white px-5 text-[0.94rem] pt-4 pb-6 w-full flex">
         <div className="w-1/10 p-1">
           <div className="">
             <img
@@ -36,16 +47,38 @@ const ExperienceIndividualComponent = ({
             <p className="text-sm ">{category}</p>
             <p className="text-[#999b9d] text-xs">{duration}</p>
           </div>
-          <div
-            className="mt-6"
-            dangerouslySetInnerHTML={{ __html: description }}
-          />
-          <div className="mt-6 flex items-center gap-3 cursor-pointer group">
+          <div className="mt-6 leading-snug">
+            {" "}
+            {showFullDescription ? (
+              <div dangerouslySetInnerHTML={{ __html: description }} />
+            ) : (
+              <div>
+                {truncatedDescription}
+                <button
+                  onClick={() => setShowFullDescription(true)}
+                  className="text-[#999b9d] hover:underline ml-2 cursor-pointer text-sm"
+                >
+                  show more
+                </button>
+              </div>
+            )}
+          </div>
+          <div className="mt-6 flex items-center gap-3 cursor-pointer group w-fit">
             <div className="group-hover:text-yellow-500">
               <GiCutDiamond />
             </div>
             <p className="font-semibold group-hover:text-[#6eb1f3] group-hover:underline ">
               {skills}
+            </p>
+          </div>
+          <div className="mt-6 flex gap-8 items-center cursor-pointer w-fit group">
+            <img
+              src={cSrc}
+              alt="Certificate"
+              className="rounded-lg outline-2 outline-[#6d6d6d] w-32 h-16 group-hover:outline-[#6eb1f3]"
+            />
+            <p className="text-base font-semibold group-hover:text-[#6eb1f3]">
+              {cName}
             </p>
           </div>
         </div>
