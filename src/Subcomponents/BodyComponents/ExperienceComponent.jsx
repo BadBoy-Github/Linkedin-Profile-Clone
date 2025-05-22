@@ -27,6 +27,32 @@ const experience = [
     cSrc: "/img/Experience/corizo training.jpg",
     cName: "Corizo Training Certificate",
   },
+  {
+    imgSrc: "/img/Experience/elies.jpg",
+    name: "Elies Biotech Pvt. Ltd",
+    position: "Applied Microbiology and Agricultural Biotechnology",
+    worktype: "Onsite · Erode, Tamil Nadu, India",
+    category: "Internship",
+    duration: "Jul 2022 - Aug 2022 · 1 month",
+    description:
+      "Completed a hands-on internship acquiring entrepreneurial skills and technical expertise in applied microbiology, rated excellent!<br></br> <b>Scope of Intern:</b><br></br><b>1. Microbial Characterization:</b> Isolated and characterized agriculturally important microorganisms.<br></br><b>2. Biofertilizers:</b> Developed commercial production techniques for biofertilizers.<br></br><b>3. Mushroom Tissue Culture:</b> Mastered advanced mushroom tissue culture methods.<br></br><b>4. Black Soldier Fly Larvae:</b> Gained expertise in rearing Black Soldier Fly Larvae for sustainable feed supplements.<br></br> This internship provided practical experience and a strong foundation in agricultural and environmental biotechnology!",
+    skills: "BSFL rearing, Microbiology and +1 skill",
+    cSrc: "/img/Experience/elies intern.jpg",
+    cName: "Elies Biotech Internship Certificate",
+  },
+  {
+    imgSrc: "/img/Experience/sample.png",
+    name: "Biorith Techno Products Pvt. Ltd",
+    position: "Biorith Millet Products",
+    worktype: "Onsite · Virudhunagar, Tamil Nadu, India",
+    category: "Internship",
+    duration: "Jun 2022 - Jul 2022 · 1 month",
+    description:
+      "During my internship at an Automatic Millet Processing Unit, I learned to operate advanced machinery for millet processing and helped develop eco-friendly packaging solutions, contributing to sustainable food production.<br></br> <b>Scope of Intern:</b><br></br>1. This internship provided me with invaluable hands-on experience in sustainable agriculture and food processing.<br></br>2. Working alongside industry experts, I gained insights into the integration of advanced technology with environmental stewardship in the food industry. It allowed me to apply theoretical knowledge to practical tasks and contributed to my professional growth in this dynamic field.<br></br> My time at the Automatic Millet Processing Unit was transformative, equipping me with practical skills and a deeper understanding of sustainable food technology. I recommend this opportunity to those passionate about impactful contributions in agriculture and food processing.!",
+    skills: "Food Science, Sustainable Agriculture and +2 skill",
+    cSrc: "/img/Experience/biorith intern.jpg",
+    cName: "Biorith Internship Certificate",
+  },
 ];
 
 const ExperienceComponent = () => {

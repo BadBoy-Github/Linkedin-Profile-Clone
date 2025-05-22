@@ -18,8 +18,8 @@ const ExperienceIndividualComponent = ({
 
   const [showFullDescription, setShowFullDescription] = useState(false);
 
-  const firstLine = description.split("<br>")[0];
-  const truncatedDescription = firstLine.replace(/<[^>]*>?/gm, "") + "...";
+  const plainTextDescription = description.replace(/<[^>]*>?/gm, "");
+  const truncatedDescription = plainTextDescription.substring(0, 40) + "...";
 
   return (
     <>
@@ -29,7 +29,7 @@ const ExperienceIndividualComponent = ({
             <img
               src={imgSrc}
               alt="Corizo Logo"
-              className="size-12 rounded-xl"
+              className="size-12 rounded-xl shadow-lg outline outline-white"
             />
           </div>
         </div>
@@ -41,10 +41,10 @@ const ExperienceIndividualComponent = ({
             <div className="flex gap-2 items-center">
               <h1 className="font-semibold text-base">{position}</h1>
               <p className="bg-[#38434f] px-1 py-0.5 rounded-xl text-xs ">
-                {worktype}
+                {category}
               </p>
             </div>
-            <p className="text-sm ">{category}</p>
+            <p className="text-sm ">{worktype}</p>
             <p className="text-[#999b9d] text-xs">{duration}</p>
           </div>
           <div className="mt-6 leading-snug">
@@ -75,7 +75,7 @@ const ExperienceIndividualComponent = ({
             <img
               src={cSrc}
               alt="Certificate"
-              className="rounded-lg  w-32 h-16"
+              className="rounded-lg  w-32 h-16 "
             />
             <p className="text-base font-semibold group-hover:text-[#6eb1f3]">
               {cName}
