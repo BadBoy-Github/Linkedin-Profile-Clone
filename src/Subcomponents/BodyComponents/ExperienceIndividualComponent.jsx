@@ -27,8 +27,8 @@ const ExperienceIndividualComponent = ({
           <div className="">
             <img
               src={imgSrc}
-              alt="Corizo Logo"
-              className="size-12 rounded-xl shadow-lg outline outline-white"
+              alt={name}
+              className="size-12 rounded-xl bg-white p-1"
             />
           </div>
         </div>

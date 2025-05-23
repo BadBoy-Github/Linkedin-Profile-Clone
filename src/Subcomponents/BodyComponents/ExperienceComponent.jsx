@@ -41,7 +41,7 @@ const experience = [
     cName: "Elies Biotech Internship Certificate",
   },
   {
-    imgSrc: "/img/Experience/sample.png",
+    imgSrc: "/img/Experience/sample.jpg",
     name: "Biorith Techno Products Pvt. Ltd",
     position: "Biorith Millet Products",
     worktype: "Onsite · Virudhunagar, Tamil Nadu, India",
