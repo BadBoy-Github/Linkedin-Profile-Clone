@@ -1,4 +1,6 @@
 import { GiCutDiamond } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
+
 import { useState } from "react";
 
 
@@ -14,6 +16,18 @@ const ExperienceIndividualComponent = ({
   cSrc,
   cName,
 }) => {
+
+  const [showCertificate, setShowCertificate] = useState(false)
+
+  const openCertificate = () => {
+    setShowCertificate(cSrc);
+    document.body.classList.add("overflow-hidden");
+  }
+
+  const closeCertificate = () => {
+    setShowCertificate(null);
+    document.body.classList.remove("overflow-hidden");
+  }
 
   const [showFullDescription, setShowFullDescription] = useState(false);
 
@@ -70,7 +84,10 @@ const ExperienceIndividualComponent = ({
               {skills}
             </p>
           </div>
-          <div className="mt-3 flex gap-5 items-center cursor-pointer w-fit group">
+          <div
+            className="mt-3 flex gap-5 items-center cursor-pointer w-fit group"
+            onClick={() => openCertificate()}
+          >
             <img
               src={cSrc}
               alt="Certificate"
@@ -80,6 +97,37 @@ const ExperienceIndividualComponent = ({
               {cName}
             </p>
           </div>
+          {/* Certificate Modal */}
+          {showCertificate && (
+            <div
+              className="fixed inset-0 bg-black/80 z-50 flex items-start justify-center p-4 animate-fadeIn"
+              onClick={closeCertificate}
+            >
+              <div
+                className="relative w-fit"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div className="bg-black flex items-center justify-center p-4 rounded-lg border border-[#373a3d] mt-10 relative">
+                  <div className="flex gap-2">
+                    <img
+                      src={showCertificate}
+                      alt="Certificate"
+                      className=" max-h-[60vh] max-w-[80vh] rounded-xl"
+                    />
+                    <div className="min-w-[40vh] max-w-[40vh] px-4">
+                      <h1 className="font-bold text-lg">{cName}</h1>
+                    </div>
+                  </div>
+                  <div
+                    className="absolute bg-[#999b9d] text-[#1b1f23] top-0 right-0 cursor-pointer m-3 p-1 rounded-full"
+                    onClick={closeCertificate}
+                  >
+                    <IoClose className="size-[1.2rem]" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </>
