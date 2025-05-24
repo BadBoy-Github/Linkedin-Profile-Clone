@@ -15,19 +15,19 @@ const ExperienceIndividualComponent = ({
   skills,
   cSrc,
   cName,
+  cDescription,
 }) => {
-
-  const [showCertificate, setShowCertificate] = useState(false)
+  const [showCertificate, setShowCertificate] = useState(false);
 
   const openCertificate = () => {
     setShowCertificate(cSrc);
     document.body.classList.add("overflow-hidden");
-  }
+  };
 
   const closeCertificate = () => {
     setShowCertificate(null);
     document.body.classList.remove("overflow-hidden");
-  }
+  };
 
   const [showFullDescription, setShowFullDescription] = useState(false);
 
@@ -35,7 +35,6 @@ const ExperienceIndividualComponent = ({
   const truncatedDescription = plainTextDescription.substring(0, 40) + "...";
 
   const formatSkills = (maxVisible = 2) => {
-
     if (skills.length <= maxVisible) {
       return skills.join(", ");
     }
@@ -87,26 +86,25 @@ const ExperienceIndividualComponent = ({
               </div>
             )}
           </div>
-          <div className="mt-3 flex items-center gap-3 cursor-pointer group w-fit">
-            <div className="group-hover:text-yellow-500">
-              <GiCutDiamond />
+          <div className="group w-fit" onClick={() => openCertificate()}>
+            <div className="mt-3 flex items-center gap-3 cursor-pointer  w-fit">
+              <div className="group-hover:text-yellow-500">
+                <GiCutDiamond />
+              </div>
+              <p className="font-semibold group-hover:text-[#6eb1f3] group-hover:underline">
+                {formatSkills()}
+              </p>
             </div>
-            <p className="font-semibold group-hover:text-[#6eb1f3] group-hover:underline">
-              {formatSkills()}
-            </p>
-          </div>
-          <div
-            className="mt-3 flex gap-5 items-center cursor-pointer w-fit group"
-            onClick={() => openCertificate()}
-          >
-            <img
-              src={cSrc}
-              alt="Certificate"
-              className="rounded-lg  w-32 h-16 "
-            />
-            <p className="text-base font-semibold group-hover:text-[#6eb1f3]">
-              {cName}
-            </p>
+            <div className="mt-3 flex gap-5 items-center cursor-pointer w-fit group">
+              <img
+                src={cSrc}
+                alt="Certificate"
+                className="rounded-lg  w-32 h-16 "
+              />
+              <p className="text-base font-semibold group-hover:text-[#6eb1f3]">
+                {cName}
+              </p>
+            </div>
           </div>
           {/* Certificate Modal */}
           {showCertificate && (
@@ -127,6 +125,21 @@ const ExperienceIndividualComponent = ({
                     />
                     <div className="min-w-[40vh] max-w-[40vh] px-4">
                       <h1 className="font-bold text-lg">{cName}</h1>
+                      <div
+                        className="pt-2"
+                        dangerouslySetInnerHTML={{ __html: cDescription }}
+                      />
+                      <div className="pt-4">
+                        <h1 className="font-bold text-lg pb-2">Skills: </h1>
+                        {skills.map((skill) => (
+                          <span
+
+                            className="bg-[#38434f] px-2 py-1 rounded-lg text-xs mr-2 mb-2 inline-block"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                   <div

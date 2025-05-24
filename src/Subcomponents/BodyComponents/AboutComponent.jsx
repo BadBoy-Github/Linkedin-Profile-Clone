@@ -48,14 +48,14 @@ const AboutComponent = () => {
               thrive at the intersection of <b>science and technology</b>. My
               expertise spans advanced laboratory techniques, data analysis, and
               innovative research methodologies, allowing me to tackle
-              real-world biological challenges with precision ⚡.
+              real-world biological challenges with precision ⚡...
             </>
           )}
           <span
             className="text-blue-400 rounded-full cursor-pointer w-fit text-center absolute bottom-2 right-2 p-2 text-sm"
             onClick={() => setShowFullText(!showFullText)}
           >
-            {showFullText ? "See less" : "See more"}
+            {showFullText ? "see less" : "see more"}
           </span>
         </div>
       </div>
