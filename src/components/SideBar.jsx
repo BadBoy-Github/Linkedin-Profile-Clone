@@ -6,15 +6,17 @@ import OrganizationComponent from "../Subcomponents/SidebarComponents/Organizati
 import InterestsComponet from "../Subcomponents/SidebarComponents/InterestsComponent";
 import SkillsComponent from "../Subcomponents/SidebarComponents/SkillsComponent";
 import RecommendationComponent from "../Subcomponents/SidebarComponents/RecommendationComponent";
+import EducationComponent from "../Subcomponents/SidebarComponents/EducationComponent";
 
 const SideBar = () => {
   return (
     <div className="w-70">
       <UrlComponent />
       <LanguageComponent />
+      <EducationComponent />
+      <SkillsComponent />
       <RecommendationComponent />
       <OrganizationComponent />
-      <SkillsComponent />
       <InterestsComponet />
     </div>
   );

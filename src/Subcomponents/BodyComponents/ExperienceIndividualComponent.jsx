@@ -119,7 +119,7 @@ const ExperienceIndividualComponent = ({
                     </div>
                   </div>
                   <div
-                    className="absolute bg-[#999b9d] text-[#1b1f23] top-0 right-0 cursor-pointer m-3 p-1 rounded-full"
+                    className="absolute bg-[#999b9d] text-[#1b1f23] top-0 right-0 cursor-pointer m-3 p-1 rounded-full hover:scale-105 transition-all duration-200"
                     onClick={closeCertificate}
                   >
                     <IoClose className="size-[1.2rem]" />
