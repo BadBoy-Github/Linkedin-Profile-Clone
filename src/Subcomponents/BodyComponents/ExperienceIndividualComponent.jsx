@@ -80,9 +80,9 @@ const ExperienceIndividualComponent = ({
                 <div dangerouslySetInnerHTML={{ __html: description }} />
                 <button
                   onClick={() => setShowFullDescription(false)}
-                  className="text-[#6eb1f3] hover:underline cursor-pointer text-sm"
+                  className="text-[#999b9d] hover:text-[#6eb1f3] cursor-pointer text-sm"
                 >
-                  show less
+                  see less
                 </button>
               </div>
             ) : (
@@ -90,9 +90,9 @@ const ExperienceIndividualComponent = ({
                 {truncateDescription(plainTextDescription)}
                 <button
                   onClick={() => setShowFullDescription(true)}
-                  className="text-[#6eb1f3] hover:underline ml-2 cursor-pointer text-sm"
+                  className="text-[#999b9d] hover:text-[#6eb1f3] ml-2 cursor-pointer text-sm"
                 >
-                  show more
+                  see more
                 </button>
               </div>
             )}

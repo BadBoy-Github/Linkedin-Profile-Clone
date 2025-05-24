@@ -58,7 +58,7 @@ const RecommendationComponent = () => {
                   </>
                 )}
                 <span
-                  className="text-blue-400 rounded-full cursor-pointer w-fit text-center absolute bottom-0 right-2 p-2 text-xs font-bold"
+                  className="text-[#999b9d] hover:text-[#6eb1f3] rounded-full cursor-pointer w-fit text-center absolute bottom-0 right-2 p-2 text-xs font-bold"
                   onClick={() => setShowFullText(!showFullText)}
                 >
                   {showFullText ? <FaAngleDoubleUp /> : <FaAngleDoubleDown />}

@@ -38,8 +38,12 @@ const AboutComponent = () => {
               interactive web platforms.
               <br /> <br />
               Let’s connect 🤝 and explore how we can collaborate—whether in
-              <b> biotech innovation, scientific web solutions, or cutting-edge
-              research!</b> 🚀
+              <b>
+                {" "}
+                biotech innovation, scientific web solutions, or cutting-edge
+                research!
+              </b>{" "}
+              🚀
             </>
           ) : (
             <>
@@ -52,7 +56,7 @@ const AboutComponent = () => {
             </>
           )}
           <span
-            className="text-blue-400 rounded-full cursor-pointer w-fit text-center absolute bottom-2 right-2 p-2 text-sm"
+            className="text-[#999b9d] hover:text-[#6eb1f3] rounded-full cursor-pointer w-fit text-center absolute bottom-2 right-2 p-2 text-sm"
             onClick={() => setShowFullText(!showFullText)}
           >
             {showFullText ? "see less" : "see more"}
