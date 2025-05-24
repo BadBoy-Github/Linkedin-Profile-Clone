@@ -32,7 +32,11 @@ const ExperienceIndividualComponent = ({
   const [showFullDescription, setShowFullDescription] = useState(false);
 
   const plainTextDescription = description.replace(/<[^>]*>?/gm, "");
-  const truncatedDescription = plainTextDescription.substring(0, 40) + "...";
+  const truncateDescription = (text, maxLength = 40) => {
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength) + "...";
+  };
+  
 
   const formatSkills = (maxVisible = 2) => {
     if (skills.length <= maxVisible) {
@@ -70,13 +74,20 @@ const ExperienceIndividualComponent = ({
             <p className="text-sm ">{worktype}</p>
             <p className="text-[#999b9d] text-xs">{duration}</p>
           </div>
-          <div className="mt-3 leading-snug">
-            {" "}
+          <div className="mt-3 leading-snug transition-all duration-300">
             {showFullDescription ? (
-              <div dangerouslySetInnerHTML={{ __html: description }} />
+              <div>
+                <div dangerouslySetInnerHTML={{ __html: description }} />
+                <button
+                  onClick={() => setShowFullDescription(false)}
+                  className="text-[#6eb1f3] hover:underline cursor-pointer text-sm"
+                >
+                  show less
+                </button>
+              </div>
             ) : (
               <div>
-                {truncatedDescription}
+                {truncateDescription(plainTextDescription)}
                 <button
                   onClick={() => setShowFullDescription(true)}
                   className="text-[#6eb1f3] hover:underline ml-2 cursor-pointer text-sm"
@@ -86,7 +97,10 @@ const ExperienceIndividualComponent = ({
               </div>
             )}
           </div>
-          <div className="group w-fit cursor-pointer" onClick={() => openCertificate()}>
+          <div
+            className="group w-fit cursor-pointer"
+            onClick={() => openCertificate()}
+          >
             <div className="mt-3 flex items-center gap-3 cursor-pointer  w-fit">
               <div className="group-hover:text-yellow-500">
                 <GiCutDiamond />
@@ -132,10 +146,7 @@ const ExperienceIndividualComponent = ({
                       <div className="pt-4">
                         <h1 className="font-bold text-lg pb-2">Skills: </h1>
                         {skills.map((skill) => (
-                          <span
-
-                            className="bg-[#38434f] px-2 py-1 rounded-lg text-xs mr-2 mb-2 inline-block"
-                          >
+                          <span className="bg-[#38434f] px-2 py-1 rounded-lg text-xs mr-2 mb-2 inline-block">
                             {skill}
                           </span>
                         ))}
