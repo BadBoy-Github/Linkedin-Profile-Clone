@@ -34,6 +34,17 @@ const ExperienceIndividualComponent = ({
   const plainTextDescription = description.replace(/<[^>]*>?/gm, "");
   const truncatedDescription = plainTextDescription.substring(0, 40) + "...";
 
+  const formatSkills = (maxVisible = 2) => {
+
+    if (skills.length <= maxVisible) {
+      return skills.join(", ");
+    }
+
+    const visibleSkills = skills.slice(0, maxVisible);
+    const remainingCount = skills.length - maxVisible;
+    return `${visibleSkills.join(", ")} and ${remainingCount} more`;
+  };
+
   return (
     <>
       <div className="text-white px-5 text-[0.94rem] pt-4 pb-4 w-full flex">
@@ -69,7 +80,7 @@ const ExperienceIndividualComponent = ({
                 {truncatedDescription}
                 <button
                   onClick={() => setShowFullDescription(true)}
-                  className="text-[#999b9d] hover:underline ml-2 cursor-pointer text-sm"
+                  className="text-[#6eb1f3] hover:underline ml-2 cursor-pointer text-sm"
                 >
                   show more
                 </button>
@@ -81,7 +92,7 @@ const ExperienceIndividualComponent = ({
               <GiCutDiamond />
             </div>
             <p className="font-semibold group-hover:text-[#6eb1f3] group-hover:underline">
-              {skills}
+              {formatSkills()}
             </p>
           </div>
           <div
