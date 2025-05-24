@@ -86,7 +86,7 @@ const ExperienceIndividualComponent = ({
               </div>
             )}
           </div>
-          <div className="group w-fit" onClick={() => openCertificate()}>
+          <div className="group w-fit cursor-pointer" onClick={() => openCertificate()}>
             <div className="mt-3 flex items-center gap-3 cursor-pointer  w-fit">
               <div className="group-hover:text-yellow-500">
                 <GiCutDiamond />
