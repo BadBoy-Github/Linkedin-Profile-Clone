@@ -32,7 +32,7 @@ const ExperienceIndividualComponent = ({
   const [showFullDescription, setShowFullDescription] = useState(false);
 
   const plainTextDescription = description.replace(/<[^>]*>?/gm, "");
-  const truncateDescription = (text, maxLength = 40) => {
+  const truncateDescription = (text, maxLength = 60) => {
     if (text.length <= maxLength) return text;
     return text.substring(0, maxLength) + "...";
   };
@@ -98,10 +98,10 @@ const ExperienceIndividualComponent = ({
             )}
           </div>
           <div
-            className="group w-fit cursor-pointer"
+            className="group cursor-pointer p-3 rounded-xl mt-2 outline-2 outline-[#38434f]"
             onClick={() => openCertificate()}
           >
-            <div className="mt-3 flex items-center gap-3 cursor-pointer  w-fit">
+            <div className=" flex items-center gap-3 cursor-pointer  w-fit">
               <div className="group-hover:text-yellow-500">
                 <GiCutDiamond />
               </div>
@@ -109,13 +109,13 @@ const ExperienceIndividualComponent = ({
                 {formatSkills()}
               </p>
             </div>
-            <div className="mt-3 flex gap-5 items-center cursor-pointer w-fit group">
+            <div className="mt-3 flex gap-5 items-start cursor-pointer w-fit group">
               <img
                 src={cSrc}
                 alt="Certificate"
                 className="rounded-lg  w-32 h-16 "
               />
-              <p className="text-base font-semibold group-hover:text-[#6eb1f3]">
+              <p className="text-base font-semibold">
                 {cName}
               </p>
             </div>
