@@ -98,26 +98,24 @@ const ExperienceIndividualComponent = ({
             )}
           </div>
           <div
-            className="group cursor-pointer p-3 rounded-xl mt-2 outline-2 outline-[#38434f]"
+            className="group cursor-pointer p-3 rounded-xl mt-2 outline-2 outline-[#38434f] hover:outline-[#6eb1f3] hover:bg-[#38434f] transition-all duration-300"
             onClick={() => openCertificate()}
           >
             <div className=" flex items-center gap-3 cursor-pointer  w-fit">
-              <div className="group-hover:text-yellow-500">
+              <div className="group-hover:text-yellow-500 transition-all duration-300">
                 <GiCutDiamond />
               </div>
-              <p className="font-semibold group-hover:text-[#6eb1f3] group-hover:underline">
+              <p className="font-semibold group-hover:text-[#6eb1f3] group-hover:underline transition-all duration-300">
                 {formatSkills()}
               </p>
             </div>
-            <div className="mt-3 flex gap-5 items-start cursor-pointer w-fit group">
+            <div className="mt-3 flex gap-5 items-start cursor-pointer w-fit ">
               <img
                 src={cSrc}
                 alt="Certificate"
                 className="rounded-lg  w-32 h-16 "
               />
-              <p className="text-base font-semibold">
-                {cName}
-              </p>
+              <p className="text-base font-semibold  text-white ">{cName}</p>
             </div>
           </div>
           {/* Certificate Modal */}
@@ -154,7 +152,7 @@ const ExperienceIndividualComponent = ({
                     </div>
                   </div>
                   <div
-                    className="absolute bg-[#999b9d] text-[#1b1f23] top-0 right-0 cursor-pointer m-3 p-1 rounded-full hover:scale-105 transition-all duration-200"
+                    className="absolute bg-[#999b9d] text-[#1b1f23] top-0 right-0 cursor-pointer m-3 p-1 rounded-full hover:scale-105 transition-all duration-200 hover:bg-red-600 hover:text-white"
                     onClick={closeCertificate}
                   >
                     <IoClose className="size-[1.2rem]" />

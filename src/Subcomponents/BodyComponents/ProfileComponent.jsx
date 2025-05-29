@@ -84,7 +84,7 @@ const ProfileComponent = () => {
         {/* Selecting Image Modal */}
         {selectedImage && (
           <div
-            className="fixed inset-0 bg-black/80 z-50 flex items-start justify-center p-4 animate-fadeIn"
+            className="fixed inset-0 bg-black/80 z-50 flex items-start justify-center p-4 animate-fadeIn "
             onClick={closeImage}
           >
             <div
@@ -100,7 +100,7 @@ const ProfileComponent = () => {
                   />
                 </div>
                 <div
-                  className="absolute bg-[#999b9d] text-[#1b1f23] top-0 right-0 cursor-pointer m-3 p-1 rounded-full"
+                  className="absolute bg-[#999b9d] text-[#1b1f23] top-0 right-0 cursor-pointer m-3 p-1 rounded-full hover:scale-105 transition-all duration-200 hover:bg-red-600 hover:text-white"
                   onClick={closeImage}
                 >
                   <IoClose className="size-[1.2rem]" />
@@ -293,7 +293,7 @@ const ProfileComponent = () => {
                       </div>
                     </div>
                     <div
-                      className="absolute bg-[#999b9d] text-[#1b1f23] top-0 right-0 cursor-pointer m-3 p-1 rounded-full"
+                      className="absolute bg-[#999b9d] text-[#1b1f23] top-0 right-0 cursor-pointer m-3 p-1 rounded-full hover:scale-105 transition-all duration-200 hover:bg-red-600 hover:text-white"
                       onClick={closeContactInfo}
                     >
                       <IoClose className="size-[1.2rem]" />
