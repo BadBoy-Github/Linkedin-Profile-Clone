@@ -5,11 +5,13 @@ import HighlightComponent from "../Subcomponents/BodyComponents/HighlightCompone
 import AboutComponent from "../Subcomponents/BodyComponents/AboutComponent";
 import FeaturedComponent from "../Subcomponents/BodyComponents/FeaturedComponent";
 import ExperienceComponent from "../Subcomponents/BodyComponents/ExperienceComponent";
+import GithubSnakeComponent from "../Subcomponents/BodyComponents/GithubSnakeComponent";
 
 const Body = () => {
   return (
     <div className="w-212">
       <ProfileComponent />
+      <GithubSnakeComponent />
       <HighlightComponent />
       <AboutComponent />
       <FeaturedComponent />

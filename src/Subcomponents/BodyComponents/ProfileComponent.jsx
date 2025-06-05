@@ -304,12 +304,12 @@ const ProfileComponent = () => {
             )}
 
             <div className="flex items-center text-[#6eb1f3] text-[0.82rem] font-semibold mt-1">
-              <p className="hover:underline cursor-pointer">2,546 followers</p>
+              <p className="hover:underline cursor-pointer">2,583 followers</p>
               <div className="px-1 text-white">
                 <GoDotFill className="size-[0.4rem]" />
               </div>
               <p className="hover:underline cursor-pointer">
-                2,534 connections
+                2,571 connections
               </p>
             </div>
           </div>
@@ -381,8 +381,8 @@ const ProfileComponent = () => {
 
         {/* Open to Work Section */}
         <div className=" flex  my-6 w-full h-fit">
-          <div className=" ml-5 rounded-xl text-white text-sm  w-1/2 flex h-42">
-            <div className="bg-[#38434f] rounded-xl p-4 w-full mr-1 relative  ">
+          <div className=" ml-5 rounded-xl text-white text-sm  w-full flex h-42 gap-6">
+            <div className="bg-[#38434f] rounded-xl p-4 w-[46%] mr-1 relative  ">
               <p className="font-semibold">Open to work</p>
               <p className="pt-2 line-clamp-4 overflow-hidden text-ellipsis">
                 Microbiologist, Biotechnologist, Biological Technician, Video
@@ -392,7 +392,7 @@ const ProfileComponent = () => {
                 Show details
               </p>
             </div>
-            <div className="bg-[#38434f] rounded-xl p-4 w-full ml-1 relative">
+            <div className="bg-[#38434f] rounded-xl p-4 w-[46%] ml-1 relative">
               <p className="font-semibold">Open to volunteering</p>
               <p className="pt-2 line-clamp-3 overflow-hidden text-ellipsis">
                 Arts and Culture, Science and Technology, Social Services
@@ -402,48 +402,7 @@ const ProfileComponent = () => {
               </p>
             </div>
           </div>
-          <div className="border border-[#38434f] py-2 px-3 mr-5 ml-2 rounded-xl text-white text-sm w-1/2 h-42">
-            <div className="flex items-center justify-between ">
-              <div className="flex items-center gap-1 my-1">
-                <p className="font-semiboldr">GitHub Profile:</p>
-                <p
-                  className="text-[#6eb1f3] font-semibold hover:underline cursor-pointer ]"
-                  onClick={() => {
-                    window.open("https://github.com/BadBoy-Github", "_blank");
-                  }}
-                >
-                  BadBoy-Github
-                </p>
-              </div>
-              <div className="bg-[#1b1f23] text-white">
-                <FaGithub className="size-[1rem]" />
-              </div>
-            </div>
-            <div
-              className="w-full h-[80%] cursor-wait relative"
-              onClick={() => {
-                window.open("https://github.com/BadBoy-Github", "_blank");
-              }}
-            >
-              <GitHubSnake />
-              <div className="flex justify-between items-center absolute bottom-0 left-0 right-0">
-                <div className=" bg-[#6eb1f3]  px-2 py-1 rounded-full flex justify-center items-center">
-                  <p
-                    className="text-xs text-[#1b1f23] font-bold cursor-pointer "
-                    onClick={() => {
-                      window.open(
-                        "https://github.com/BadBoy-Github?tab=repositories",
-                        "_blank"
-                      );
-                    }}
-                  >
-                    33 repos
-                  </p>
-                </div>
-                <p className="text-xs text-[#6eb1f3]">@BadBoy-Github</p>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </>
