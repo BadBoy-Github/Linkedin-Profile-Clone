@@ -7,7 +7,7 @@ import FeaturedIndividualComponent from "./FeaturedIndividualComponent";
 const FeaturedComponent = () => {
   return (
     <>
-      <div className="bg-[#1b1f23] h-fit w-full rounded-xl mr-2 mt-2 mb-2 py-7 px-3 flex flex-col gap-4">
+      <div className="bg-[#1b1f23] h-fit w-full rounded-xl my-2 py-7 px-3 flex flex-col gap-4">
         <div className="text-white px-5">
           <h1 className="font-semibold text-[1.2rem]">Featured</h1>
         </div>
@@ -33,15 +33,7 @@ const FeaturedComponent = () => {
             buttonLink="https://github.com/BadBoy-Github"
           />
 
-          <FeaturedIndividualComponent
-            topType="Post"
-            imgSrc="/img/LIUW.jpg"
-            title="LinkedIn Unwrapped"
-            linkName="www.cleve.ai/unwrapped"
-            info="Reflecting on an Incredible LinkedIn 2024 Journey!"
-            buttonName="View Post"
-            buttonLink="#"
-          />
+          
         </div>
       </div>
     </>
