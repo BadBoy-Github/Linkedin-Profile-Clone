@@ -49,7 +49,7 @@ const UrlComponent = () => {
             </div>
           </div>
           <a
-            href="https://portfolio-three-pi-52.vercel.app/"
+            href="https://elayabarathimv-portfolio.vercel.app/"
             target="_blank"
             className="text-[18px] pt-4 flex justify-center font-bold"
           >
